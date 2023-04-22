@@ -13,3 +13,589 @@
  *= require_tree .
  *= require_self
  */
+ app/assets/stylesheets
+ body {
+    /* font of the text */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+     background-color: #f1f1f1;
+  }
+  
+  
+  .frame {
+      width: 100%;
+      height: 400px;
+  }
+  .boxes {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  .box {
+    position: relative;
+    flex: 1 1 auto;
+    width: 20%;
+    background: white;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .text {
+    position: absolute;
+    transform: scale(0.5);
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+    width:100%;
+    height: 100%;
+    text-align:center;
+    transition-delay: 0.5s;
+    transform:  translateX(-80px);
+  }
+  a.text{
+    color: #FFF;
+    opacity:0;
+    line-height: 300px;
+    text-decoration: none;
+  }
+  .box-1, .box-2, .box-3, .box-4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .box-1{background-image: url("https://www.16personalities.com/static/images/personality-types/avatars/infj-advocate.png")}
+  .box-2{background-image: url("https://i.pinimg.com/originals/0b/b5/20/0bb52077456664681199bafa9c12b6d3.png")}
+  .box-3{background-image: url("https://i.pinimg.com/originals/d6/ea/54/d6ea543eda6d31ce8a86e42073057b32.png")}
+  .box-4{background-image: url("https://i.pinimg.com/originals/52/29/8d/52298d48c02c395a6039b85fad91228d.png")}
+  
+    
+  
+  .testimonials{
+    padding: 40px 0;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
+  }
+  .inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  
+  .border{
+    width: 160px;
+    height: 5px;
+    background: orange; /*gci guyn*/
+    margin: 26px auto;
+  }
+  
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+  .testimonial{
+    background: #fff;
+    padding: 30px;
+  }
+  .testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  
+  
+  @media screen and (max-width:960px) {
+  .col{
+    flex: 100%;
+    max-width: 80%;
+  }
+  }
+  
+  @media screen and (max-width:600px) {
+  .col{
+    flex: 100%;
+    max-width: 100%;
+  }
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  /* .header {
+    height: 600px;
+    background-image: url("data:image/jpeg;base64,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");
+    background-repeat:no-repeat;
+    background-size:cover;
+  
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+   */
+
+   .module {
+    background: url("https://peopledev.co.za/docs/2020/07/career.jpg"); /* background image header */
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .module > header {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: inherit;
+    background-attachment: fixed;
+    overflow: hidden;
+  }
+  
+  .module > header::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: inherit;
+    background-attachment: fixed;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+  }
+  
+  .module > header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25)
+  }
+  
+  .module > header > h1 {
+    margin: 0;
+    color: white;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .module > header > button {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .contact-form-wrapper {
+    padding: 100px 0;
+    height: 600px ;
+    width: 100%;
+  }
+  
+  .contact-form {
+    padding: 30px 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    max-width: 400px;
+    min-height: 410px;
+  
+  }
+  
+  .contact-form textarea {
+    resize: none;
+  }
+  
+  .contact-form .form-input,
+  .form-text-area {
+    background-color: #f0f4f5;
+    height: 50px;
+    padding-left: 16px;
+  }
+  
+  .contact-form .form-text-area {
+    background-color: #f0f4f5;
+    height: auto;
+    padding-left: 16px;
+  }
+  
+  .contact-form .form-control::placeholder {
+    color: #aeb4b9;
+    font-weight: 500;
+    opacity: 1;
+  }
+  
+  .contact-form .form-control:-ms-input-placeholder {
+    color: #aeb4b9;
+    font-weight: 500;
+  }
+  
+  .contact-form .form-control::-ms-input-placeholder {
+    color: #aeb4b9;
+    font-weight: 500;
+  }
+  
+  .contact-form .form-control:focus {
+    border-color: #f33fb0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px orange;
+  }
+  
+  .contact-form .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .contact-form .description {
+    color: #aeb4b9;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .contact-form .submit-button-wrapper {
+    text-align: center;
+  }
+  
+  .contact-form .submit-button-wrapper input {
+    border: none;
+    border-radius: 4px;
+    color: #393232;
+    text-transform: uppercase;
+    padding: 10px 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  
+  .contact-form .submit-button-wrapper input:hover {
+    background-color: orange;
+  }
+  
+  
+  
+  .brand { 
+    font-size: 20px; 
+    text-decoration: none;
+    margin-top: 30px;
+  }
+  
+  .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .text-box2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .text-box3 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .heading-primary {
+    color: #fff; /* game name and "Download on play market" text color*/
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+  }
+  
+  .heading-primary-main {
+    display: block;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 5px;
+  }
+  
+  .heading-primary-sub {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 7.4px;
+  }
+  
+  .btn:link,
+  .btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    background-color: white; /* download button color background */
+    color: black; /* download button text color */
+  
+  }
+  
+  .column {
+      float: left;
+      width: 25%;
+      padding: 10px;
+  }
+  
+  .wrapper h1{
+      font-size: 52px;
+      margin-bottom: 60px;
+      text-align: center;
+  
+  }
+  
+  .users{
+      display: flex;
+      justify-content: center;
+      width: auto;
+      text-align: center;
+      flex-wrap: wrap;
+  }
+  
+  .users .member{
+      background: white; /* background of user's review*/ 
+      margin: 5px;
+      margin-bottom: 50px;
+      width: 300px;
+      padding: 20px;
+      line-height: 20px; 
+      position: relative;
+  
+  }
+  .users .member h3{
+      color: black; /* user's name color */
+      font-size: 26px;
+      margin-top: 50px;
+  }
+  
+  .users .member p.role{
+      color: #5c5a5a; /* text color of user's position */
+      margin: 12px 0;
+      font-size: 12px;
+      text-transform: uppercase;
+  }
+  
+  .users .member .user_img{
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+  }
+  
+  .users .member .user_img img{
+      width: 100px;
+      height: 100px;
+      padding: 5px;
+  }
+  
+  .dis{
+    text-align: center;
+    margin-top: 20px;
+  
+  
+  }
+  
+  .img_container{
+    margin-top: 40px;
+    margin: auto;
+  
+  }
+  
+  .img_item{
+  padding: 5px;
+  margin: auto;
+  
+  }
+  
+  
+  .background {
+    display: flex;
+  
+  }
+  
+  .container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 70px;
+  }
+  
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white; /* contact us text color */
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white; /* underlines of name, email, message*/
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white; /* color of the text that user inputs*/
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: white; /* color of "name, email, message" texts*/
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: white;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    color: white; /* cancel, send button color*/
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .app-form-button:hover {
+    color: black; /* cancel, send button color when you hold on it*/
+  }
+  
+  
+  
+  
+  
+  .sub {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sub span {
+    text-transform: uppercase;
+    text-decoration: none;
+      position: relative;
+    letter-spacing: 5px;
+    padding: 20px 40px;
+    background: transparent;
+    font-size: 20px;
+    color: white;
+      margin-top: 190px;
+  
+  }
+  
+  .sub span a {
+    text-transform: uppercase;
+    text-decoration: none;
+      position: relative;
+    letter-spacing: 5px;
+    padding: 20px 40px;
+    background: transparent;
+    font-size: 20px;
+    color: black;
+      margin-top: 90px;
+  }
+  
+  .sub span:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: -1%;
+    top: -5px;
+    background-color: #f1f1f1;
+    transform: skewX(30deg);
+    z-index: -1;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .sub span:hover:before {
+    transform: skewX(0deg);
+    left: 50%;
+    top: 0;
+      color: white;
+  
+  }
+  
+  .sub span:after {
+    content: "";
+    position: absolute;
+      text-decoration: none;
+    text-transform: uppercase;
+  
+    height: 100%;
+    width: 50%;
+    left: 51%;
+    top: 5px;
+    background-color: white;
+    transform: skewX(30deg);
+    z-index: -1;
+    color: white;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .sub span:hover:after {
+    transform: skewX(0deg);
+    left: 0%;
+    top: 0;
+  }
+  
+  
+  
