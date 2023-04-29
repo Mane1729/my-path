@@ -24,26 +24,25 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_29_104046) do
   create_enum "quality", ["excellent", "poor", "medium"]
   create_enum "salary_work", ["salary", "work"]
   create_enum "worker_type", ["hard worker", "smart worker"]
-  create_enum "yes_no", ["yes", "no"]
 
   create_table "users", force: :cascade do |t|
     t.integer "working_hours"
     t.integer "public_speaking_points"
+    t.boolean "self_learning"
+    t.boolean "extra_courses"
+    t.boolean "plays_games"
+    t.boolean "team_player"
+    t.boolean "introvert"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.enum "self_learning", enum_type: "yes_no"
-    t.enum "extra_courses", enum_type: "yes_no"
     t.enum "reading_writing_skills", enum_type: "quality"
     t.enum "memory_capability", enum_type: "quality"
     t.enum "interested_subject", enum_type: "interested_subject"
-    t.enum "plays_games", enum_type: "yes_no"
     t.enum "fav_book_genre", enum_type: "book_genre"
     t.enum "behaviour", enum_type: "behaviour"
     t.enum "management_technical", enum_type: "management_technical"
     t.enum "salary_work", enum_type: "salary_work"
     t.enum "worker_type", enum_type: "worker_type"
-    t.enum "team_player", enum_type: "yes_no"
-    t.enum "introvert", enum_type: "yes_no"
     t.enum "career", enum_type: "career"
   end
 

@@ -1,0 +1,109 @@
+{
+  "reading_writing_skills": [
+    "excellent",
+    "poor",
+    "medium"
+  ],
+  "memory_capability": [
+    "excellent",
+    "poor",
+    "medium"
+  ],
+  "interested_subject": [
+    "cloud computing",
+    "networks",
+    "hacking",
+    "Computer Architecture",
+    "programming",
+    "parallel computing",
+    "IOT",
+    "data engineering",
+    "Software Engineering",
+    "Management"
+  ],
+  "fav_book_genre": [
+    "Prayer books",
+    "Childrens",
+    "Travel",
+    "Romance",
+    "Cookbooks",
+    "Self help",
+    "Drama",
+    "Math",
+    "Religion-Spirituality",
+    "Anthology",
+    "Trilogy",
+    "Autobiographies",
+    "Mystery",
+    "Diaries",
+    "Journals",
+    "History",
+    "Art",
+    "Dictionaries",
+    "Horror",
+    "Encyclopedias",
+    "Action and Adventure",
+    "Fantasy",
+    "Comics",
+    "Science fiction",
+    "Series",
+    "Guide",
+    "Biographies",
+    "Health",
+    "Satire",
+    "Science",
+    "Poetry"
+  ],
+  "behaviour": [
+    "stubborn",
+    "gentle"
+  ],
+  "management_technical": [
+    "Management",
+    "Technical"
+  ],
+  "salary_work": [
+    "salary",
+    "work"
+  ],
+  "worker_type": [
+    "hard worker",
+    "smart worker"
+  ],
+  "career": [
+    "Database Developer",
+    "Portal Administrator",
+    "Systems Security Administrator",
+    "Business Systems Analyst",
+    "Software Systems Engineer",
+    "Business Intelligence Analyst",
+    "CRM Technical Developer",
+    "Mobile Applications Developer",
+    "UX Designer",
+    "Quality Assurance Associate",
+    "Web Developer",
+    "Information Security Analyst",
+    "CRM Business Analyst",
+    "Technical Support",
+    "Project Manager",
+    "Information Technology Manager",
+    "Programmer Analyst",
+    "Design & UX",
+    "Solutions Architect",
+    "Systems Analyst",
+    "Network Security Administrator",
+    "Data Architect",
+    "Software Developer",
+    "E-Commerce Analyst",
+    "Technical Services/Help Desk/Tech Support",
+    "Information Technology Auditor",
+    "Database Manager",
+    "Applications Developer",
+    "Database Administrator",
+    "Network Engineer",
+    "Software Engineer",
+    "Technical Engineer",
+    "Network Security Engineer",
+    "Software Quality Assurance (QA) / Testing"
+  ]
+}
