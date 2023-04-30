@@ -29,6 +29,7 @@
     </header>
   </div>
 
+
   <div class="dis" id="overview">
     <h1 class="font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg" contenteditable="false" id="termsofuse">MyPath OVERVIEW</h1><br> <!-- Name +  OVERVIEW -->
     <p class="fs-5">MyPath is an AI-powered career guidance application that helps users make informed career choices.</p> <!--  MyPath overview -->
@@ -40,7 +41,79 @@
         <div class="border"></div>
         <div class="row">
 
-          
+
+        <h1>Questions</h1>
+        <ul id="survey-questions"></ul>
+        
+        <script>
+        function addQuestionToList(question, listElement, callback) {
+          const questionLI = document.createElement('li');
+          questionLI.innerHTML = question;
+          listElement.appendChild(questionLI);
+          callback();
+        }
+        
+        fetch("<%= asset_path('enums.json') %>")
+          .then(response => response.json())
+          .then(data => {
+            const surveyQuestionsList = document.getElementById("survey-questions");
+            
+            // Add the first question to the list and call the function
+            addQuestionToList(data.questions[0], surveyQuestionsList, function() {
+              // Call your function here
+            });
+        
+            // Add the second question to the list and call the function
+            addQuestionToList(data.questions[1], surveyQuestionsList, function() {
+              // Call your function here
+            });
+        
+            // Add the third question to the list and call the function
+            addQuestionToList(data.questions[2], surveyQuestionsList, function() {
+              // Call your function here
+            });
+        
+            // Add the fourth question to the list and call the function
+            addQuestionToList(data.questions[3], surveyQuestionsList, function() {
+              // Call your function here
+            });
+        
+            // Add the reading and writing skills question to the list
+            const readingWritingSkillsQuestion = document.createElement('li');
+            readingWritingSkillsQuestion.innerHTML = data.questions[4];
+            surveyQuestionsList.appendChild(readingWritingSkillsQuestion);
+        
+            // Add the options for the reading and writing skills question
+            const readingWritingSkillsList = document.createElement('ul');
+            const readingWritingSkills = data.reading_writing_skills;
+            for (let i = 0; i < readingWritingSkills.length; i++) {
+              const skillLI = document.createElement('li');
+              skillLI.innerHTML = readingWritingSkills[i];
+              readingWritingSkillsList.appendChild(skillLI);
+            }
+            readingWritingSkillsQuestion.appendChild(readingWritingSkillsList);
+        
+            // Add the fifth question to the list and call the function
+            addQuestionToList(data.questions[5], surveyQuestionsList, function() {
+              // Call your function here
+            });
+        
+            // Add the options for the memory capabilities question
+            const memoryCapabilitiesList = document.createElement('ul');
+            const memoryCapabilities = data.memory_capabilities;
+            for (let i = 0; i < memoryCapabilities.length; i++) {
+              const capabilityLI = document.createElement('li');
+              capabilityLI.innerHTML = memoryCapabilities[i];
+              memoryCapabilitiesList.appendChild(capabilityLI);
+            }
+            surveyQuestionsList.appendChild(memoryCapabilitiesList);
+          });
+        </script>
+        
+
+
+
+
         </div>
       </div>
     </div>
