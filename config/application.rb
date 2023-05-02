@@ -1,6 +1,7 @@
 require_relative "boot"
 
 require "rails/all"
+require 'pycall/import'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -18,5 +19,10 @@ module MyPath
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    PyCall::import_module('numpy')
+    PyCall::import_module('pandas')
+    PyCall::import_module('sklearn.preprocessing')
+    PyCall::import_module('joblib')
   end
 end
