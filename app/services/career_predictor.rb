@@ -1,6 +1,5 @@
 require 'pycall/import'
 include PyCall::Import
-require 'pandas'
 
 
 class CareerPredictor < ApplicationService
@@ -9,19 +8,18 @@ class CareerPredictor < ApplicationService
   pyimport 'sklearn.preprocessing', as: 'preprocessing'
   pyimport 'joblib', as: 'joblib'
 
-  attr_reader :input_data
+  attr_reader :user
   
-  # The input should include some hard coded ['Suggested Job Role']
-  def initialize(input_data)
+  def initialize(user)
     pyimport 'joblib', as: 'joblib'
 
-    @input_data = input_data
+    @user = user
     @best_model = joblib.load(Rails.root.join('lib', 'ML', 'best_model.joblib').to_s)
     @encoders = joblib.load('lib/ML/encoders.joblib')
   end
 
   def call
-    input_encoded = encode_input(@input_data)
+    input_encoded = encode_input(InputDataFormatter.call(@user))
     prediction = @best_model.predict(input_encoded)
     decoded_prediction = decode_prediction(prediction)
 
@@ -41,7 +39,6 @@ class CareerPredictor < ApplicationService
       df[col] = le.transform(df[col]) if le
     end
 
-    df = df[df.columns.difference(['Suggested Job Role'])]
     df
   end
 
@@ -53,5 +50,3 @@ class CareerPredictor < ApplicationService
     decoded[0]
   end
 end
-
-# the input data keys and encoders keys are different, so I need a mapping
