@@ -37,41 +37,13 @@
 
     <div class="testimonials">
       <div class="inner">
-      <h1>Questions</h1>
+      <h1>Result</h1>
 
         <div class="border"></div>
         <div class="row">
 
-        <ol id="survey-questions-1"></ol>
 
-        <script>
-        function addQuestionToList(key, value, listElement, callback) {
-          const questionLI = document.createElement('p');
-          questionLI.innerHTML = `${listElement.childElementCount + 1}. ${key} <br> ${value}`;
-          listElement.appendChild(questionLI);
-          if (callback) {
-            callback();
-          }
-        }
 
-        fetch("<%= asset_path('enums.json') %>")
-          .then(response => response.json())
-          .then(data => {
-
-            const surveyQuestionsList = document.getElementById("survey-questions-1");
-            
-            for (const [key, value] of Object.entries(data)) {
-              if (key === "Would you consider yourself a hard worker or a smart worker?") {
-                break;
-              }
-              addQuestionToList(key, value, surveyQuestionsList, function() {
-              });
-            }
-
-          });
-        </script>
-
-        <p><%= link_to "Try for free!", page3_path %></p>
         </div>
       </div>
     </div>

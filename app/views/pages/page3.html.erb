@@ -42,12 +42,12 @@
         <div class="border"></div>
         <div class="row">
 
-        <ol id="survey-questions-1"></ol>
+        <ol id="survey-questions-2"></ol>
 
         <script>
         function addQuestionToList(key, value, listElement, callback) {
           const questionLI = document.createElement('p');
-          questionLI.innerHTML = `${listElement.childElementCount + 1}. ${key} <br> ${value}`;
+          questionLI.innerHTML = `${listElement.childElementCount + 10}. ${key} <br> ${value}`; 
           listElement.appendChild(questionLI);
           if (callback) {
             callback();
@@ -58,20 +58,27 @@
           .then(response => response.json())
           .then(data => {
 
-            const surveyQuestionsList = document.getElementById("survey-questions-1");
+            const surveyQuestionsList = document.getElementById("survey-questions-2");
+            let startAddingQuestions = false;
             
+            // Add each question and its value to the list and call the function
             for (const [key, value] of Object.entries(data)) {
               if (key === "Would you consider yourself a hard worker or a smart worker?") {
-                break;
+                startAddingQuestions = true;
               }
-              addQuestionToList(key, value, surveyQuestionsList, function() {
-              });
+              if (startAddingQuestions) {
+                addQuestionToList(key, value, surveyQuestionsList, function() {
+                });
+              }
             }
 
           });
         </script>
 
-        <p><%= link_to "Try for free!", page3_path %></p>
+        
+
+        <p><%= link_to "Result", result_path %></p>
+
         </div>
       </div>
     </div>
