@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   root 'pages#welcome'
   get '/page2', to: 'pages#page2'
-  get '/page3', to: 'pages#page3'
   get '/result', to: 'pages#result'
 
 end
