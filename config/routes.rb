@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get '/page2', to: 'pages#page2'
   get '/result', to: 'pages#result'
 
+
+  post 'users/predict_career', to: 'users#predict_career'
 end

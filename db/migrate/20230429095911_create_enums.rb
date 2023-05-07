@@ -1,5 +1,6 @@
 class CreateEnums < ActiveRecord::Migration[7.0]
   def up
+    create_enum :yes_no, ['yes', 'no']
     create_enum :quality, ['excellent', 'poor', 'medium']
     create_enum :interested_subject, ['cloud computing', 'networks', 'hacking', 'Computer Architecture',
       'programming', 'parallel computing', 'IOT', 'data engineering',
@@ -36,6 +37,7 @@ class CreateEnums < ActiveRecord::Migration[7.0]
 
   def down
     execute <<-SQL.squish
+      DROP TYPE yes_no
       DROP TYPE reading_writing_skills;
       DROP TYPE memory_capability;
       DROP TYPE interested_subject;

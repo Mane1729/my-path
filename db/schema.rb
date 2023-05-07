@@ -24,25 +24,26 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_29_104046) do
   create_enum "quality", ["excellent", "poor", "medium"]
   create_enum "salary_work", ["salary", "work"]
   create_enum "worker_type", ["hard worker", "smart worker"]
+  create_enum "yes_no", ["yes", "no"]
 
   create_table "users", force: :cascade do |t|
-    t.integer "working_hours"
-    t.integer "public_speaking_points"
-    t.boolean "self_learning"
-    t.boolean "extra_courses"
-    t.boolean "plays_games"
-    t.boolean "team_player"
-    t.boolean "introvert"
+    t.integer "working_hours", null: false
+    t.integer "public_speaking_points", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.enum "reading_writing_skills", enum_type: "quality"
-    t.enum "memory_capability", enum_type: "quality"
-    t.enum "interested_subject", enum_type: "interested_subject"
-    t.enum "fav_book_genre", enum_type: "book_genre"
-    t.enum "behaviour", enum_type: "behaviour"
-    t.enum "management_technical", enum_type: "management_technical"
-    t.enum "salary_work", enum_type: "salary_work"
-    t.enum "worker_type", enum_type: "worker_type"
+    t.enum "self_learning", null: false, enum_type: "yes_no"
+    t.enum "extra_courses", null: false, enum_type: "yes_no"
+    t.enum "plays_games", null: false, enum_type: "yes_no"
+    t.enum "team_player", null: false, enum_type: "yes_no"
+    t.enum "introvert", null: false, enum_type: "yes_no"
+    t.enum "reading_writing_skills", null: false, enum_type: "quality"
+    t.enum "memory_capability", null: false, enum_type: "quality"
+    t.enum "interested_subject", null: false, enum_type: "interested_subject"
+    t.enum "fav_book_genre", null: false, enum_type: "book_genre"
+    t.enum "behaviour", null: false, enum_type: "behaviour"
+    t.enum "management_technical", null: false, enum_type: "management_technical"
+    t.enum "salary_work", null: false, enum_type: "salary_work"
+    t.enum "worker_type", null: false, enum_type: "worker_type"
     t.enum "career", enum_type: "career"
   end
 

@@ -78,3 +78,4 @@ group :test do
 end
 
 gem 'pycall'
+gem 'pry', '~> 0.13.1'

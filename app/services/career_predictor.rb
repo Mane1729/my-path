@@ -1,13 +1,7 @@
 require 'pycall/import'
 include PyCall::Import
 
-
 class CareerPredictor < ApplicationService
-  pyimport 'numpy', as: 'np'
-  pyimport 'pandas', as: 'pd'
-  pyimport 'sklearn.preprocessing', as: 'preprocessing'
-  pyimport 'joblib', as: 'joblib'
-
   attr_reader :user
   
   def initialize(user)
