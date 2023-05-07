@@ -1,10 +1,17 @@
+require 'pycall/import'
+include PyCall::Import
+
 class UsersController < ApplicationController
+  def result
+    @user = User.find(params[:id])
+  end
+
   def predict_career
     @user = UserCreator.call(user_params)
     if @user.save
       career = CareerPredictor.call(@user)
       @user.update!(career: career)
-      render json: @user, status: :ok
+      redirect_to result_path(@user), status: :moved_permanently
     else
       render json: @user.errors, status: :unprocessable_entity
     end

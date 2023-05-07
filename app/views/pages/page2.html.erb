@@ -15,39 +15,42 @@
   <link rel="stylesheet" type="text/css" href="my-path/app/assets/stylesheets/application.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/x-icon" href="img/img1.png"/> <!-- website logo in tab -->
-  <style>
-          .question-item {
-            margin-bottom: 10px;
-            padding: 10px;
-            # border: 1px solid #ccc;
-          }
-          .question-text {
-            font-size: 17px;
-            font-weight: bold;
-            display: block;
-          }
-          .options-list {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-          }
-          .options-list li {
-            margin-bottom: 10px;
-            
-          }
-          .options-list label {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            justify-content: center;
-            margin-top: 10px;
+    <style>
+    .question-item {
+      margin-bottom: 10px;
+      padding: 10px;
+      # border: 1px solid #ccc;
+    }
+    .question-text {
+      font-size: 17px;
+      font-weight: bold;
+      display: block;
+    }
+    .options-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .options-list li {
+      margin-bottom: 10px;
+    }
+    .options-list label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .options-list input[type="radio"] {
+      margin-right: 5px;
+      margin-left: 40px;
+
+    }
+  </style>
 
 
-          }
-          .options-list input[type="radio"] {
-            margin-right: 10px;
-          }
-        </style>
 
 </head>
 <body> 
@@ -59,90 +62,106 @@
         <div class="border"></div>
         <div class="row">
 
-        <div id="survey-questions-1"></div>
-
-        <script>
-        fetch("<%= asset_path('enums.json') %>")
-        .then(response => response.json())
-        .then(data => {
-          const surveyQuestionsList = document.getElementById("survey-questions-1");
-          const entries = Object.entries(data);
-          const totalQuestions = entries.length;
-
-          entries.forEach(([key, value], index) => {
-            if (index < 2 || index >= totalQuestions - 2) {
-              addDropdownQuestion(key, value, surveyQuestionsList);
-            } else {
-              addRadioQuestion(key, value, surveyQuestionsList);
-            }
-          });
-        });
-
-
-            function addDropdownQuestion(questionText, options, container) {
+        <%= form_with(model: @user, url: users_predict_career_path, local: true) do |f| %>
+          <div id="survey-questions-1"></div>
+        
+          <script>
+            fetch("<%= asset_path('enums.json') %>")
+            .then(response => response.json())
+            .then(data => {
+              const surveyQuestionsList = document.getElementById("survey-questions-1");
+              const entries = Object.entries(data);
+              const totalQuestions = entries.length;
+        
+              const questions = ["How many hours do you typically work per day?", "On a scale of 0 to 10, how comfortable are you with public speaking?", "Would you consider yourself a self-learner?", "Have you taken any extra courses beyond your formal education?", "Are you interested in playing games?", "Have you worked in teams before?", "Do you prioritize salary or type of work when considering job opportunities?", "Would you describe yourself as stubborn or gentle in your behavior?", "Do you prefer management or technical roles?", "Would you consider yourself a hard worker or a smart worker?", "Do you consider yourself an introvert or an extrovert?", "How would you rate your reading and writing skills?", "How would you rate your memory capabilities?", "Which subjects are you most interested in? Choose one.", "Which types of books are you most interested in? Choose one."]; 
+        
+              entries.forEach(([key, value], index) => {
+                const questionText = questions[index];
+                if (index < 2 || index >= totalQuestions - 2) {
+                  addDropdownQuestion(questionText, key, value, surveyQuestionsList);
+                } else {
+                  addRadioQuestion(questionText, key, value, surveyQuestionsList);
+                }
+              });
+            });
+        
+            function addDropdownQuestion(questionText, key, options, container) {
               const questionItem = document.createElement("div");
               questionItem.classList.add("question-item");
-            
+
               const questionLabel = document.createElement("label");
               questionLabel.classList.add("question-text");
               questionLabel.textContent = questionText;
               questionItem.appendChild(questionLabel);
-            
+
               const selectElement = document.createElement("select");
+              selectElement.name = `user[${key}]`; // Set the 'name' attribute so that it gets included in user params
               const chooseOption = document.createElement('option');
-              chooseOption.id = `${questionText}-choose-option`;
-              chooseOption.name = questionText;
+              chooseOption.id = `${key}-choose-option`;
+              chooseOption.name = key;
               chooseOption.value = 'choose';
               chooseOption.checked = true;
               chooseOption.textContent = 'Choose';
               selectElement.appendChild(chooseOption);
-            
+
               options.forEach(option => {
                 const optionElement = document.createElement("option");
                 optionElement.value = option;
-                optionElement.textContent = option;
+                optionElement.textContent = capitalizeWords(option);
                 selectElement.appendChild(optionElement);
               });
               questionItem.appendChild(selectElement);
-            
+
               container.appendChild(questionItem);
             }
-            
 
-          function addRadioQuestion(questionText, options, container) {
-            const questionItem = document.createElement("div");
-            questionItem.classList.add("question-item");
+            function capitalizeWords(str) {
+              return str.replace(/\b\w/g, function (match) {
+                return match.toUpperCase();
+              });
+            }
 
-            const questionLabel = document.createElement("label");
-            questionLabel.classList.add("question-text");
-            questionLabel.textContent = questionText;
-            questionItem.appendChild(questionLabel);
+            function addRadioQuestion(questionText, key, options, container) {
+              const questionItem = document.createElement("div");
+              questionItem.classList.add("question-item");
 
-            const optionsList = document.createElement("ul");
-            optionsList.classList.add("options-list");
-            options.forEach(option => {
-              const listItem = document.createElement("li");
+              const questionLabel = document.createElement("label");
+              questionLabel.classList.add("question-text");
+              questionLabel.textContent = questionText;
+              questionItem.appendChild(questionLabel);
 
-              const inputElement = document.createElement("input");
-              inputElement.type = "radio";
-              inputElement.name = questionText;
-              inputElement.value = option;
+              const optionsList = document.createElement("ul");
+              optionsList.classList.add("options-list");
 
-              const labelElement = document.createElement("label");
-              labelElement.appendChild(inputElement);
-              labelElement.appendChild(document.createTextNode(option));
+              options.forEach(option => {
+                const listItem = document.createElement("li");
 
-              listItem.appendChild(labelElement);
-              optionsList.appendChild(listItem);
-            });
-            questionItem.appendChild(optionsList);
+                const inputElement = document.createElement("input");
+                inputElement.type = "radio";
+                inputElement.name = `user[${key}]`; // Set the 'name' attribute so that it gets included in user params
+                inputElement.value = option;
 
-            container.appendChild(questionItem);
-          }
-        </script>
-        <p><%= link_to "Try for free!", page3_path %></p>
+                const labelElement = document.createElement("label");
+                labelElement.appendChild(inputElement);
+                labelElement.appendChild(document.createTextNode(capitalizeWords(option)));
 
-        <p><%= link_to "Finish", result_path %></p>
+                listItem.appendChild(labelElement);
+                optionsList.appendChild(listItem);
+              });
+
+              questionItem.appendChild(optionsList);
+              container.appendChild(questionItem);
+            }
+
+            function capitalizeWords(str) {
+              return str.replace(/\b\w/g, c => c.toUpperCase());
+            }
+
+            </script>
+
+          <%= f.submit "Submit", class: "submit-button" %>
+        <% end %>
+
         </div>
       </div>
     </div>
@@ -150,3 +169,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+
