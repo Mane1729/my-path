@@ -1,5 +1,5 @@
 {
-  "How many hours do you typically work per day?":[
+  "working_hours":[
     "1",
     "2",
     "3",
@@ -26,7 +26,7 @@
     "24"
   ],
 
-  "On a scale of 0 to 10, how comfortable are you with public speaking?":[
+  "public_speaking_points":[
     "1",
     "2",
     "3",
@@ -38,98 +38,100 @@
     "9",
     "10"
   ],
-  "Would you consider yourself a self-learner?":[
-    "Yes",
-    " No"
+  "self_learning":[
+    "yes",
+    "no"
   ],
-  "Have you taken any extra courses beyond your formal education?":[
-    "Yes",
-    " No"
+  "extra_courses":[
+    "yes",
+    "no"
   ],
-  "Are you interested in playing games?":[
-    "Yes",
-    " No"
+  "plays_games":[
+    "yes",
+    "no"
   ],
-  "Have you worked in teams before?":[
-    "Yes",
-    " No"
+  "team_player":[
+    "yes",
+    "no"
   ],
-  "Do you prioritize salary or type of work when considering job opportunities?": [
-    "Salary",
-    " Work"
+  "salary_work": [
+    "salary",
+    "work"
   ],
-  "Would you describe yourself as stubborn or gentle in your behavior?": [
-    "Stubborn",
-    " Gentle"
+  "behaviour": [
+    "stubborn",
+    "gentle"
   ],
-  "Do you prefer management or technical roles?": [
+  "management_technical": [
     "Management",
-    " Technical"
+    "Technical"
   ],
 
-  "Would you consider yourself a hard worker or a smart worker?":[
-    "Hard worker",
-    " Smart worker"
+  "worker_type":[
+    "hard worker",
+    "smart worker"
   ],
-  "Do you consider yourself an introvert or an extrovert?":[
-    "Introvert",
-    " Extrovert"
+  "introvert":[
+    "yes",
+    "no"
   ],
-  "How would you rate your reading and writing skills?":[
-    "Excellent",
-    " Medium",
-    " Poor"
+  "reading_writing_skills":[
+    "excellent",
+    "medium",
+    "poor"
+
   ],
-  "How would you rate your memory capabilities?": [
-    "Excellent",
-    " Medium",
-    " Poor"
+  "memory_capability": [
+    "excellent",
+    "medium",
+    "poor"
   ],
 
-  "Which subjects are you most interested in? Choose one.": [
-    "Cloud computing",
-    " Networks",
-    " Hacking",
-    " Computer Architecture",
-    " Programming",
-    " Parallel computing",
-    " IOT",
-    " Data engineering",
-    " Software Engineering",
-    " Management"
+  "interested_subject": [
+    "cloud computing", 
+    "networks", 
+    "hacking", 
+    "Computer Architecture", 
+    "programming", 
+    "parallel computing", 
+    "IOT", 
+    "data engineering", 
+    "Software Engineering", 
+    "Management"
   ],
 
-  "Which types of books are you most interested in? Choose one.": [
-    "Prayer books",
-    " Childrens",
-    " Travel",
-    " Romance",
-    " Cookbooks",
-    " Self help",
-    " Drama",
-    " Math",
-    " Religion-Spirituality",
-    " Anthology",
-    " Trilogy",
-    " Autobiographies",
-    " Mystery",
-    " Diaries",
-    " Journals",
-    " History",
-    " Art",
-    " Dictionaries",
-    " Horror",
-    " Encyclopedias",
-    " Action and Adventure",
-    " Fantasy",
-    " Comics",
-    " Science fiction",
-    " Series",
-    " Guide",
-    " Biographies",
-    " Health",
-    " Satire",
-    " Science",
-    " Poetry"
+  "fav_book_genre": [
+    "Science",
+    "Math", 
+    "Action and Adventure", 
+    "Self help", 
+    "Science fiction", 
+    "Art", 
+    "History", 
+    "Travel", 
+    "Anthology", 
+    "Trilogy", 
+    "Horror", 
+    "Autobiographies", 
+    "Mystery", 
+    "Action and Adventure", 
+    "Diaries", 
+    "Journals", 
+    "Cookbooks", 
+    "Dictionaries", 
+    "Encyclopedias", 
+    "Romance", 
+    "Fantasy", 
+    "Comics", 
+    "Series", 
+    "Drama", 
+    "Guide", 
+    "Childrens", 
+    "Religion-Spirituality", 
+    "Biographies", 
+    "Health", 
+    "Satire", 
+    "Prayer books",  
+    "Poetry"
   ]
 }

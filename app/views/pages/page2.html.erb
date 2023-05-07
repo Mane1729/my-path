@@ -59,89 +59,89 @@
         <div class="border"></div>
         <div class="row">
 
-  <div id="survey-questions-1"></div>
+        <div id="survey-questions-1"></div>
 
-  <script>
-  fetch("<%= asset_path('enums.json') %>")
-  .then(response => response.json())
-  .then(data => {
-    const surveyQuestionsList = document.getElementById("survey-questions-1");
-    const entries = Object.entries(data);
-    const totalQuestions = entries.length;
+        <script>
+        fetch("<%= asset_path('enums.json') %>")
+        .then(response => response.json())
+        .then(data => {
+          const surveyQuestionsList = document.getElementById("survey-questions-1");
+          const entries = Object.entries(data);
+          const totalQuestions = entries.length;
 
-    entries.forEach(([key, value], index) => {
-      if (index < 2 || index >= totalQuestions - 2) {
-        addDropdownQuestion(key, value, surveyQuestionsList);
-      } else {
-        addRadioQuestion(key, value, surveyQuestionsList);
-      }
-    });
-  });
-
-
-
-
-      function addDropdownQuestion(questionText, options, container) {
-        const questionItem = document.createElement("div");
-        questionItem.classList.add("question-item");
-      
-        const questionLabel = document.createElement("label");
-        questionLabel.classList.add("question-text");
-        questionLabel.textContent = questionText;
-        questionItem.appendChild(questionLabel);
-      
-        const selectElement = document.createElement("select");
-        const chooseOption = document.createElement('option');
-        chooseOption.id = `${questionText}-choose-option`;
-        chooseOption.name = questionText;
-        chooseOption.value = 'choose';
-        chooseOption.checked = true;
-        chooseOption.textContent = 'Choose';
-        selectElement.appendChild(chooseOption);
-      
-        options.forEach(option => {
-          const optionElement = document.createElement("option");
-          optionElement.value = option;
-          optionElement.textContent = option;
-          selectElement.appendChild(optionElement);
+          entries.forEach(([key, value], index) => {
+            if (index < 2 || index >= totalQuestions - 2) {
+              addDropdownQuestion(key, value, surveyQuestionsList);
+            } else {
+              addRadioQuestion(key, value, surveyQuestionsList);
+            }
+          });
         });
-        questionItem.appendChild(selectElement);
-      
-        container.appendChild(questionItem);
-      }
-      
 
-    function addRadioQuestion(questionText, options, container) {
-      const questionItem = document.createElement("div");
-      questionItem.classList.add("question-item");
 
-      const questionLabel = document.createElement("label");
-      questionLabel.classList.add("question-text");
-      questionLabel.textContent = questionText;
-      questionItem.appendChild(questionLabel);
+            function addDropdownQuestion(questionText, options, container) {
+              const questionItem = document.createElement("div");
+              questionItem.classList.add("question-item");
+            
+              const questionLabel = document.createElement("label");
+              questionLabel.classList.add("question-text");
+              questionLabel.textContent = questionText;
+              questionItem.appendChild(questionLabel);
+            
+              const selectElement = document.createElement("select");
+              const chooseOption = document.createElement('option');
+              chooseOption.id = `${questionText}-choose-option`;
+              chooseOption.name = questionText;
+              chooseOption.value = 'choose';
+              chooseOption.checked = true;
+              chooseOption.textContent = 'Choose';
+              selectElement.appendChild(chooseOption);
+            
+              options.forEach(option => {
+                const optionElement = document.createElement("option");
+                optionElement.value = option;
+                optionElement.textContent = option;
+                selectElement.appendChild(optionElement);
+              });
+              questionItem.appendChild(selectElement);
+            
+              container.appendChild(questionItem);
+            }
+            
 
-      const optionsList = document.createElement("ul");
-      optionsList.classList.add("options-list");
-      options.forEach(option => {
-        const listItem = document.createElement("li");
+          function addRadioQuestion(questionText, options, container) {
+            const questionItem = document.createElement("div");
+            questionItem.classList.add("question-item");
 
-        const inputElement = document.createElement("input");
-        inputElement.type = "radio";
-        inputElement.name = questionText;
-        inputElement.value = option;
+            const questionLabel = document.createElement("label");
+            questionLabel.classList.add("question-text");
+            questionLabel.textContent = questionText;
+            questionItem.appendChild(questionLabel);
 
-        const labelElement = document.createElement("label");
-        labelElement.appendChild(inputElement);
-        labelElement.appendChild(document.createTextNode(option));
+            const optionsList = document.createElement("ul");
+            optionsList.classList.add("options-list");
+            options.forEach(option => {
+              const listItem = document.createElement("li");
 
-        listItem.appendChild(labelElement);
-        optionsList.appendChild(listItem);
-      });
-      questionItem.appendChild(optionsList);
+              const inputElement = document.createElement("input");
+              inputElement.type = "radio";
+              inputElement.name = questionText;
+              inputElement.value = option;
 
-      container.appendChild(questionItem);
-    }
-  </script>
+              const labelElement = document.createElement("label");
+              labelElement.appendChild(inputElement);
+              labelElement.appendChild(document.createTextNode(option));
+
+              listItem.appendChild(labelElement);
+              optionsList.appendChild(listItem);
+            });
+            questionItem.appendChild(optionsList);
+
+            container.appendChild(questionItem);
+          }
+        </script>
+        <p><%= link_to "Try for free!", page3_path %></p>
+
         <p><%= link_to "Finish", result_path %></p>
         </div>
       </div>
