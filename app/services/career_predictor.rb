@@ -8,8 +8,8 @@ class CareerPredictor < ApplicationService
     pyimport 'joblib', as: 'joblib'
 
     @user = user
-    @best_model = joblib.load(Rails.root.join('lib', 'ML', 'best_model.joblib').to_s)
-    @encoders = joblib.load('lib/ML/encoders.joblib')
+    @best_model = Rails.application.config.best_model
+    @encoders = Rails.application.config.encoders
   end
 
   def call
