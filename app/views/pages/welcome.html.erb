@@ -14,107 +14,22 @@
   <link rel="stylesheet" type="text/css" href="my-path/app/assets/stylesheets/application.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="shortcut icon" type="image/x-icon" href="img/img1.png"/> <!-- website logo in tab -->
-  <link rel="stylesheet" type="text/css" href="my-path/app/assets/stylesheets/application.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <link rel="shortcut icon" type="image/x-icon" href="img/img1.png"/> <!-- website logo in tab -->
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1a1a2e;">
-  <div class="container-fluid" style="height: 80px;">
-    <a class="navbar-brand" href="#" style="font-size: 2rem; font-weight: bold;">MyPath</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" style="font-size: 1.2rem;">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" style="font-size: 1.2rem;">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" style="font-size: 1.2rem;">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" style="font-size: 1.2rem;">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-
-  <div class="dis" id="overview">
-    <h1 class="font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg" contenteditable="false" id="termsofuse">MyPath OVERVIEW</h1><br> <!-- Name +  OVERVIEW -->
-    <p class="fs-5">MyPath is an AI-powered career guidance application that helps users make informed career choices.</p> <!--  MyPath overview -->
-  </div>  
-
-  <div class="row">
-    <div class="frame">
-      <div class="boxes">
-        <div class="box box-1"></div>
-        <div class="box box-2"></div>
-        <div class="box box-3"></div>
-        <div class="box box-4"></div>
-      </div>
-    </div>
-  </div>
-
-    <div class="testimonials">
-      <div class="inner">
-        <h1>Who are we</h1>
-        <div class="border"></div>
-        <div class="row">
-
-          <div class="col">
-            <div class="testimonial">
-              <img src="my-path/app/assets/images/img1.png" alt="">
-              <div class="name">Full name</div>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="testimonial">
-              <img src="img/img2.png" alt="">
-              <div class="name">Full name</div>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="testimonial">
-              <img src="img/img3.png" alt="">
-              <div class="name">Full name</div>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            </div>
-          </div>
-          <p><%= link_to "Try for free!", page2_path %></p>
-        </div> 
-      </div>
-    </div>
-
-
-    <div id = "contact"class="contact-form-wrapper d-flex justify-content-center" style="background-color:darkblue !important;">
-      <form action="#" class="contact-form">
-      <h5 class="title">Contact us</h5>
-      <div>
-        <input type="text" class="form-control rounded border-white mb-3 form-input" id="name" placeholder="Name" required>
-      </div>
-      <div>
-        <input type="email" class="form-control rounded border-white mb-3 form-input" placeholder="Email" required>
-      </div>
-      <div>
-        <textarea id="message" class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" placeholder="Message" required></textarea>
-      </div>
-      <div class="submit-button-wrapper">
-        <input type="submit" value="Send">
-      </div>
-    </form>
+  <div class="module">
+    <header>
+    <h4><%= link_to "Try for free!", page2_path, class: "no-underline" %></h4>
+    <h2>My Path</h2>
+    <h5>Revolutionize your career with AI insights.</h5>
+    </header>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
