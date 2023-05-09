@@ -1,9 +1,15 @@
 require 'pycall/import'
 include PyCall::Import
+require 'json'
+
 
 class UsersController < ApplicationController
   def result
     @user = User.find(params[:id])
+    
+    json_string = File.read('app/javascript/careers.json')
+    @json_data = JSON.parse(json_string)
+  
   end
 
   def predict_career
@@ -15,6 +21,7 @@ class UsersController < ApplicationController
     else
       render json: @user.errors, status: :unprocessable_entity
     end
+
   end
 
   private
