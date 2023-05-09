@@ -78,44 +78,44 @@
               entries.forEach(([key, value], index) => {
                 const questionText = questions[index];
                 if (index < 2 || index >= totalQuestions - 2) {
-                  addSearchQuestion(questionText, key, value, surveyQuestionsList);
-                  } else {
+                  addDropdownQuestion(questionText, key, value, surveyQuestionsList);
+                 } else {
                   addRadioQuestion(questionText, key, value, surveyQuestionsList);
                 }
               });
             });
         
-            function addSearchQuestion(questionText, key, options, container) {
+            function addDropdownQuestion(questionText, key, options, container) {
               const questionItem = document.createElement("div");
               questionItem.classList.add("question-item");
-            
+
               const questionLabel = document.createElement("label");
               questionLabel.classList.add("question-text");
               questionLabel.textContent = questionText;
               questionItem.appendChild(questionLabel);
-            
-              const inputElement = document.createElement("input");
-              inputElement.type = "text";
-              inputElement.name = `user[${key}]`;
-              inputElement.setAttribute("list", `${key}-datalist`);
-            
-              const dataListElement = document.createElement("datalist");
-              dataListElement.id = `${key}-datalist`;
-            
+
+              const selectElement = document.createElement("select");
+              selectElement.name = `user[${key}]`; // Set the 'name' attribute so that it gets included in user params
+              const chooseOption = document.createElement('option');
+              chooseOption.id = `${key}-choose-option`;
+              chooseOption.name = key;
+              chooseOption.value = 'choose';
+              chooseOption.checked = true;
+              chooseOption.textContent = 'Choose';
+              selectElement.appendChild(chooseOption);
+
               options.forEach(option => {
                 const optionElement = document.createElement("option");
-                optionElement.value = capitalizeWords(option);
-                dataListElement.appendChild(optionElement);
+                optionElement.value = option;
+                optionElement.textContent = capitalizeWords(option);
+                selectElement.appendChild(optionElement);
               });
-            
-              questionItem.appendChild(inputElement);
-              questionItem.appendChild(dataListElement);
-            
+              questionItem.appendChild(selectElement);
+
               container.appendChild(questionItem);
             }
-            
-            function capitalizeWords(str) {
-              return str.replace(/\b\w/g, function(match) {
+             function capitalizeWords(str) {
+              return str.replace(/\b\w/g, function (match) {
                 return match.toUpperCase();
               });
             }
