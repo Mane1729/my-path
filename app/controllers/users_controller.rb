@@ -5,7 +5,8 @@ require 'json'
 
 class UsersController < ApplicationController
   def result
-    @user = User.find(params[:id])
+    @user = User.find(session[:user_id])
+    session[:user_id] = nil
     
     json_string = File.read('app/javascript/careers.json')
     @json_data = JSON.parse(json_string)
@@ -17,7 +18,8 @@ class UsersController < ApplicationController
     if @user.save
       career = CareerPredictor.call(@user)
       @user.update!(career: career)
-      redirect_to result_path(@user), status: :moved_permanently
+      session[:user_id] = @user.id
+      redirect_to result_path, status: :moved_permanently
     else
       render json: @user.errors, status: :unprocessable_entity
     end

@@ -1,6 +1,39 @@
 require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
+  describe 'GET #result' do
+    let(:user) { create(:user) }
+    context 'when the user is found' do
+      before do
+        session[:user_id] = user.id
+      end
+
+      subject(:result) do
+        get :result
+        response
+      end
+
+      it "returns a 200" do
+        expect(result).to have_http_status(:ok)
+      end
+
+      it 'assigns the user' do
+        result
+        expect(assigns(:user)).to eq(user)
+      end
+
+      it 'renders the result template' do
+        expect(result).to render_template(:result)
+      end
+    end
+
+    context 'when the user is not found' do
+      it 'raises a record not found error' do
+        expect { get :result }.to raise_error(ActiveRecord::RecordNotFound)
+      end
+    end
+  end
+
   describe 'POST /predict_career' do
     context 'with valid user attributes' do
       let(:valid_params) do
@@ -32,8 +65,8 @@ RSpec.describe UsersController, type: :controller do
         response
       end
 
-      it "returns a 200" do
-        expect(result).to have_http_status(:ok)
+      it "returns a 301" do
+        expect(result).to have_http_status(:moved_permanently)
       end
 
       it 'creates a new user' do

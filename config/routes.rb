@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   root 'pages#welcome'
   get '/page2', to: 'pages#page2'
-  get '/result/:id', to: 'users#result', as: 'result'
+  get '/result', to: 'users#result', as: 'result'
   get '/welcome', to: 'pages#welcome'
 
 
