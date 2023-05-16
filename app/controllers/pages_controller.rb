@@ -4,7 +4,7 @@ class PagesController < ApplicationController
 end
 
 class PagesController < ApplicationController
-    def page2
-      render 'page2'
+    def questions
+      render 'questions'
     end
   end
