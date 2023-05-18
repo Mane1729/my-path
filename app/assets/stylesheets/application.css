@@ -87,7 +87,7 @@
     top: 50%;
     left: 50%;
     width: 800px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     margin-top: 35px;
     margin-left: 40px;;
@@ -215,7 +215,6 @@
   
   .module > header > h4 {
     font-size: 1rem;
-    margin-top: 300px;
   }
   
   .module > header > h5 {
@@ -227,12 +226,11 @@
 @media screen and (max-width: 480px) {
   .module > header > h2 {
     font-size: 1.5rem;
-    margin-top: 30px;
+    margin-top: 100px;
   }
   
   .module > header > h4 {
     font-size: 0.8rem;
-    margin-top: 200px;
   }
   
   .module > header > h5 {
@@ -241,18 +239,17 @@
   }
 }
 
-@media screen and (max-height: 768px) {
+@media screen and (max-height: 765px) {
   .module > header > h2 {
     font-size: 2rem;
-    margin-top: 90px;
+    margin-top: 71px;
   }
   
   .module > header > h4 {
     font-size: 1.5rem;
-    margin-top: 480px;
+    margin-top: 460px;
     
   }
-  
   .module > header > h5 {
     font-size: 0.8rem;
     margin-top: 2px;
