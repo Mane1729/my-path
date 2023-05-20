@@ -37,7 +37,7 @@ margin-right: 171px;
 
 <div class="testimonials1">
   <div class="inner1">
-    <h1 style="margin-top: 100px;"><%= @user.career %></h1>
+    <h1 style="margin-top: 100px; font-size: 3.5vw;"><%= @user.career %></h1>
   </div>
 </div>
 
@@ -46,14 +46,14 @@ margin-right: 171px;
   <div class="bottom-image">
   <%= image_tag(asset_path(@json_data[@user.career.strip]["image"]), style: 'height: 400px; width: 400px;') %>
 </div>
-  <div class="description">
-    <h2>Description</h2></br>
+  <div class="description"><br>
+    <h2 style="margin-bottom:30px;">Description</h2>
     <p style="margin-left: 110px;"><%= @json_data[@user.career.strip]["description"] %></p>
-    <h2 style="margin-top: 20px;">Skills you need to have</h2></br>
+    <h2 style="margin-top: 50px;">Skills you need to have</h2>
 </div>
-<div class="skills-container">
+<div class="skills-container" >
   <% @json_data[@user.career.strip]["skills"].each do |skill| %>
-    <p class="skill-item"><%= "० #{skill}" %></p>
+    <p class="skill-item" style="font-size: 1.2vw;"><%= "० #{skill}" %></p>
   <% end %>
 </div>
 <% else %>

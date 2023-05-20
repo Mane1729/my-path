@@ -86,15 +86,15 @@
     padding: 0 20px;
     top: 50%;
     left: 50%;
-    width: 800px;
-    font-size: 16px;
+    width: 64%;
+    font-size: 1.2vw;
     line-height: 1.5;
-    margin-top: 35px;
+    margin-bottom: 15px;
     margin-left: 40px;;
   }
   
   .description h2 {
-    font-size: 24px;
+    font-size: 2vw;
     margin-left: 110px;;
 
   }
@@ -156,6 +156,7 @@
   
   
    .module {
+    background-position: center center;
     background-image: url("welcome-page.jpeg");
     background-attachment: fixed;
     background-size: cover;
@@ -164,118 +165,49 @@
     background-repeat: no-repeat; 
   }
   
-  .module > header > h2 {
-    margin: 0;
-    color: rgb(168, 163, 151);
-    margin-top: 80px;
-    z-index: 1;
+   .module > header > h2 {
+    color: rgb(176, 156, 108);
     text-align: center;
+    margin-top: 44.5%;
     font-family: 'Source Serif Pro', serif;
-    font-size: 2rem; 
+    font-size: 2vw; 
   }
-  
+
+
   .module > header > h4 {
-    margin: 0;
-    color: rgb(168, 163, 151);
-    margin-top: 530px;
-    z-index: 1;
+    color: rgb(176, 156, 108);
     text-align: center;
     font-family: 'Source Serif Pro', serif;
     font-style: italic;
-    font-size: 1.5rem; 
+    margin-top: 36.5%;
+    font-size: 2vw; 
   }
+
+
   
+  .module > header > h5 {
+    color: rgb(176, 156, 108);
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    font-style: italic;
+    margin-top: 47%;
+    font-size: 1.3vw; 
+  } 
+  
+
   .no-underline {
     text-decoration: none;
     color: rgb(176, 156, 108);
   }
-  
+
+  .module > header > h2,
+  .module > header > h4,
   .module > header > h5 {
-    margin: 0;
-    color: rgb(168, 163, 151);
-    z-index: 1;
-    margin-top: 5px;
-    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     font-family: 'Source Serif Pro', serif;
-    font-style: italic;
-    font-size: 1rem; 
-  }
-  
-  @media screen and (min-width: 768px) {
-    .description {
-      max-width: 800px;
-    }
-  }
 
-@media screen and (max-width: 768px) {
-  .module > header > h2 {
-    font-size: 2rem;
-    margin-top: 50px;
-  }
-  
-  .module > header > h4 {
-    font-size: 1rem;
-  }
-  
-  .module > header > h5 {
-    font-size: 0.8rem;
-    margin-top: 2px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .module > header > h2 {
-    font-size: 1.5rem;
-    margin-top: 100px;
-  }
-  
-  .module > header > h4 {
-    font-size: 0.8rem;
-  }
-  
-  .module > header > h5 {
-    font-size: 0.6rem;
-    margin-top: 1px;
-  }
-}
-
-@media screen and (max-height: 765px) {
-  .module > header > h2 {
-    font-size: 2rem;
-    margin-top: 71px;
-  }
-  
-  .module > header > h4 {
-    font-size: 1.5rem;
-    margin-top: 460px;
-    
-  }
-  .module > header > h5 {
-    font-size: 0.8rem;
-    margin-top: 2px;
-  }
-}
-
-@media screen and (max-height: 480px) {
-  .module > header > h2 {
-    font-size: 1.5rem;
-    margin-top: 30px;
-  }
-  
-  .module > header > h4 {
-    font-size: 0.8rem;
-    margin-top: 100px;
-  }
-  
-  .module > header > h5 {
-    font-size: 0.6rem;
-    margin-top: 1px;
-  }
-}
-
-  .module {
-    background-position: center center;
-    background-size: cover;
   }
   
   .module > header {
