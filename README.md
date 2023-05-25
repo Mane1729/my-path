@@ -27,6 +27,22 @@ brew services start postgresql # on mac
 sudo service postgresql start  # on wsl or linux
 ```
 
+To create a database user, you'll need to access the PostgreSQL console.
+First, start the PostgreSQL console:
+```
+sudo -u postgres psql
+```
+
+Then, execute the following command inside the PostgreSQL console to create the database user:
+```
+create -s -r postgres
+```
+
+And the following command to set or update the password:
+```
+alter user postgres with encrypted password 'password';
+```
+
 #### Python
 
 You need to have Python 3 installed on your machine. To install it use: 
@@ -79,19 +95,14 @@ docker compose up
 
 The application should now be running at http://localhost:3000.
 
-If you do not have the database created locally yet you can do
-
+If you do not have the database created locally yet you can do:
 ```
-
 docker compose run --rm app rails db:setup
-
 ```
 
 To interact with the system via the console use:
 ```
-
 docker compose run --rm app rails c
-
 ```
 
 
