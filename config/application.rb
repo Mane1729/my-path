@@ -2,6 +2,7 @@ require_relative "boot"
 
 require "rails/all"
 require 'pycall/import'
+require 'sprockets/railtie'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
