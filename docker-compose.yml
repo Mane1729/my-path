@@ -17,6 +17,8 @@ services:
       - .:/app
     environment:
       - DATABASE_HOST=db
+    env_file:
+      - ".envrc"
     tty: true
     stdin_open: true
     depends_on:

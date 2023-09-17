@@ -9,7 +9,7 @@ RUN gem update --system
 RUN gem install bundler
 COPY Gemfile Gemfile.lock ./
 RUN bundle install
-RUN pip3 install numpy pandas scikit-learn joblib
+RUN pip3 install numpy pandas scikit-learn==1.2.2 joblib
 
 
 ADD . /app
