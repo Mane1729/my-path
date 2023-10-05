@@ -1,9 +1,11 @@
 class UserCreator < ApplicationService
-  def initialize(user_params)
-    @user_params = user_params
+  def initialize(profile_params)
+    @profile_params = profile_params
   end
 
   def call
-    User.new(@user_params)
+    user = User.new
+    user.build_profile(@profile_params)
+    user
   end
 end

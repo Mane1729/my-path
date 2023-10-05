@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_29_104046) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_05_180031) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -26,11 +26,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_29_104046) do
   create_enum "worker_type", ["hard worker", "smart worker"]
   create_enum "yes_no", ["yes", "no"]
 
-  create_table "users", force: :cascade do |t|
+  create_table "profiles", force: :cascade do |t|
     t.integer "working_hours", null: false
     t.integer "public_speaking_points", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.enum "self_learning", null: false, enum_type: "yes_no"
     t.enum "extra_courses", null: false, enum_type: "yes_no"
     t.enum "plays_games", null: false, enum_type: "yes_no"
@@ -44,7 +42,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_29_104046) do
     t.enum "management_technical", null: false, enum_type: "management_technical"
     t.enum "salary_work", null: false, enum_type: "salary_work"
     t.enum "worker_type", null: false, enum_type: "worker_type"
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_profiles_on_user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.enum "career", enum_type: "career"
   end
 
+  add_foreign_key "profiles", "users"
 end
