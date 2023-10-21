@@ -10,27 +10,7 @@ module Mutations
                       description: 'Answers to the Systems Thinking questionnaire'
 
     def resolve(user_id:, answers:)
-      if has_systems_thinking_skill(answers)
-        user = User.find(user_id)
-        systems_thinking_skill = Skill.find_by(name: "Systems thinking")
-        
-        users_skill = UsersSkill.create(user: user, skill: systems_thinking_skill)
-        if users_skill.persisted?
-          { success: true, errors: [] }
-        else
-          { success: false, errors: users_skill.errors.full_messages }
-        end
-      else
-        { success: true, errors: [] }
-      end
-    end
-
-    private
-
-    # Answers leaning towards option 'b' generally indicate a stronger ability of Systems Thinking 
-    def has_systems_thinking_skill(answers)
-      b_answers_count = answers.values.count('b')
-      b_answers_count > 3
+      Commands::AssessUserSystemsThinkingSkill.call(user_id:, answers:)
     end
   end
 end

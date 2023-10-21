@@ -1,6 +1,6 @@
 class User < ApplicationRecord
-  has_one :profile
-  has_one :emerging_job
+  has_one :profile, autosave: true
+  belongs_to :emerging_job, optional: true
   has_many :users_skills
   has_many :skills, through: :users_skills
 

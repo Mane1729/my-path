@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe InputDataFormatter, type: :service do
   describe '#call' do
-    let(:user) { create(:user) }
+    let(:user) { create(:user_with_profile) }
     let(:expected_result) {
       {
         'Extra-courses did': [user.extra_courses],

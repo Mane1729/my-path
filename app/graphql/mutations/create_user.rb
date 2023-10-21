@@ -1,6 +1,6 @@
 module Mutations
   class CreateUser < Mutations::BaseMutation
-    description 'Creates a new address'
+    description 'Creates a new user'
 
     field :id, ID, null: true, description: 'ID of the created user'
     field :success, Boolean, null: false
