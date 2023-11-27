@@ -8,5 +8,7 @@ module Types
                                                description: "Assesses user's Project Management skill based on their answer to a specific question"
     field :assess_user_cross_industry_communication_skill, mutation: Mutations::AssessUserCrossIndustryCommunicationSkill, 
                                                description: "Assesses user's Cross-industry communication skill based on a questionnaire"
+    field :assess_user_customer_focus_skill, mutation: Mutations::AssessUserCustomerFocusSkill, 
+                                               description: "Assesses user's Customer focus skill based on a questionnaire"
   end
 end

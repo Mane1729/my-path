@@ -1,5 +1,5 @@
 module Types
-  class MultipleChoiceAnswerEnum < Types::BaseEnum
+  class ThreeOptionAnswerEnum < Types::BaseEnum
     value "a"
     value "b"
     value "c"
