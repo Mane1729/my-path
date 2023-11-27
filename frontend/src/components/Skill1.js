@@ -1,36 +1,60 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import jsonData from './QuestionAnswer.json';
+import jsonData from './SystemsThinkingQuestions.json';
 import './../App.css';
+import Skill2 from './Skill2';
+
+import gql from 'graphql-tag';
+import { useMutation } from '@apollo/react-hooks';
+
+const CREATE_USER = gql`
+  mutation AssessUserSystemsThinkingSkill($userId: ID!, $answers: SystemsThinkingQuestionnaireInput!) {
+    assessUserSystemsThinkingSkill(userId: $userId, answers: $answers) {
+      success
+      errors
+    }
+  }
+`;
 
 function App() {
-  const questions = Object.keys(jsonData).slice(0, 6);
-
-  // Create a state to store user responses
+  const questionsData = jsonData;
   const [responses, setResponses] = useState({});
 
-  const handleResponseChange = (question, response) => {
-    setResponses({ ...responses, [question]: response });
+  const handleResponseChange = (questionKey, choice) => {
+    setResponses({ ...responses, [questionKey]: choice });
   };
 
-// function getSelectedOption() {
-//   var options = document.getElementsByName("choice");
-//   var selectedOption = null;
+  const mapResponsesToMutationFormat = () => {
+    const mappedResponses = {};
+    for (const questionKey in responses) {
+      if (responses.hasOwnProperty(questionKey)) {
+        mappedResponses[questionKey] = responses[questionKey];
+      }
+    }
+    return mappedResponses;
+  };
 
-//   for (var i = 0; i < options.length; i++) {
-//     if (options[i].checked) {
-//       selectedOption = options[i].value;
-//       break;
-//     }
-//   }
+  const [assessUserSystemsThinkingSkill] = useMutation(CREATE_USER);
 
-//   if (selectedOption) {
-//     alert("You chose: " + selectedOption);
-//   } else {
-//     alert("Please select an option.");
-//   }
-// }
+  const submitResponses = async () => {
+    try {
+      const mappedResponses = mapResponsesToMutationFormat();
 
+      console.log('Collected Responses:', responses);
+      console.log('Mapped Responses for Mutation:', mappedResponses);
+
+      const response = await assessUserSystemsThinkingSkill({
+        variables: {
+          userId: '2', // replace with actual user ID
+          answers: mappedResponses,
+        },
+      });
+
+      // handle response, e.g., navigate to another page or show success message
+    } catch (error) {
+      // handle error, e.g., show error message
+    }
+  };
 
   return (
     <div>
@@ -40,22 +64,22 @@ function App() {
       <main>
         <section>
           <ul>
-            {questions.map((question, index) => (
-              <li key={index}>
+            {Object.keys(questionsData).map((questionKey) => (
+              <li key={questionKey}>
                 <br></br>
-                <h3>{question}</h3>
+                <h3>{questionsData[questionKey].question}</h3>
                 <ul>
-                  {jsonData[question].map((answer, answerIndex) => (
-                    <li key={answerIndex}>
+                  {questionsData[questionKey].options.map((option) => (
+                    <li key={option.choice}>
                       <label>
                         <input
                           type="radio"
-                          name={question}
-                          value={answer}
-                          checked={responses[question] === answer}
-                          onChange={() => handleResponseChange(question, answer)}
+                          name={questionKey}
+                          value={option.choice}
+                          checked={responses[questionKey] === option.choice}
+                          onChange={() => handleResponseChange(questionKey, option.choice)}
                         />
-                        {answer}
+                        {option.text}
                       </label>
                     </li>
                   ))}
@@ -65,12 +89,19 @@ function App() {
           </ul>
         </section>
       </main>
+      <section>
+        <h2>Collected Responses:</h2>
+        <pre>{JSON.stringify(responses, null, 2)}</pre>
+      </section>
       <footer>
         {/* &copy; 2023 My Website */}
       </footer>
-      <Link to="/skill2">
-        <button>Next</button>
-      </Link>
+      <div>
+        <Link to="/skill2">
+          <button>Next</button>
+        </Link>
+        <button onClick={submitResponses}>Submit Answers</button>
+      </div>
     </div>
   );
 }

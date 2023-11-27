@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import jsonData from './QuestionAnswer.json';
+import jsonData from './SystemsThinkingQuestions.json';
 import './../App.css';
 
 function Skill4() {
