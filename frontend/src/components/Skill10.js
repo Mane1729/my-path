@@ -4,7 +4,7 @@ import jsonData from './QuestionAnswer.json';
 import './../App.css';
 
 function App() {
-  const questions = Object.keys(jsonData).slice(7, 11);
+  const questions = Object.keys(jsonData).slice(39, 42);
 
   // Create a state to store user responses
   const [responses, setResponses] = useState({});
@@ -16,7 +16,7 @@ function App() {
   return (
       <div>
         <header>
-          <h1>Cross-industry communication skills</h1>
+          <h1>Working in uncertainty </h1>
         </header>
         <main>
           <section>
@@ -48,7 +48,7 @@ function App() {
         <footer>
           {/* &copy; 2023 My Website */}
         </footer>
-        <Link to="/skill4">
+        <Link to="/skill11">
           <button>Next</button>
         </Link>
       </div>

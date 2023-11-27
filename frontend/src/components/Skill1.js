@@ -2,35 +2,34 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import jsonData from './QuestionAnswer.json';
 import './../App.css';
-import Skill2 from './Skill2';
 
 function App() {
   const questions = Object.keys(jsonData).slice(0, 6);
 
+  // Create a state to store user responses
+  const [responses, setResponses] = useState({});
 
   const handleResponseChange = (question, response) => {
     setResponses({ ...responses, [question]: response });
   };
 
+// function getSelectedOption() {
+//   var options = document.getElementsByName("choice");
+//   var selectedOption = null;
 
+//   for (var i = 0; i < options.length; i++) {
+//     if (options[i].checked) {
+//       selectedOption = options[i].value;
+//       break;
+//     }
+//   }
 
-function getSelectedOption() {
-  var options = document.getElementsByName("choice");
-  var selectedOption = null;
-
-  for (var i = 0; i < options.length; i++) {
-    if (options[i].checked) {
-      selectedOption = options[i].value;
-      break;
-    }
-  }
-
-  if (selectedOption) {
-    alert("You chose: " + selectedOption);
-  } else {
-    alert("Please select an option.");
-  }
-}
+//   if (selectedOption) {
+//     alert("You chose: " + selectedOption);
+//   } else {
+//     alert("Please select an option.");
+//   }
+// }
 
 
   return (
