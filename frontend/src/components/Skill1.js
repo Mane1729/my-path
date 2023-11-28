@@ -98,9 +98,8 @@ function App() {
       </footer>
       <div>
         <Link to="/skill2">
-          <button>Next</button>
+          <button onClick={submitResponses}>Next</button>
         </Link>
-        <button onClick={submitResponses}>Submit Answers</button>
       </div>
     </div>
   );
