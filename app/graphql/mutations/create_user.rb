@@ -10,6 +10,8 @@ module Mutations
       user = User.create
 
       if user.persisted?
+        context[:session][:user_id] = user.id
+
         { id: user.id, success: true, errors: [] }
       else
         { id: nil, success: false, errors: user.errors.full_messages }

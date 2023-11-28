@@ -7,8 +7,8 @@ RSpec.describe Mutations::AssessUserCrossIndustryCommunicationSkill, type: :requ
 
   let(:mutation) do
     <<~GQL
-      mutation AssessUserCrossIndustryCommunicationSkill($userId: ID!, $answers: CrossIndustryCommunicationQuestionnaireInput!) {
-        assessUserCrossIndustryCommunicationSkill(userId: $userId, answers: $answers) {
+      mutation AssessUserCrossIndustryCommunicationSkill($answers: CrossIndustryCommunicationQuestionnaireInput!) {
+        assessUserCrossIndustryCommunicationSkill(answers: $answers) {
           success
           errors
         }
@@ -18,7 +18,6 @@ RSpec.describe Mutations::AssessUserCrossIndustryCommunicationSkill, type: :requ
 
   let(:variables) do
     {
-      userId: user.id,
       answers: {
         dataScientistQuestion: 'b',
         architectQuestion: 'b',
@@ -27,6 +26,8 @@ RSpec.describe Mutations::AssessUserCrossIndustryCommunicationSkill, type: :requ
       }
     }
   end
+
+  before { post '/test_setup_session', params: { user_id: user.id } }
 
   context 'when user has a cross-industry communication skill' do
     it 'creates a UsersSkill record' do
@@ -42,7 +43,6 @@ RSpec.describe Mutations::AssessUserCrossIndustryCommunicationSkill, type: :requ
   context 'when user does not have a cross-industry communication skill' do
     let(:variables) do
       {
-        userId: user.id,
         answers: {
           dataScientistQuestion: 'c',
           architectQuestion: 'b',
@@ -63,17 +63,7 @@ RSpec.describe Mutations::AssessUserCrossIndustryCommunicationSkill, type: :requ
   end
 
   context 'when user does not exist' do
-    let(:variables) do
-      {
-        userId: -1, 
-        answers: {
-          dataScientistQuestion: 'b',
-          architectQuestion: 'b',
-          telecommunicationExpertQuestion: 'a',
-          publicHealthOfficialQuestion: 'b',
-        }
-      }
-    end
+    before { post '/test_setup_session', params: { user_id: -1 } }
 
     it 'returns an error' do
       expect(data['success']).to be_falsey

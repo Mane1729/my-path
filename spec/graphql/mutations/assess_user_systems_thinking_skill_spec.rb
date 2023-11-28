@@ -7,8 +7,8 @@ RSpec.describe Mutations::AssessUserSystemsThinkingSkill, type: :request do
 
   let(:mutation) do
     <<~GQL
-      mutation AssessUserSystemsThinkingSkill($userId: ID!, $answers: SystemsThinkingQuestionnaireInput!) {
-        assessUserSystemsThinkingSkill(userId: $userId, answers: $answers) {
+      mutation AssessUserSystemsThinkingSkill($answers: SystemsThinkingQuestionnaireInput!) {
+        assessUserSystemsThinkingSkill(answers: $answers) {
           success
           errors
         }
@@ -18,7 +18,6 @@ RSpec.describe Mutations::AssessUserSystemsThinkingSkill, type: :request do
 
   let(:variables) do
     {
-      userId: user.id,
       answers: {
         understandingRelationships: 'a',
         holisticApproach: 'b',
@@ -29,6 +28,8 @@ RSpec.describe Mutations::AssessUserSystemsThinkingSkill, type: :request do
       }
     }
   end
+
+  before { post '/test_setup_session', params: { user_id: user.id } }
 
   context 'when user has a systems thinking skill' do
     it 'creates a UsersSkill record' do
@@ -44,7 +45,6 @@ RSpec.describe Mutations::AssessUserSystemsThinkingSkill, type: :request do
   context 'when user does not have a systems thinking skill' do
     let(:variables) do
       {
-        userId: user.id,
         answers: {
           understandingRelationships: 'a',
           holisticApproach: 'c',
@@ -67,19 +67,7 @@ RSpec.describe Mutations::AssessUserSystemsThinkingSkill, type: :request do
   end
 
   context 'when user does not exist' do
-    let(:variables) do
-      {
-        userId: -1, 
-        answers: {
-          understandingRelationships: 'a',
-          holisticApproach: 'b',
-          patternIdentification: 'b',
-          feedbackLoops: 'c',
-          systemAlteration: 'b',
-          unintendedConsequences: 'b'
-        }
-      }
-    end
+    before { post '/test_setup_session', params: { user_id: -1 } }
 
     it 'returns an error' do
       expect(data['success']).to be_falsey

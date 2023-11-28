@@ -20,6 +20,11 @@ RSpec.describe Mutations::CreateUser, type: :request do
       expect { graphql_query(mutation) }.to change { User.count }.by(1)
     end
 
+    it 'stores the user id in the session' do
+      graphql_query(mutation)
+      expect(session[:user_id]).to eq User.last.id
+    end
+
     it 'returns a user id on successful creation' do
       expect(data['id']).not_to be_nil
       expect(data['success']).to be_truthy

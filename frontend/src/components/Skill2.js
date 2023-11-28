@@ -8,8 +8,8 @@ import gql from 'graphql-tag';
 import { useMutation } from '@apollo/react-hooks';
 
 const CREATE_USER = gql`
-  mutation AssessUserProjectManagemenSkill($userId: ID!, $answer: String!) {
-    assessUserProjectManagementSkill(userId: $userId, answer: $answer) {
+  mutation AssessUserProjectManagemenSkill($answer: String!) {
+    assessUserProjectManagementSkill(answer: $answer) {
       success
       errors
     }
@@ -45,7 +45,6 @@ function Skill2() {
   
       const response = await AssessUserProjectManagemenSkill({
         variables: {
-          userId: '2', // replace with actual user ID
           answer: answersString, 
         },
       });

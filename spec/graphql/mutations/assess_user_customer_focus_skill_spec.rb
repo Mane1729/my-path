@@ -7,8 +7,8 @@ RSpec.describe Mutations::AssessUserCustomerFocusSkill, type: :request do
 
   let(:mutation) do
     <<~GQL
-      mutation AssessUserCustomerFocusSkill($userId: ID!, $answers: CustomerFocusQuestionnaireInput!) {
-        assessUserCustomerFocusSkill(userId: $userId, answers: $answers) {
+      mutation AssessUserCustomerFocusSkill($answers: CustomerFocusQuestionnaireInput!) {
+        assessUserCustomerFocusSkill(answers: $answers) {
           success
           errors
         }
@@ -18,7 +18,6 @@ RSpec.describe Mutations::AssessUserCustomerFocusSkill, type: :request do
 
   let(:variables) do
     {
-      userId: user.id,
       answers: {
         initialResponse: 'c',
         addressingEmotion: 'b',
@@ -28,6 +27,8 @@ RSpec.describe Mutations::AssessUserCustomerFocusSkill, type: :request do
       }
     }
   end
+
+  before { post '/test_setup_session', params: { user_id: user.id } }
 
   context 'when user has a customer focus skill' do
     it 'creates a UsersSkill record' do
@@ -44,7 +45,6 @@ RSpec.describe Mutations::AssessUserCustomerFocusSkill, type: :request do
   context 'when user does not have a customer focus skill' do
     let(:variables) do
       {
-        userId: user.id,
         answers: {
           initialResponse: 'c',
           addressingEmotion: 'a',
@@ -66,18 +66,7 @@ RSpec.describe Mutations::AssessUserCustomerFocusSkill, type: :request do
   end
 
   context 'when user does not exist' do
-    let(:variables) do
-      {
-        userId: -1, 
-        answers: {
-          initialResponse: 'c',
-          addressingEmotion: 'b',
-          proposedSolution: 'a',
-          handlingNegativePublicity: 'c',
-          futureTrustAssurance: 'c'
-        }
-      }
-    end
+    before { post '/test_setup_session', params: { user_id: -1 } }
 
     it 'returns an error' do
       expect(data['success']).to be_falsey

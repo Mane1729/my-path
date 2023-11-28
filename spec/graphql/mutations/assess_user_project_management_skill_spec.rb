@@ -7,8 +7,8 @@ RSpec.describe Mutations::AssessUserProjectManagementSkill, type: :request do
 
   let(:mutation) do
     <<~GQL
-      mutation AssessUserProjectManagemenSkill($userId: ID!, $answer: String!) {
-        assessUserProjectManagementSkill(userId: $userId, answer: $answer) {
+      mutation AssessUserProjectManagemenSkill($answer: String!) {
+        assessUserProjectManagementSkill(answer: $answer) {
           success
           errors
         }
@@ -16,14 +16,15 @@ RSpec.describe Mutations::AssessUserProjectManagementSkill, type: :request do
     GQL
   end
 
-  context 'when passing valid input' do
-    let(:variables) do
-      {
-        userId: user.id,
-        answer: 'answer for project management skill assessment question'
-      }
-    end
-     
+  let(:variables) do
+    {
+      answer: 'answer for project management skill assessment question'
+    }
+  end
+
+  before { post '/test_setup_session', params: { user_id: user.id } }
+
+  context 'when passing valid input' do 
     it 'returns a success' do
       expect(data['success']).to be_truthy
       expect(data['errors']).to be_empty
@@ -31,12 +32,7 @@ RSpec.describe Mutations::AssessUserProjectManagementSkill, type: :request do
   end
 
   context 'when user does not exist' do
-    let(:variables) do
-      {
-        userId: -1, 
-        answer: 'valid answer indicating project management skill'
-      }
-    end
+    before { post '/test_setup_session', params: { user_id: -1 } }
 
     it 'returns an error' do
       expect(data['success']).to be_falsey
