@@ -10,5 +10,7 @@ module Types
                                                description: "Assesses user's Cross-industry communication skill based on a questionnaire"
     field :assess_user_customer_focus_skill, mutation: Mutations::AssessUserCustomerFocusSkill, 
                                                description: "Assesses user's Customer focus skill based on a questionnaire"
+    field :assess_user_information_technology_skill, mutation: Mutations::AssessUserInformationTechnologySkill, 
+                                               description: "Assesses user's IT skill based on a questionnaire"
   end
 end
