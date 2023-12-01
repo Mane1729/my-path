@@ -12,5 +12,7 @@ module Types
                                                description: "Assesses user's Customer focus skill based on a questionnaire"
     field :assess_user_information_technology_skill, mutation: Mutations::AssessUserInformationTechnologySkill, 
                                                description: "Assesses user's IT skill based on a questionnaire"
+    field :assess_user_social_skill, mutation: Mutations::AssessUserSocialSkill, 
+                                               description: "Assesses user's Social skill based on a questionnaire"
   end
 end
