@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import jsonData from './SystemsThinkingQuestions.json';
 import './../App.css';
-import Skill2 from './Skill2';
 
 import gql from 'graphql-tag';
 import { useMutation } from '@apollo/react-hooks';

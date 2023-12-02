@@ -1,0 +1,48 @@
+{
+    "initialResponse": {
+      "question": "You're a customer service representative. A customer calls in, sounding quite upset, and tells you they've received a defective product. 'Hello, I recently ordered a product from your company and it's defective! This is unacceptable!'",
+      "options": [
+        {"choice": "a", "text": "I'm sorry, but it's not my fault."},
+        {"choice": "b", "text": "Can you please clarify what you mean by 'defective'?"},
+        {"choice": "c", "text": "I apologize for the inconvenience. Let's find a solution together."},
+        {"choice": "d", "text": "You must have used it incorrectly."}
+      ]
+    },
+    "addressingEmotion": {
+        "question": "'I've always trusted your brand, and now I feel disappointed. I needed this for a special event tomorrow!'",
+        "options": [
+          {"choice": "a", "text": "Many customers buy our products without issues. Maybe you're just unlucky."},
+          {"choice": "b", "text": "I understand your frustration and disappointment. Let's see how we can rectify this in time for your event."},
+          {"choice": "c", "text": "Why didn't you check it as soon as you received it?"},
+          {"choice": "d", "text": "We can give you a 10% discount on your next purchase."}
+        ]
+      },
+      "proposedSolution": {
+        "question": "'What can you do about this? I don't have time to send this back and wait for a replacement.'",
+        "options": [
+          {"choice": "a", "text": "Well, all sales are final. Sorry!"},
+          {"choice": "b", "text": "You can buy another one, and we'll refund you when we receive the defective one."},
+          {"choice": "c", "text": "I can arrange for an expedited delivery of a replacement product. Additionally, you can return the defective one at your convenience."},
+          {"choice": "d", "text": "That's not my problem."}
+
+        ]
+      },
+      "handlingNegativePublicity": {
+        "question": "'I've told my friends about this issue, and they're advising me to post about it on social media. I really didn't expect this from your brand.'",
+        "options": [
+          {"choice": "a", "text": "You can post whatever you want. We have many satisfied customers."},
+          {"choice": "b", "text": "I'm really sorry you feel that way. Let's work together to resolve this. We value your feedback and want to ensure your satisfaction."},
+          {"choice": "c", "text": "If you post negatively, we'll have to ban you from making future purchases."},
+          {"choice": "d", "text": "There's no need to involve others. Can you please keep this between us?"}
+        ]
+      },
+      "futureTrustAssurance": {
+        "question": "'How do I know I won't face the same issue in the future? I'm losing my trust in your company.'",
+        "options": [
+          {"choice": "a", "text": "Mistakes happen. You just got unlucky."},
+          {"choice": "b", "text": "Our products generally have high reviews. Don't worry about it."},
+          {"choice": "c", "text": "I understand your concerns. We continually strive to improve our product quality, and your feedback is crucial. I'll ensure this is escalated to our quality control team."},
+          {"choice": "d", "text": "Maybe our products are just not suitable for you."}
+        ]
+      }
+}
