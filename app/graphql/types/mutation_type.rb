@@ -14,5 +14,7 @@ module Types
                                                description: "Assesses user's IT skill based on a questionnaire"
     field :assess_user_social_skill, mutation: Mutations::AssessUserSocialSkill, 
                                                description: "Assesses user's Social skill based on a questionnaire"
+    field :assess_user_lean_production_skill, mutation: Mutations::AssessUserLeanProductionSkill, 
+                                               description: "Assesses user's Lean Production skill based on their response to a scenario question"
   end
 end

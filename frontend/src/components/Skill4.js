@@ -8,7 +8,7 @@ import { useMutation } from '@apollo/react-hooks';
 
 const CREATE_USER = gql`
   mutation AssessUserLeanProductionSkill($answer: String!) {
-    AssessUserLeanProductionSkill(answer: $answer) {
+    assessUserLeanProductionSkill(answer: $answer) {
       success
       errors
     }
