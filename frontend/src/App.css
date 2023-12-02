@@ -13,3 +13,27 @@ input[type="text"] {
   font-size: 16px;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: gray;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 30%;
+  left: 40%;
+  margin-left: 30px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+

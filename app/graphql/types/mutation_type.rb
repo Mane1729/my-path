@@ -20,5 +20,7 @@ module Types
                                                description: "Assesses user's Working In Uncertainty skill based on a questionnaire"
     field :assess_user_ecological_thinking_skill, mutation: Mutations::AssessUserEcologicalThinkingSkill, 
                                                description: "Assesses user's Ecological Thinking skill based on a questionnaire"
+    field :assess_user_art_and_creativity_skill, mutation: Mutations::AssessUserArtAndCreativitySkill, 
+                                               description: "Assesses user's Art and Creativity skill based on their answer to a specific question"
   end
 end
