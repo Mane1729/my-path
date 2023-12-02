@@ -1,6 +1,6 @@
 module Mutations
   class AssessUserCustomerFocusSkill < GraphQL::Schema::Mutation
-    description "Assesses user's CustomerFocus skill based on a questionnaire"
+    description "Assesses user's Customer Focus skill based on a questionnaire"
 
     field :success, Boolean, null: false
     field :errors, [String], null: false
