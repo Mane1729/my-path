@@ -18,5 +18,7 @@ module Types
                                                description: "Assesses user's Lean Production skill based on their response to a scenario question"
     field :assess_user_working_in_uncertainty_skill, mutation: Mutations::AssessUserWorkingInUncertaintySkill, 
                                                description: "Assesses user's Working In Uncertainty skill based on a questionnaire"
+    field :assess_user_ecological_thinking_skill, mutation: Mutations::AssessUserEcologicalThinkingSkill, 
+                                               description: "Assesses user's Ecological Thinking skill based on a questionnaire"
   end
 end

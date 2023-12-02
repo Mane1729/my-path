@@ -9,7 +9,7 @@ RSpec.describe Commands::AssessUserSocialSkill do
     {
       team_conflict: 'c',
       new_team_member_struggling: 'a',
-      sharing_negative_feedback: 'c',
+      sharing_negative_feedback: 'c'
     }
   end
 
@@ -17,7 +17,7 @@ RSpec.describe Commands::AssessUserSocialSkill do
     {
       team_conflict: 'a',
       new_team_member_struggling: 'b',
-      sharing_negative_feedback: 'd',
+      sharing_negative_feedback: 'd'
     }
   end
 

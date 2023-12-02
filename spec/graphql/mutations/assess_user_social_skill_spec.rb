@@ -9,7 +9,7 @@ RSpec.describe Mutations::AssessUserSocialSkill, type: :request do
       answers: {
         teamConflict: 'c',
         newTeamMemberStruggling: 'a',
-        sharingNegativeFeedback: 'c',
+        sharingNegativeFeedback: 'c'
       }
     }
   end
@@ -19,7 +19,7 @@ RSpec.describe Mutations::AssessUserSocialSkill, type: :request do
       answers: {
         teamConflict: 'a',
         newTeamMemberStruggling: 'b',
-        sharingNegativeFeedback: 'd',
+        sharingNegativeFeedback: 'd'
       }
     }
   end

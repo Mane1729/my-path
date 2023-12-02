@@ -10,7 +10,7 @@ RSpec.describe Mutations::AssessUserCrossIndustryCommunicationSkill, type: :requ
         dataScientistQuestion: 'b',
         architectQuestion: 'b',
         telecommunicationExpertQuestion: 'a',
-        publicHealthOfficialQuestion: 'b',
+        publicHealthOfficialQuestion: 'b'
       }
     }
   end
@@ -21,7 +21,7 @@ RSpec.describe Mutations::AssessUserCrossIndustryCommunicationSkill, type: :requ
         dataScientistQuestion: 'c',
         architectQuestion: 'b',
         telecommunicationExpertQuestion: 'a',
-        publicHealthOfficialQuestion: 'c',
+        publicHealthOfficialQuestion: 'c'
       }
     }
   end

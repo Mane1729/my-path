@@ -10,7 +10,7 @@ RSpec.describe Commands::AssessUserCrossIndustryCommunicationSkill do
       data_scientist_question: 'b',
       architect_question: 'b',
       telecommunication_expert_question: 'a',
-      public_health_official: 'b',
+      public_health_official: 'b'
     }
   end
 
@@ -19,7 +19,7 @@ RSpec.describe Commands::AssessUserCrossIndustryCommunicationSkill do
       data_scientist_question: 'c',
       architect_question: 'b',
       telecommunication_expert_question: 'a',
-      public_health_official: 'c',
+      public_health_official: 'c'
     }
   end
 
