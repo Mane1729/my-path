@@ -1,0 +1,50 @@
+{
+  "understandingRelationships": {
+    "question": "When you're trying to understand a complex issue, do you look at the individual parts separately, or do you try to understand how they all interact and affect each other?",
+    "options": [
+      {"choice": "a", "text": "I tend to look at each part separately."},
+      {"choice": "b", "text": "I attempt to understand how all the parts interact."},
+      {"choice": "c", "text": "Sometimes a, sometimes b, depending on the situation."}
+    ]
+  },
+  "holisticApproach": {
+    "question": "When addressing a challenge, do you think about how it fits within the bigger picture?",
+    "options": [
+      {"choice": "a", "text": "Rarely, I focus on the immediate challenge."},
+      {"choice": "b", "text": "Always, I think about its context and larger environment."},
+      {"choice": "c", "text": "Sometimes, it depends on the situation."}
+    ]
+  },
+  "patternIdentification": {
+    "question": "How comfortable are you with identifying patterns and trends in complex data or information?",
+    "options": [
+      {"choice": "a", "text": "I often struggle to identify patterns or trends."},
+      {"choice": "b", "text": "I am quite comfortable and often identify patterns that others may not notice."},
+      {"choice": "c", "text": "I can identify patterns if they are quite obvious."}
+    ]
+  },
+  "feedbackLoops": {
+    "question": "When making a decision, do you think about how actions might come back around to affect the situation again (like a cycle)?",
+    "options": [
+      {"choice": "a", "text": "Rarely, I don’t usually consider cyclical effects."},
+      {"choice": "b", "text": "Always, I think about how my decisions might loop back and impact the situation in the future."},
+      {"choice": "c", "text": "Occasionally, but it's not a primary concern."}
+    ]
+  },
+  "systemAlteration": {
+    "question": "If a part of a system is changed, do you take into account how this could affect other parts of the system?",
+    "options": [
+      {"choice": "a", "text": "I rarely think about how a change will impact other parts of the system."},
+      {"choice": "b", "text": "I always think about the potential impacts on the entire system before making a change."},
+      {"choice": "c", "text": "Sometimes I do, but not always."}
+    ]
+  },
+  "unintendedConsequences": {
+    "question": "When implementing a change, how often do you think about possible side effects that might not be immediately obvious?",
+    "options": [
+      {"choice": "a", "text": "Rarely, I focus on the primary outcomes."},
+      {"choice": "b", "text": "Always, I weigh the primary and potential secondary outcomes."},
+      {"choice": "c", "text": "Sometimes, especially if it's a major change."}
+    ]
+  }
+}

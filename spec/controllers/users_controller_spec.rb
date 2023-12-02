@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
   describe 'GET #result' do
-    let(:user) { create(:user) }
+    let(:user) { create(:user_with_profile) }
     context 'when the user is found' do
       before do
         session[:user_id] = user.id
@@ -106,7 +106,7 @@ RSpec.describe UsersController, type: :controller do
 
       it "returns a 422" do
         expect(result).to have_http_status(:unprocessable_entity)
-        expect(JSON.parse(response.body)).to eq({"working_hours"=>["can't be blank"]})
+        expect(JSON.parse(response.body)).to eq({"profile.working_hours"=>["can't be blank"]})
       end
 
       it 'does not create a new user' do

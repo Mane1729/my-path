@@ -1,0 +1,34 @@
+ {
+  "dataScientistQuestion": {
+    "question": "The data scientist presents a detailed data model that predicts human movement and traffic patterns within the city over the next 10 years. They ask: How can we use this data to optimize our smart city design?",
+    "options": [
+      {"choice": "a", "text": "Isn't this just typical traffic data?"},
+      {"choice": "b", "text": "Let's utilize this data to enhance public transportation routes and smart traffic light systems."},
+      {"choice": "c", "text": "I'm not sure what this data signifies."}
+    ]
+  },
+  "architectQuestion": {
+    "question": "The architect showcases a series of designs for modular buildings that can be easily reconfigured based on the city's evolving needs. They ask: Considering the flexible nature of these designs, where should our primary focus be?",
+    "options": [
+      {"choice": "a", "text": "It looks fancy, but is it practical?"},
+      {"choice": "b", "text": "We should focus on residential areas first, allowing for dynamic community spaces that can adapt over time."},
+      {"choice": "c", "text": "Designs don't matter as much as functionality."}
+    ]
+  },
+  "telecommunicationExpertQuestion": {
+    "question": "The expert explains the potential of a new 6G network that can facilitate instantaneous communication and support augmented reality (AR) in public spaces. They inquire: How can we integrate this into our smart city plan?",
+    "options": [
+      {"choice": "a", "text": "Isn't 5G good enough?"},
+      {"choice": "b", "text": "We can leverage this tech to enhance public services, from AR-guided public transport systems to real-time emergency response systems."},
+      {"choice": "c", "text": "Telecommunication isn't my area of expertise."}
+    ]
+  },
+  "publicHealthOfficialQuestion": {
+    "question": "The official provides information about the benefits of green spaces in cities concerning air quality, mental health, and overall well-being. They ask: How do we make sure our smart city addresses these health concerns?",
+    "options": [
+      {"choice": "a", "text": "We have technology to clean the air, so why bother with green spaces?"},
+      {"choice": "b", "text": "Incorporate abundant green spaces and parks within our city design, ensuring residents have easy access to nature for their well-being."},
+      {"choice": "c", "text": "Health is a separate department's concern."}
+    ]
+  }
+ }
