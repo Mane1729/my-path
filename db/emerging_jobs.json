@@ -6,10 +6,4405 @@
       "Systems thinking",
       "Customer focus",
       "Multilingualism/ Multiculturalism",
-      "Social skills",
+      "Social",
       "Working in uncertainty"
     ],
     "description": "A specialist who provides the legal and ethical framework for the activities of medical diagnostic and bioengineering centers in which transplantology and genetic modeling are carried out."
+  },
+
+  {
+    "name": "Genetic consultant",
+    "industry": "Medicine",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Customer focus"
+    ],
+    "description": "A professional conducting initial and planned genetic analysis in diagnostic centers, processes data from diagnostic devices, and gives an opinion and recommendations on future treatment regimen."
+  },
+
+  {
+    "name": "Clinical bioinformaticist",
+    "industry": "Medicine",
+    "skills": [
+      "Systems thinking",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Working in uncertainty"
+    ],
+    "description": "In the case of a non-standard course of the disease, he builds a computer model of the biochemical processes of the disease in order to understand the causes of it (reveals violations at the cellular and subcellular levels)."
+  },
+
+  {
+    "name": "Health R&D Manager",
+    "industry": "Medicine",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication",
+      "Project management",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A specialist providing communication between research, diagnostic and preventive institutions, managing cooperation programs, and joint projects. His role is to assemble a suitable team of scientists, engineers, researchers, and developers, as well as focusing them on the implementation of commercially promising ideas and coordinate all joint work in the process."
+  },
+
+  {
+    "name": "Molecular nutritionist",
+    "industry": "Medicine",
+    "skills":[
+      "Systems thinking",
+      "Customer focus",
+      "Ecological thinking"
+    ],
+    "description": "A specialist in the development of individual nutritional schemes based on data on the molecular composition of food, taking into account the results of a genetic analysis of a person and the characteristics of his physiological  processes."
+  },
+
+  {
+    "name": "Medical robot operator",
+    "industry": "Medicine",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description": "A professional who runs diagnostic, therapeutic, and surgical robots, with programming skills. Robotic surgery is not a  new direction; it began to develop in the 1980s."
+  },
+
+  {
+    "name": "IT geneticist",
+    "industry": "Medicine",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description": "A specialist who is involved in genome programming for given parameters, in particular, preventing the development of hereditary diseases."
+  },
+
+  {
+    "name": "Developer of cyber prosthetics and implants",
+    "industry": "Medicine",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Multilingualism/Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description": "An engineer who will develop functional artificial devices (cyber prostheses) and organs compatible with living tissues."
+  },
+
+  {
+    "name":"Tissue engineer",
+    "industry": "Medicine",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication",
+      "Project management",
+      "IT"
+    ],
+    "description":"A professional who develops a technological process and selects materials and conditions for the formation of a specific tissue or organ. A transplant surgeon uses the results of his work"
+  },
+
+  {
+    "name":"Medical institution lifecycle planner",
+    "industry": "Medicine",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Lean production",
+      "Customer focus",
+      "Social"
+    ],
+    "description":"A specialist in the development of the life cycle of a medical institution and its management, from design to closure."
+  },
+
+  {
+    "name":"Personified medicine expert",
+    "industry": "Medicine",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A professional who analyzes the patient’s genetic map, develops individual support programs (diagnosis, prevention, treatment) and offers appropriate medical insurance products."
+
+  },
+  {
+    "name":"Healthy aging consultant",
+    "industry":"Medicine",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A specialist in the medical and social sphere, developing optimal solutions for the problems of an aging population. Such a specialist will help to correct the lifestyle, select the appropriate diet, and physical activity."
+  },
+
+  {
+    "name":"Online GP",
+    "industry":"Medicine",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A  high-class diagnostician who owns information and communication technologies and is able to diagnose online. Focused on preliminary diagnosis and prevention of diseases."
+  },
+
+  {
+    "name":"Translational medicine specialist",
+    "industry":"Medicine",
+    "skills":[
+      "Cross-industry communication",
+      "Project management",
+      "Customer focus",
+      "Social"
+    ],
+    "description":"A professional who is looking for ways to accelerate the path from developing a promising new medicine to its entry into the market, for example, through computer modeling and high-tech laboratory research."
+  },
+
+  {
+    "name": "Targeted nanotechnologist",
+    "industry":"Medicine",
+    "skills":[
+      "Cross-industry communication",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Working in uncertainty"
+    ],
+    "description": "The developer of methods for the delivery of drugs that ensure targeted cancer cells. Targeted drugs can act only on the tumor without harming healthy tissues. They can damage the vessels that feed the tumor, block biochemical signals for reproduction, and even turn off individual genes."
+  },
+
+  {
+    "name": "Pharmacological ecologist",
+    "industry":"Medicine",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Customer focus",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist who regulates environmental safety in pharmacological production. According to the international classification of environmental safety of production, pharmaceutical laboratories and enterprises are at risk. Therefore, specialists able to assess and prevent this risk are required."
+  },
+   {
+    "name":"Medical marketer",
+    "industry":"Medicine",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A  specialist in market research in the field of pharmacology, medical services, and medical equipment; develops the marketing policy of an enterprise or research center. Another profession that has long existed in the world, though in Russia. It is quite new since, until recent times, all medicine was state or near-state."
+   },
+
+   {
+    "name": "IT medical worker",
+    "industry":"Medicine",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A specialist with good IT knowledge to create and manage physiological databases (for example, analysis results), create software for medical and diagnostic equipment."
+  },
+
+  {
+    "name":"Medical equipment architect",
+    "industry":"Medicine",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication",
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+      ],
+      "description":"A  multifunctional specialist who designs equipment for various medical tasks, with knowledge in the field of engineering and computer graphics materials science, machine parts, and electrical engineering. This profession already exists, but as more functions in medicine are automated, the demand will grow."
+  },
+
+  {
+    "name":"Architect of virtuality",
+    "industry": "Media and entertainment",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication",
+      "Project management",
+      "IT",
+      "Customer focus"
+    ],
+    "description": "A specialist in designing solutions that allow you to work, study, and relax in virtual reality. He develops software and equipment, taking into account the biological and psychological parameters of the user (including custom-made orders)."
+
+  },
+
+  {
+    "name":"Emotion designer",
+    "industry": "Media and entertainment",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication",
+      "Customer focus",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who creates an emotional background of content using new channels of information delivery, including directly to the consumer’s brain. He controls the effect on the senses so that the user experiences the necessary sensations and emotions during the consumption of content."
+  },
+
+  {
+    "name":"Producer of the semantic field (or “semanticist”)",
+    "industry":"Media and entertainment",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Working in uncertainty"
+
+    ],
+    "description":"A specialist who is responsible for shaping the overall picture of the world, in accordance with which media streams will be built. He manages programs that filter content, and they form information flows for users within a given picture of the world. (A “cultural sommelier” from Victor Pelevin’s novel S.N.U.F.F. plays a similar role in society.)"
+  },
+
+  {
+    "name": "Gamification expert in mixed reality",
+    "industry":"Media and entertainment",
+    "skills":[
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Art and Creativity"
+
+    ],
+    "description":"An organizer, creator, guide in entertaining gaming universes in physical and virtual spaces. There is a  direction of ARG games in an alternative reality, where the line between the real world and the gaming world is very blurred. In the future, such games will develop further."
+  },
+
+  {
+    "name":"Media policeman",
+    "industry":"Media and entertainment",
+    "skills":[
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description": "A law enforcement officer in the media sphere. Searches for violations of the law by monitoring media resources in person and/or through special programs. Now in Russia, this function is partially fulfilled by the Federal Service for Supervision of Communications, Information Technology, and Mass Media (Roskomnadzor) and the Safe Internet League; but in the future, information abuse and cybercrime will increase so that this function will stand out as a separate profession."
+  },
+
+  {
+    "name":"Media software developer",
+    "industry":"Media and entertainment",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication",
+      "IT",
+      "Customer focus",
+      "Social"
+    ],
+    "description":"A specialist working together with psychologists, linguists, and engineers to create software tools for searching, processing, and disseminating information in the net (search engines, semantic analyzers, aggregators, robots, writing information notes)."
+  },
+
+  {
+    "name":"Infostylist",
+    "industry":"Media and entertainment",
+    "skills":[
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A  person who selects information and style of its presentation per the requests of a particular user. Now, a stream of content is offered to a person in the form of a selection of recommended information products based on geo-targeting, user search queries, or interests indicated on social networks. This is done mainly by an algorithm that was created by someone for their own purposes (for example, by advertisers or managers of social networks). In the future, a person’s desire to form such a flow for himself, without any influence, will create a demand for similar algorithms, which he or she will either write for himself or make an individual order for specialists."
+  },
+
+  {
+    "name":"Fact checker",
+    "industry":"Media and entertainment",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication",
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist who checks the facts presented in the media for accuracy. He can work both for specialized resources laying out ratings of high-quality and truthful media and journalists, and by order of a demanding consumer of information. For example, in tandem with an info curator."
+  },
+
+  {
+    "name":"Content aggregator editor",
+    "industry":"Media and entertainment",
+    "skills":[
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"He manages information channels and selects content that meets the expectations of users, setting up search engines, aggregators, automatic information analyzers, and reporting drones. This profession already exists in digital media, but as individual media grows, the demand for it will grow. Over time, it will turn from a separate profession into a universal editorial competency."
+  },
+
+  {
+    "name":"Creative neural network curator",
+    "industry":"Media and entertainment",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who sets up neural networks to work on creative tasks and coordinates their interaction with people. Despite the fact that creative processes are more complicated for computer programs than analytics, some stages of creative work (for example, enumeration of different solutions) can be algorithmized. There are already precedents. In 2016, an artificial intelligence created by Yandex developers wrote poems in the style of Yegor Letov, and a science fiction novel co-authored with a neural network passed the qualifying stage of the Japanese literary award, Hoshi Shinichi Literary Award. The computer program also appeared in scriptwriting, and based on its creation, director Oscar Sharp wrote the short film, 'Sunspring.'"
+    
+  },
+
+  {
+    "name":"Smart advertising designer",
+    "industry":"Media and entertainment",
+    "skills":[
+      "Cross-industry communication",
+      "Project management",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who creates more subtle and high-tech contextual advertising using data science, behavioral economics, immersive technologies, etc. Smart advertising is more in line with the interests of a particular user and has a greater potential for involvement through the use of user data and psychological mechanisms."
+
+  },
+
+  {
+    "name":"Contextual game developer",
+    "industry":"Media and entertainment",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication",
+      "Customer focus",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A  game designer specialized in the development of context-sensitive games. The context includes the location of the player and the game objects near him, movements, emotional state, stress level, information about the interaction between several players. Examples of such games and platforms: Mogi in Japan, Pokémon Go, I Love Bees, Playstation EyeToy consoles and Nintendo Wii."
+  },
+
+  {
+    "name":"Screenwriter of interactive movies / TV series",
+    "industry":"Media and entertainment",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication",
+      "IT",
+      "Working in uncertainty",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who creates artistic scenarios in which the viewer can influence the plot. The television and film industries strive to reach new heights of emotional impact on the audience. In 2018, film director and producer Steven Soderbergh released the interactive series “Mosaic” on a  free application for iOS and Android, where users could change the course of action. Screenwriters of the Black Mirror series have released the interactive Bandersnatch series for Netflix. Computer games are not far behind. The plot’s dependence on the user’s moral choice brought popularity to the games Heavy Rain, Life Is Strange, and Detroit: Become Human. All this requires new skills from screenwriters, both in understanding the psychology of the viewer and in building the plot."
+  },
+
+  {
+    "name":"Private content maker",
+    "industry":"Media and entertainment",
+    "skills":[
+      "IT",
+      "Social",
+      "Working in uncertainty",
+      "Art and Creativity"
+    ],
+    "description":"A blogger who creates his own multimedia content, sometimes involving a  team of virtual and real assistants for this purpose. A  private content maker can lead his channel on social networks or occupy some niche in large media (for example, sell private reports or even report significant newsbreaks for a fee). Russian media, such as Meduza and Lifenews, are already actively collaborating with Internet users, and copyright talk shows on YouTube are gathering a huge audience (for comparison: the release of the YouTube show “Vdud*” in February 2019 gained 3.7 million views per month—this is more than the quarterly views of the entire channel “Russia Today**” in the UK)."
+  },
+
+  {
+    "name":"Transmedia content architect",
+    "industry":"Media and entertainment",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication",
+      "Project management",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who designs content (characters, stories, conflicts, problems, educational content) and services for several mass media (television programs, games, etc.). He should be able to build a convincing system of interaction between different formats (consistency of character images and the relationship/complementarity of the stories that happen to them). This profession requires innovative thinking. For example, in an American school, as part of an art project, students encrypted the text of the poem in program code, then transferred it to the Scratch tutorial, which allows you to create animations, and then in LEGO Mindstorms EV3, the robot programming language. And in the online children’s series “Inanimate Alice,” they use text, video, pictures, and interactive games."
+  },
+
+  {
+    "name":"Virtual world designer",
+    "industry":"Media and entertainment",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Art and Creativity",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist who creates conceptual solutions for the virtual world: philosophy, laws of nature and society, the rules of social interaction and economics, landscape, architecture, sensations (including smells and sounds), living world, and social world."
+  },
+
+  {
+    "name":"Smart travel systems developer",
+    "industry":"Tourism and hospitality",
+    "skills":[
+      "Project management",
+      "IT",
+      "Customer focus"
+    ],
+    "description":"A specialist who creates automated systems for buying tickets, navigation, and hotel reservations. Founders of tourism-related companies already make money by creating unique search algorithms—for example, AviaSales.ru. The demand for simple, convenient, and quick solutions in this area will only grow. In addition, personalization and the ability to create individual routes will be increasingly important."
+  },
+
+  {
+    "name":"Tour navigator developer",
+    "industry":"Tourism and hospitality",
+    "skills":[
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"An IT specialist who creates programs and applications that allow the user to navigate a specific route. When creating a route and important points, it will be a good idea to take into account the interests, mindcult, and plans of a particular user, as well as current cultural events."
+  },
+
+  {
+    "name":"Robotics supervisor",
+    "industry":"Tourism and hospitality",
+    "skills":[
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A specialist supervising hotel robots. Robotic hotels already exist in the USA, China, Japan, and other countries, and although mechanical porters, maids, and couriers have proven their worth, they still require human supervision. Such a supervisor should be a highly organized specialist with multitasking skills, well versed in mechanisms and artificial intelligence."
+  },
+
+  {
+    "name":"Curator of conscious ecotourism",
+    "industry":"Tourism and hospitality",
+    "skills":[
+      "Systems thinking",
+      "Customer focus",
+      "Social",
+      "Art and Creativity",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who creates and implements a culture of visiting forests and parks. His or her competencies include creating routes for ecotourism, planning infrastructure (electricity, water, places for separate waste collection), introducing environmental practices and teaching tourists behavioral philosophy."
+  },
+
+  {
+    "name":"Family travel writer",
+    "industry":"Tourism and hospitality",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Customer focus",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A professional who creates comprehensive programs for tourists traveling with families. He or she takes into account age-related psychological preferences, organizing dynamic leisure, where children and adults can both spend time together and rest from each other (and this is no less important!)."
+  },
+
+  {
+    "name":"Educational travel curator",
+    "industry":"Tourism and hospitality",
+    "skills":[
+      "Systems thinking",
+      "Customer focus",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A specialist at the intersection of tourism and education, who develops and implements tourism programs that are designed in order to develop certain skills. Today, educational tourism is mainly focused on the study of foreign languages, but it is obvious that its possibilities are much wider."
+  },
+
+  {
+    "name":"Intercultural communication coach for tour guides",
+    "industry":"Tourism and hospitality",
+    "skills":[
+      "Cross-industry communication ",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist who trains guides to find a common language with representatives of different generations and cultures. As tourist groups will be increasingly diverse in composition (this applies to age, nationality, and cultural codes), a guide in demand must be flexible and master different languages and communication styles."
+  },
+
+  {
+    "name":"Gamificator of tourist experience",
+    "industry":"Tourism and hospitality",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A  specialist who creates tourist games based on various attractions, historical facts, and local cultural features. As tourists increasingly expect unusual emotional experiences from travel, competitive advantages will be given to those who can turn an excursion or a  master class into an exciting game."
+  },
+
+  {
+    "name":"Territory AR designer",
+    "industry":"Tourism and hospitality",
+    "skills":[
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Art and Creativity"
+    ],
+    "description":"A professional who develops various layers of augmented reality around a certain territory, considering its landscape, historical and cultural context. For example, he or she can create several options for Red Square, the times of Ivan the Terrible, 1917, the era of dandies, etc. Such a specialist should combine the skills of a designer and programmer with a good knowledge of history."
+  },
+
+  {
+    "name":"Territory architect",
+    "industry":"Tourism and hospitality",
+    "skills":[
+      "Cross-industry communication ",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who creates “information landscapes” for tourists (pictures, descriptions, videos), taking into account the realities of the region, types of consumers, and currently popular destinations in the tourism industry. If a brand manager performs the functions of a creative director, then the territorial architect is a designer who finds specific detailed solutions for the tasks."
+  },
+
+  {
+    "name":"Individual tour scriptwriter",
+    "industry":"Tourism and hospitality",
+    "skills":[
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A  professional guide capable of developing and personally conducting unique tours at the request of specific clients. This profession, in a sense, already exists (for example, Airbnb service allows guides to publish offers on original tours), but it will become widespread as traditional tour operators disappear."
+  },
+
+  {
+    "name":"Territory brand manager",
+    "industry":"Tourism and hospitality",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A consultant and organizer who is responsible for filling the virtual space with cultural meanings associated with a specific territory. He creates the image and legend of the area, and design, identity*, information coverage, types of travel services, and various events that are united to this legend. All this gives the territory a uniqueness, allows you to attract visitors, and makes it a competitive center of tourism. The profession of a territory brand manager exists now, but over time its relevance will only increase—and the requirements for specialists of this profile, as well, respectively."
+  },
+
+  {
+    "name":"Tech-mediator",
+    "industry":"Industry",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A highly qualified specialist working at the top management level of the enterprise. The basic tasks include research and analysis of changes in market needs, forecasting the future consumption patterns of potential customers. In addition, a  tech-mediator is always up-to-date with the latest trends and understands the consequences of introducing modern technologies that affect production. He travels a lot and explores markets. At the enterprise, he leads a  group to search and solve new business problems."
+  },
+
+  {
+    "name":"Cyber physical systems designer",
+    "industry":"Industry",
+    "skills":[
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who designs cyber-physical systems for a specific task. He or she uses artificial assistants and consults with physicists and metallurgists, designing a model of the cyber-physical system in virtual reality."
+  },
+
+  {
+    "name":"Designer of new materials and technologies",
+    "industry":"Industry",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"A professional who designs new materials and production technologies based on the required properties and the function that they must perform in the industry. To do this, he uses access to the results of processing big data on available materials. After receiving a digital model of a material or technology, he must independently obtain and test it."
+  },
+
+  {
+    "name":"Cybersystem manager",
+    "industry":"Industry",
+    "skills":[
+      "Lean production",
+      "IT",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist who controls the operation of cyber systems in the factory. He or she can work with virtual and augmented reality interfaces, simulators, remote formats, and interact with different types of machines—robots, smartphones, workstations."
+  },
+
+  {
+    "name":"Repairman 2.0",
+    "industry":"Industry",
+    "skills":[
+      "Cross-industry communication ",
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description":"A repair team consisting of specialists with high expertise in one or two core competencies (electrical, mechanics, electronics, etc.) and basic knowledge in the rest, which facilitates communication within the team and allows assisting each other during repairs. Repair specialists have always existed in the industry, but in new conditions, more coordinated teamwork will be required."
+  },
+
+  {
+    "name":"Equipment failure forecaster",
+    "industry":"Industry",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Working in uncertainty"
+    ],
+    "description":"A professional who predicts wearing off and tearing in production equipment. To do this, he or she looks at the diagnostic data in real-time and runs it through mathematical or empirical models. Based on the results, he reports when it is time to do preventive repairs, how to reconfigure processes so that the equipment wears out less, and warns of possible breakdowns."
+  },
+
+  {
+    "name":"Digital modeling engineer",
+    "industry":"Industry",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Social",
+      "Ecological thinking"
+    ],
+    "description":"A specialist managing a digital model of an entire enterprise. He or she is responsible for the efficient use of resources and investments, the balance of peak loads, the flexible revision of business models, and technological processes depending on the external environment, large-scale digitalization, which allows for taking into account changes in consumer requests, logistics, and after-sales services. He manages a team of digital engineers, collects virtual models of individual machines, units, lines of an enterprise into a single system until the appearance of an integral model of the technological process at the enterprise."
+  },
+
+  {
+    "name":"Industrial flow logistics specialist",
+    "industry":"Industry",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Social"
+    ],
+    "description":"A professional who works primarily with software, designing, and redirecting logistics and information flows in such a  way as to ensure efficient production. He or she creates and maintains the necessary software that can simultaneously conduct several flows, taking into account situational changes in the operating mode, new data, the conclusion of individual stages for outsourcing, etc."
+  },
+
+  {
+    "name":"Industrial robot operator",
+    "industry":"Industry",
+    "skills":[
+      "Lean production",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist in the management and maintenance of robotic systems, including complex and hazardous industries and when working with hard-to-reach or microscopic objects. Such specialists are needed right now, primarily for working with robotic manipulators and CNC machines (numerical control)."
+  },
+
+  {
+    "name":"Additive technology machine operator",
+    "industry":"Industry",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist who knows how to work with machines of various types in additive manufacturing, which involves the layer-by-layer building of an object using computer 3D-modeling. In the modern industry, different technologies can be combined for this; for example, jet spraying, laser baking, etc."
+  },
+
+  {
+    "name":"Digital artisan",
+    "industry":"Industry",
+    "skills":[
+      "Cross-industry communication ",
+      "Customer focus",
+      "Art and Creativity"
+    ],
+    "description":"An entrepreneur, owner of the micro production of customized products. He or she is able to maximally and accurately understand what the client wants, offer him solutions and at the end, provide him with a product or a full digital model of the necessary product, which is enough to load into a standard production complex (for example, a 3D printing studio) to get the product “in hardware.”"
+  },
+
+  {
+    "name":"Industrial robotics designer",
+    "industry":"Industry",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"A specialist in the design of robotic production devices (for operations such as painting, welding, packaging, stamping), production of logistics devices, such as loaders, conveyors, manipulators, as well as robotic systems from such devices, like automated plants."
+  },
+
+  {
+    "name":"Operator of multifunctional robotic systems",
+    "industry":"Industry",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Working in uncertainty",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist in the management and maintenance of robotic systems, including complex and hazardous industries, and when working with hard-to-reach or microscopic objects. Specialists are needed from now on."
+  },
+
+  {
+    "name":"Clothing recycling specialist",
+    "industry":"Fashion",
+    "skills":[
+      "Systems thinking",
+      "Lean production",
+      "Ecological thinking"
+    ],
+    "description":"A  professional with knowledge in ecology and materials science, who develops optimal ways of processing old clothes and their recycling. For example, the Fair Harbor brand creates beachwear made from recycled plastic collected in the ocean."
+  },
+
+  {
+    "name": "Healthy clothing expert",
+    "industry":"Fashion",
+    "skills":[
+      "Customer focus",
+      "Social",
+      "Ecological thinking"
+    ],
+    "description":"He or she controls the production of clothing in terms of its safety and health benefits (thermal insulation, ventilation, etc.), and also develops clothes with medicinal properties—for example, fabrics with disinfecting impregnation. Sensors woven into smart tissue will take heart rate, respiration, sugar levels, etc., and then transfer them (for example, via wireless communication channels) to the user’s mobile phone or directly to the physician."
+  },
+
+  {
+    "name":"Smart fabric designer",
+    "industry":"Fashion",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Customer focus"
+    ],
+    "description":"A specialist who designs new synthetic fabrics and materials with desired properties (for example, LED fabrics or fabrics with shape memory). To create such fabrics,they use optical fiber, metals, conductive polymers, and other materials. Recently, designers have been actively using nanostructures for the modification and decoration of natural and synthetic fibrous materials. They give the product hydrophobic and antibacterial properties, protect the wearer from the negative effects of ultraviolet radiation, etc. Clothing becomes more wear-resistant and adapts better to temperature fluctuations, so seasonal differences in the wardrobe are erased."
+  },
+
+  {
+    "name":"Tech stylist",
+    "industry":"Fashion",
+    "skills":[
+      "Cross-industry communication ",
+      "IT",
+      "Customer focus",
+      "Art and Creativity",
+      "Ecological thinking"
+    ],
+    "description":"A specialist at the intersection of design and IT, who complements clothes with wearable gadgets both for purely decorative purposes and for solving certain problems. For example, there are paired “T-shirts for hugs” equipped with special sensors. If you hug yourself, they transmit information to your smartphone, and a  person with a  T-shirt “twin” will be able to feel the virtual touch."
+  },
+
+  {
+    "name":"New organic materials designer",
+    "industry":"Fashion",
+    "skills":[
+      "Cross-industry communication ",
+      "IT",
+      "Customer focus",
+      "Social",
+      "Art and Creativity",
+      "Ecological thinking"
+    ],
+    "description":"A  professional who creates new organic fabrics. Due to the trend for environmental friendliness, interest in textiles made from natural materials is growing. Now, in addition to the already known cotton, linen, viscose, wool, and other fabrics, new organic materials are being developed from other plants: nettles, bamboo, algae, hemp, eucalyptus, etc. For example, in 2017, the sports brand Reebok introduced NPC UK Cotton + sneakers Corn, which is 75% organic biodegradable components: the top is made of cotton, the sole is made of propanediol, a biomaterial developed on the basis of fodder corn, and the insoles are castor oil."
+  },
+
+  {
+    "name":"Fashion visual effects specialist",
+    "industry":"Fashion",
+    "skills":[
+      "Customer focus",
+      "Social",
+      "Art and Creativity",
+      "Ecological thinking"
+    ],
+    "description":"High technology creates new opportunities for visual effects. Firstly, there is a demand for the creation of fabrics that change color as a result of external influences, and secondly, augmented reality comes into fashion. This means that artists who can come up with and model these visual effects will be in demand."
+  },
+
+  {
+    "name":"Smart clothing repairman",
+    "industry":"Fashion",
+    "skills":[
+      "IT",
+      "Customer focus",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist who is engaged in cleaning and repairing clothes from new materials and with built-in gadgets. Smart fabrics in operation are more capricious than ordinary ones: due to high-tech impregnations and electronic fillings, it will be more difficult to clean, iron, and repair them. Accordingly, new services will appear at the junction of laundries and ateliers, where it will be possible to hand over smart clothes for cleaning and repair."
+  },
+
+  {
+    "name":"Brand blockchain authentication expert",
+    "industry":"Fashion",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT"
+    ],
+    "description":"A specialist who marks the authenticity of fashionable clothes or accessories using blockchain technology. The tremendous possibilities of 3D printing at the same time carry a new risk of mass fakes in the fashion industry. A possible solution is to verify the processes of creating original clothes using the blockchain. Accordingly, specialists will be required to develop such protocols. For example, the fashion ready-to-wear brand Babyghost, together with the blockchain project VeChain, created a  solution for protection against fakes, based on the use of NFC."
+  },
+
+  {
+    "name":"Fashion expert on environmental safety",
+    "industry":"Fashion",
+    "skills":[
+      "Systems thinking",
+      "Customer focus",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who creates a new ideology of consumption of fashionable products. He or she is responsible for the transition of the business from the “fast fashion” model (cheap low-quality goods, frequent updating of collections) to “slow fashion” (high-quality and expensive clothes, often made by hand, not tied to certain trends and collections). Such a specialist is engaged in the introduction of new technologies in production that minimize the negative impact on the environment and determines the choice of materials, etc."
+  },
+
+  {
+    "name":"Light industry IT-interface developer",
+    "industry":"Fashion",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "IT"
+    ],
+    "description":"A  specialist who develops programs for 3D-design of clothes, creating patterns, and virtual dressing rooms."
+  },
+
+  {
+    "name":"Developer of electronic recipes of clothes",
+    "industry":"Fashion",
+    "skills":[
+      "Cross-industry communication ",
+      "Lean production",
+      "IT",
+      "Art and Creativity"
+    ],
+    "description":"An IT specialist who translates design sketches of clothes into instructions for a robot or 3D printer. In the future, the user can use them and print or sew clothes according to them in an automated studio."
+  },
+
+  {
+    "name":"Eco-analyst in construction",
+    "industry":"Construction",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Customer focus",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who analyzes the facilities being built in terms of their impact on the environmental situation in the city and helps construction companies choose the solutions that are less harmful to the environment and reduce construction waste. He or she is also looking for optimal solutions for the recycling of waste arising during the construction process. Unlike the life cycle manager, he works only at the design and construction stage."
+  },
+
+  {
+    "name":"3D printing engineer in construction",
+    "industry":"Construction",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Customer focus",
+      "Ecological thinking"
+    ],
+    "description":"A specialist in the design and construction of buildings using 3D printing. He or she designs layouts of structures, selects components for their printing, plans, and controls the installation of fittings and communications with the help of robotic manipulators and accompanies the process of printing houses. Now, the closest profession is an additive manufacturing engineer. It is already in demand in the West."
+  },
+
+  {
+    "name":"Redevelopment specialist for industrial areas",
+    "industry":"Construction",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Social",
+      "Art and Creativity",
+      "Ecological thinking"
+    ],
+    "description":"A professional who is engaged in the reconstruction of “dead” industrial zones with a view to their more efficient use, including for the development of culture and tourism."
+  },
+
+  {
+    "name":"Building technology modernization specialist",
+    "industry":"Construction",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "Ecological thinking"
+    ],
+    "description":"A  professional who knows well modern technologies in the field of construction (for example, the use of structures made of new materials to modernize existing buildings and structures, the use of modern solutions for power supply, water supply, sanitation and air conditioning in offices, residential buildings, etc.), promoting them within the industry and introducing into specific projects."
+  },
+
+  {
+    "name":"Specialist in the development of new materials for construction",
+    "industry":"Construction",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Ecological thinking"
+    ],
+    "description":"A specialist in materials science, well versed in the needs of the construction industry. He or she models the properties of new materials that are suitable for construction and environmentally friendly, and predicts their life cycle. He or she uses digital models during development."
+  },
+
+  {
+    "name":"Zero energy buildings architect",
+    "industry":"Construction",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "Customer focus",
+      "Art and Creativity",
+      "Ecological thinking"
+    ],
+    "description":"A specialist in the design of energy-autonomous houses that fully provide themselves with the necessary energy through micro-energy generation (alternative energy sources, trigeneration—the simultaneous generation of electricity, heat, and healthy cold) and the use of energy-saving materials and structures."
+  },
+
+  {
+    "name":"Accessible environment designer",
+    "industry":"Construction",
+    "skills":[
+      "Lean production",
+      "Customer focus",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A  specialist who develops infrastructure solutions for children, retirees, and people with disabilities around the property (for example, playgrounds, elevators for people with disabilities, signs for the visually impaired, ramps, places to relax, etc.)."
+  },
+
+  {
+    "name":"Foreman watcher",
+    "industry":"Construction",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Social"
+    ],
+    "description":"A specialist in construction who uses digital construction projects. He uses pattern recognition systems to evaluate the progress of construction and adjusts the construction process based on the result of data analysis."
+  },
+
+  {
+    "name":"Specialist in rebuilding and reinforcing old buildings",
+    "industry":"Construction",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Working in uncertainty",
+      "Ecological thinking"
+    ],
+    "description":"He estimates the degree of dilapidation of buildings or structures, selects new technological solutions (including the use of new materials) for their reconstruction and reinforcement. The profession becomes especially in demand during the restructuring and reconstruction of historical centers of cities."
+  },
+
+  {
+    "name":"Smart home Infrastructure designer",
+    "industry":"Construction",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Customer focus"
+    ],
+    "description":"A specialist in the design, installation, and configuration of an intelligent household management system (for example, household appliances, security systems, energy supply, water supply, etc.) Smart homes are step by step appearing now, and the demand for such specialists will grow in the coming years."
+  },
+
+  {
+    "name":"Urban lifecycle manager",
+    "industry":"Construction",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Customer focus",
+      "Art and Creativity",
+      "Ecological thinking"
+    ],
+    "description":"A professional who designs/evaluates and then monitors the state of the urban environment using IT tools. In particular, he analyzes and implements solutions that help minimize household waste, consume less resources (energy, water, etc.), improve the environment, and increase the availability of public goods. To make such decisions, he takes into account the complex social dynamics of the load on the infrastructure of the city (pendulum migration, holidays, etc.)."
+  },
+
+  {
+    "name":"BIM manager",
+    "industry":"Construction",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"A specialist working on the full life cycle of a facility under construction. He or she sets up and controls the design and construction team process using BIM (Building Information Model) technology. BIM-modeling is the creation of an information model of a building in which diverse information is collected and comprehensively processed: architectural, engineering, economic, etc., taking into account all the relationships. This allows specialists to consider different aspects of the project as a single system and use this information at all stages of its life cycle, from making design decisions and predicting performance to reconstruction or demolition. The jobs of BIM managers in Russia have already emerged, but as technology spreads, the demand for them will grow."
+  },
+
+  {
+    "name":"Personal retirement plan developer",
+    "industry":"Financial sector",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Customer focus"
+    ],
+    "description":"A specialist who develops models of personal investments in pension funds and other financial instruments, depending on the level of income, type of professional activity, lifestyle, and lifestyle expectations of old age."
+  },
+
+  {
+    "name":"Crowdfunding and crowd equity platform manager",
+    "industry":"Financial sector",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A specialist who organizes the work of crowdfunding platforms, evaluates projects that apply for public funding, and regulates conflicts between project holders and those who support them. The first vacancies in this field already appear in Russia, both at the largest crowdfunding venues (Planeta.ru, Smipon.ru, and Boomstarter.ru), and in charity funds. By the way, the third edition of the Atlas of Emerging Jobs, which you hold in your hands, was funded with crowdfunding on the Planeta.ru platform."
+  },
+
+  {
+    "name":"Developer of automated services for managing personal finances",
+    "industry":"Financial sector",
+    "skills":[
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Social"
+    ],
+    "description":"A  specialist who develops and improves software that allows users to effectively manage their wealth. To do this, people consultants are becoming less and less needed. With many financial management solutions, AI is more capable to build integrated mathematical and statistical models."
+  },
+
+  {
+    "name":"Machine-to-Machine algorithm (M2M) transaction architect",
+    "industry":"Financial sector",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A specialist who thinks out optimal algorithms for financial transactions on the Internet of things, excluding people from the process (but taking into account user preferences)."
+  },
+
+  {
+    "name":"Financial sector cybersecurity analyst",
+    "industry":"Financial sector",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Social"
+    ],
+    "description":"A cybersecurity specialist with a focus on finance. Such an employee, among other things, perfectly understands the risks associated with the automation of personal finance management, inter-machine transactions, and cloud solutions, and is able to find vulnerabilities in smart contracts."
+  },
+
+  {
+    "name":"Distributed ledger architect",
+    "industry":"Financial sector",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Customer focus",
+      "Art and Creativity"
+    ],
+    "description":"A  professional who creates complex projects using distributed ledger technologies in various sectors of the economy. Today, distributed ledger technologies are used not only in the financial sector but also in other industries. In Russia, a course in this field of knowledge can be taken, for example, in Skoltech."
+  },
+
+  {
+    "name":"Distributed ledger developer",
+    "industry":"Financial sector",
+    "skills":[
+      "Project management",
+      "IT",
+      "Art and Creativity"
+    ],
+    "description":"An IT professional who maintains a distributed ledger and resolves bugs and vulnerabilities."
+  },
+
+  {
+    "name":" Intellectual property evaluator",
+    "industry":"Financial sector",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A specialist who determines the value of intangible assets, such as ideas, business models, inventions, material and social technologies, etc. This profession already exists in Russia, and the demand is growing every year."
+  },
+
+  {
+    "name":"Green finance auditor",
+    "industry":"Financial sector",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Social",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who conducts a comprehensive assessment of the compliance of investments with criteria and evaluates credit risks in terms of environmental impact."
+  },
+
+  {
+    "name":"Multicurrency converter",
+    "industry":"Financial sector",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A specialist in organizing exchange systems for traditional and alternative currencies. There are already online services where you can exchange bitcoins to WebMoney or transfer to a regular bank account in your own currency (for example, alfacashier.com)."
+  },
+
+  {
+    "name":"Private equity fund manager for talented people",
+    "industry":"Financial sector",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A specialist involved in the formation of a “portfolio” of talented specialists in need of financial support. He or she accompanies their educational and career paths in order to maximize their income and, accordingly, the fund’s income (based on business models of movie star agents and young athletes)."
+  },
+
+  {
+    "name":"Individual financial trajectory designer",
+    "industry":"Financial sector",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A specialist calculating the model of personal investment, based on the planned income-expenses. He gives recommendations on family and personal budget planning, career development, etc. The profession of a personal finance consultant already exists in the Russian market. Still, taking into account the fact that more and more perform several assignments at a time, including those related to foreign projects, sources of income will become more diverse, and the planning of the budget will often require the help of a specialist."
+  },
+
+  {
+    "name":"Developer of biocompatible and biodegradable materials",
+    "industry":"Biotechnologies",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"A specialist working at the intersection of materials science and biochemistry. He or she creates biodegradable polymer materials that can decompose into environmentally friendly substances and biocompatible materials that can be used in medicine for the development of cyber prostheses and the cultivation of artificial organs."
+  },
+
+  {
+    "name":"System biotechnologist",
+    "industry":"Biotechnologies",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"A specialist in replacing obsolete solutions in various industries with new products of the biotechnology industry. For example, he or she will help industries switch from petrochemical raw materials to raw materials from renewable sources. Transport companies will switch to biofuels instead of diesel, and construction companies will switch to new biomaterials instead of cement and concrete."
+  },
+
+  {
+    "name":"MFC developer",
+    "industry":"Biotechnologies",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "Ecological thinking"
+    ],
+    "description":"A professional who develops microbial fuel cells. In Russia, MFC technologies are involved, for example, in Novosibirsk, at the Federal Research Center (FRC) “Institute of Catalysis SB RAS”."
+  },
+
+  {
+    "name":"Biochemical engineer",
+    "industry":"Biotechnologies",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Lean production",
+      "IT",
+      "Working in uncertainty",
+      "Ecological thinking"
+    ],
+    "description":"A specialist engaged in the creation of new equipment, robotic systems, and software for biotechnological and medical laboratories. It combines expertise in both the natural sciences and systems engineering. In addition, he will need experience with medical data to use databases of medical experiment results."
+  },
+
+  {
+    "name":"Safety engineer in a biotechnological production",
+    "industry":"Biotechnologies",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Social",
+      "Working in uncertainty",
+      "Ecological thinking"
+    ],
+    "description":"A specialist responsible for the safety of the biotechnological production process and the quality of the product (primarily in the food industry and medicine). In addition, he or she oversees waste minimization. There is an increasing number of closed-loop non-waste industries, where organic waste is disposed of, processed, or used to generate electricity (microbial fuel cells)."
+  },
+
+  {
+    "name":"Synthetic biologist",
+    "industry":"Biotechnologies",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Multilingualism/ Multiculturalism",
+      "Art and Creativity",
+      "Ecological thinking"
+    ],
+    "description":"A professional who designs and creates biological systems with desired properties for use in medicine, veterinary medicine, agriculture, and the food industry. In particular, it creates synthetic enzymes and peptides that are used in cosmetics, pharmaceuticals, dietary supplements, etc."
+  },
+
+  {
+    "name":"Living systems architect",
+    "industry":"Biotechnologies",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"A specialist in the planning, designing, and development of closed-loop technologies involving genetically modified organisms and microorganisms. Such a professional will be indispensable in autonomous cities. He or she will calculate the necessary capacity of bioreactors, develop projects for urban farms, and carefully consider the waste management system."
+  },
+
+  {
+    "name":"Biopharmacologist",
+    "industry":"Biotechnologies",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A specialist in the design of new biologics with desired properties or in the replacement of artificially synthesized drugs with biologics. Already today, a number of important drugs — for example, penicillin and insulin — are produced using genetically modified bacteria."
+  },
+
+  {
+    "name":"Business continuity manager",
+    "industry":"Safety",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist who ensures the uninterrupted business processes in case of problems or disabling the enterprise's IT systems due to cyber-attacks, software errors, technological disasters affecting the operation of the network, and other force majeure situations."
+  },
+
+  {
+    "name":"Ergonomic designer of wearable security devices",
+    "industry":"Safety",
+    "skills":[
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who develops gadgets to provide enhanced user safety in an emergency. This profession requires a harmonious combination of common sense and imagination because you can solve the problems of self-defense in different ways. For example, Armstar developed the BodyGuard protective sleeve, equipped with a camera, alarm device, and stun gun."
+  },
+
+  {
+    "name":"Personal security designer",
+    "industry":"Safety",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Customer focus",
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist who evaluates and projects a person’s life from the point of view of all possible risks (from a genetic predisposition to certain diseases to the likelihood of accidents and the fact that a person will become a victim of a  crime) and their prevention. He or she can be either a  permanent consultant or provide one-time services. For example, if the client has a business trip to a dangerous region."
+  },
+
+  {
+    "name":"Remote security coordinator",
+    "industry":"Safety",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Working in uncertainty"
+    ],
+    "description":"An operator of new automated and robotic security systems, monitoring their status through sensors and surveillance cameras and, if necessary, sending a quick response group to the object. This is a development of the security profession and will be replaced in the future by fully automated security systems."
+  },
+
+  {
+    "name":"Integrated security auditor in industry",
+    "industry":"Safety",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist who assesses the security status at an existing facility, and he considers all types of threats: mechanical damage, fires, environmental threats, cyber-attacks, etc."
+  },
+
+  {
+    "name":"Personal profile security advisor",
+    "industry":"Safety",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Customer focus",
+      "Social"
+    ],
+    "description":"An information security specialist for network users. By order of the client, he forms for him the current information image of the client on the network from all information available about him. He conducts an audit of the client’s work on the network to identify vulnerabilities, ensure confidentiality, and overall security. At the client’s request, he eliminates vulnerabilities, edits user information on the network until it is deleted, and forms the client’s image. Advertising is already able to accurately influence a person with the help of the data collected, behavior assessment on the Internet, photos, and posts on social networks. In the future, the pressure will only increase."
+  },
+
+  {
+    "name":"Child psychological safety specialist",
+    "industry":"Safety",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A professional testing various children’s goods and services (toys, games, cartoons, clothes, furniture, etc.) for threats to the psyche and potential harm to the development of the child. Based on the results of tests, he makes recommendations for finalizing the product and how to use it."
+  },
+
+  {
+    "name":"Digital office architect",
+    "industry":"IT sector",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Customer focus",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A professional who designs digital offices (from cloud-based management programs, such as BaseCamp, to virtual spaces) for the specific tasks of work teams. He or she manages the user's request, finds the best solution, thinks through the design, creates software."
+  },
+
+  {
+    "name":"Dataset collector",
+    "industry":"IT sector",
+    "skills":[
+      "Systems thinking",
+      "IT"
+    ],
+    "description":"A specialist who prepares data for artificial intelligence training (for example, pictures by which the program learns to recognize faces). Machine learning requires a lot of good quality data, which is nowadays often prepared by people. The problem is that even for relatively simple tasks, a machine needs to learn from tens of thousands of examples. And if some mistakes were made when collecting the examples, then the AI trained on them will solve the problem with distortions."
+  },
+
+  {
+    "name":"Data quality verification specialist",
+    "industry":"IT sector",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A professional who checks the quality of the data on the based on which Big Data models and machine learning will be built. Nowadays, errors are accumulating because the source data has poor quality, and this confuses artificial intelligence. To improve the quality of sampling, there should be an automated data validation. The program should at least indicate to the person suspicious data in the dataset, and possibly clean it up by itself. Most likely, in the next 15 years, algorithms will learn to sort raw data into categories like “definitely bad,” “questionable,” “good,” and will give hints. For example: “30% chance that a kitty is shown in the picture — is this true?” But the final decisions will remain for the people."
+  },
+
+  {
+    "name":"Big data model developer",
+    "industry":"IT sector",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Customer focus"
+    ],
+    "description":"A specialist who develops models for analyzing big data. This profession already exists, but the demand for it greatly exceeds supply."
+  },
+
+  {
+    "name":"Privacy balancer",
+    "industry":"IT sector",
+    "skills":[
+      "IT",
+      "Customer focus",
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist who will seek a balance between maintaining the confidentiality and practical benefit for the user from the use of his data. The less user data is available to third parties, the more difficult it is for developers to make a convenient solution that considers the individual characteristics of the client. But the more opportunities for personalization, the less privacy."
+  },
+
+  {
+    "name":"Hardware developer for AR / VR solutions",
+    "industry":"IT sector",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who creates the hardware for virtual, mixed, and augmented reality devices and makes it comfortable to use: easy, with a clear picture, not confusing the vestibular system, etc."
+  },
+
+  {
+    "name":"Quantum computer programmer",
+    "industry":"IT sector",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist who creates quantum programming languages, algorithms, and final software. It is not yet clear how exactly quantum computers will work, so this is a profession for the very distant future. Nowadays, experts deal only with particular algorithms and simple tasks."
+  },
+
+   {
+    "name":"Neural network controller",
+    "industry":"IT sector",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A specialist who marks the attributes by which a neural network makes a conclusion and tries to reproduce its logic. Neural networks are better trained in face recognition and other complex AI operations, but they still often make mistakes or use patterns that are incomprehensible for humans to solve problems."
+   },
+
+   {
+    "name":"Interface designer",
+    "industry":"IT sector",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Social"
+    ],
+    "description":"A specialist who develops and creates user-friendly, adaptable-for-human safe interfaces of equipment, technology, software, at various levels. It is important for him to be able to create interfaces with good usability, that is, as comfortable as possible for the user. The profession already exists and is in demand, but the developing human-to-computer interaction will lead to the need for more of such specialists, and their skills will be modified to solve new problems."
+    
+   },
+
+   {
+    "name":"Information ecologist",
+    "industry":"IT sector",
+    "skills":[
+      "IT",
+      "Social",
+      "Working in uncertainty",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist who develops standards for digital environmental safety analyzes the production, develops guidelines and rules, and monitors their compliance."
+  },
+
+   {
+    "name":"User experience designer (UX)",
+    "industry":"IT sector",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Customer focus",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"The objective of this designer is to make the user experience as comfortable as possible. To do this, he teaches programs to respond to the sequence of actions that the user usually performs, both within the same application and different ones. This leads to the fact that the same functions may look different, depending on how the user uses the system. For example, in the latest Android version, the system learns from user behavior and predicts which application he will open next. Therefore, the phone displays in the menu those applications that the user most likely will use. Many other applications will be built on this principle — they will guess the user’s desires and prepare for him corresponding icons and buttons."
+   },
+
+   {
+    "name":"Neural interface programmer",
+    "industry":"IT sector",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Art and Creativity"
+    ],
+    "description":"The developer of software for neuro feedback devices. For example, to create data analysis programs for scientists or training applications for ordinary consumers."
+   },
+
+   {
+    "name":"Cyber technician for smart environments",
+    "industry":"IT sector",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist who is engaged in ensuring security in the lower levels of the information infrastructure, combining smart environments (meaning for small local networks). It is assumed that both households and businesses will be separated from the World Wide Web into a separate segment connected to the common network through secure low-level connections."
+   },
+
+   {
+    "name":"Information security curator",
+    "industry":"IT sector",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Working in uncertainty"
+    ],
+    "description":"This specialist works in automated manufacturing. He provides security, protection, and stable operation of production control systems and information processing operations. Unlike a security specialist for the smart environment, who is responsible for the operation of smart environments for the end-user, this professional is responsible for the operational safety of the industrial Internet of things — smart industries. This profession already exists, but in the future, demand for it will grow."
+   },
+
+   {
+    "name":"Immersive design specialist",
+    "industry":"IT sector",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Customer focus",
+      "Social",
+      "Art and Creativity",
+      "Ecological thinking"
+    ],
+    "description":"A designer who develops interfaces that combine different technologies, from voice recognition and gesture control to virtual and augmented reality. Immersive design, meaning, blurring the line between the digital and physical worlds, is in demand primarily in the fields of education, culture, urban development, tourism, and entertainment. The British Higher School of Design is already offering a program in this area."
+   },
+
+   {
+    "name":"Cyber investigator",
+    "industry":"IT sector",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist conducting investigations, searching, and processing information on the network. In particular, he or she can actively seek information through officially authorized cyberattacks on suspects. In fact, cyber investigators are already actively working, but the need for specialists of this kind will only increase."
+   },
+
+   {
+    "name":"Digital linguist",
+    "industry":"IT sector",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A  professional who develops linguistic systems of semantic translation (translation taking into account the context and meaning), text processing systems (including semantic search on the Internet), and new communication interfaces between a human and a computer in natural languages."
+   },
+
+   {
+    "name":"Technology evangelist",
+    "industry":"IT sector",
+    "skills":[
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A specialist who interacts with end-users of IT products and promotes new solutions in groups that are conservatively inclined towards advanced technologies. He or she teaches people to use new programs and services to narrow the digital gap among the population. Activities aimed at educating people about digital literacy are taking place now, but usually on a voluntary basis. In the near future, it will become a real profession."
+   },
+
+   {
+    "name":"IT auditor",
+    "industry":"IT sector",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Customer focus",
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description":"A professional with a specialization in software development. He checks the operation of complex IT systems, errors, or hacking, potentially carrying high risks. In particular, it assesses the software security of these systems and even tracks the process of software development and the qualifications of developers."
+   },
+
+   {
+    "name":"Online lawyer",
+    "industry":"IT sector",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A  specialist providing regulatory interaction online (including in virtual worlds). He or she develops systems of the legal protection of people and property on the Internet."
+   },
+
+   {
+    "name":"Information systems architect",
+    "industry":"IT sector",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Customer focus"
+    ],
+    "description":"A qualified specialist who works with data processing systems. In particular, he or she designs databases, develops algorithms for their action, provides convenient use of data warehouses, and controls the quality and logic of information storage and retrieval. Such professionals are required nowadays, but in the future, when information technologies will penetrate all spheres of human activity, they will be needed even more."
+  },
+
+  {
+    "name":"Transport network security engineer",
+    "industry":"Land Transport",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Working in uncertainty",
+      "Ecological thinking"
+    ],
+    "description":""
+  },
+
+  {
+    "name":"Transport system modernization specialist",
+    "industry":"Land Transport",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Lean production",
+      "Working in uncertainty",
+      "Ecological thinking"
+    ],
+    "description":""
+  },
+
+  {
+    "name":"Telematics developer",
+    "industry":"Land Transport",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":""
+  },
+
+  {
+    "name":"Intelligent management architect",
+    "industry":"Land Transport",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT"
+    ],
+    "description":""
+  },
+
+  {
+    "name":"Intermodal transport hub designer",
+    "industry":"Land Transport",
+    "skills":[
+      "Lean production",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Working in uncertainty"
+    ],
+    "description":""
+  },
+
+  {
+    "name":"Smart road builder",
+    "industry":"Land Transport",
+    "skills":[
+      "Project management",
+      "Lean production",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":""
+  },
+
+  {
+    "name":"Designer of transport composite constructions",
+    "industry":"Land Transport",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":""
+  },
+
+  {
+    "name":"High-speed railways designer",
+    "industry":"Land Transport",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":""
+  },
+
+  {
+    "name":"Intermodal transport solution designer",
+    "industry":"Land Transport",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":""
+  },
+
+  {
+    "name":"Cross logistics operator",
+    "industry":"Land Transport",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Lean production",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description":"A professional who selects the best way to deliver people and goods, using different types of transport. He or she controls the movement of traffic flows, checks the capacity of transport hubs, and, if necessary, redistributes the flows of passengers and goods between different stops/flights."
+  },
+
+  {
+    "name":"Operator-analyst of transport solutions",
+    "industry":"Land Transport",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist who forms and builds a general transport map, using information received from AI. Such a professional should, at the same time, understand the functioning of various transport systems, be able to work with big data, and have developed communication skills, so, in case of a crisis situation, he could resolve it."
+  },
+
+  {
+    "name":"Operator of automated transport systems",
+    "industry":"Land Transport",
+    "skills":[
+      "Systems thinking",
+      "Lean production",
+      "IT",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist who controls and secures self-driving vehicles. He gets involved in case of any issues. If necessary, he corrects the data and redirects the vehicle."
+  },
+
+  {
+    "name":"Ecologist logistician",
+    "industry":"Ecology",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who is responsible for reducing the environmental effect caused by the transportation of goods (CO2emissions). He or she develops logistics solutions, optimizes routes, and supply chains to reduce emissions. The population is growing, trade relations between the regions of the world are strengthening, so the need for the development of transport services and the need to monitor the environment will only increase. Therefore, the demand for this profession will be more and more compelling."
+  },
+
+  {
+    "name":"Specialist in overcoming systemic environmental disaster",
+    "industry":"Ecology",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Social",
+      "Working in uncertainty",
+      "Ecological thinking"
+    ],
+    "description":"An engineer working with disasters that are stretched over time and gradually realized by people: for example, pollution around large industrial centers, the Pacific plastic dump, melting permafrost, radiation dumps, etc. The specialist’s tasks include the development and implementation of programs in order to cope with the consequences and prevent the recurrence of such disasters. "
+  },
+
+  {
+    "name":"Specialist in carbon markets",
+    "industry":"Ecology",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Social",
+      "Working in uncertainty",
+      "Ecological thinking"
+    ],
+    "description":"This specialist will monitor the situation on international and national markets and changes in legislation, assess the risks for business in current and potential countries of presence."
+  },
+
+  {
+    "name":"Climate risk insurance specialist",
+    "industry":"Ecology",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Customer focus",
+      "Social",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who develops insurance products for a business exposed to risks due to abnormal weather conditions associated with global warming. Insurance and construction companies are interested in foreseeing extreme climate and weather events so that climate risk insurance will become an integral condition for sustainable business development."
+  },
+
+  {
+    "name":"Ecosystem services auditor",
+    "industry":"Ecology",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Lean production",
+      "Customer focus",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who analyzes natural resources in terms of what services they provide to a human and estimates its value. Such a specialist assesses ecosystem services and their value, determines who benefits from them, develops compensation methods, and monitors their implementation. For example, forests in a region provide services to the population, including those that absorb carbon and produce oxygen. The population can give back to the forest for this service, protecting it from deforestation and planting new trees."
+  },
+
+  {
+    "name":"Eco producer",
+    "industry":"Ecology",
+    "skills":[
+      "Cross-industry communication ",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Art and Creativity",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who makes up and implements educational and enlightenment projects in the field of environmental protection, coordinates the production of content (teaching aids, textual, photo and video materials, reference books, etc.) and technological solutions, as well as organizes environmental restoration events, such as community clean-ups and tree planting."
+  },
+
+  {
+    "name":"Software developer for environmental protection",
+    "industry":"Ecology",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who develops and maintains environmental information systems and databases, as well as sets up new programs necessary for solving environmental problems. Examples of these solutions include the KEDR system for monitoring illegal deforestation, the Irbis electronic database of snow leopard passports, and the gathering and analysis of data from camera traps."
+  },
+
+  {
+    "name":"Zero waste manager",
+    "industry":"Ecology",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Customer focus",
+      "Social",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who designs and implements industrial and household waste management systems that allow reducing waste to zero. Representatives of such a profession already exist in the world; for example, the San Francisco City Hall has a  “zero waste” department. Formally, the importance of preventing and reducing the generation of waste and its processing is written in Russian legislation, but so far, there are no real steps towards “zero waste.”"
+  },
+
+  {
+    "name":"Manufacturer environmental responsibility consultant",
+    "industry":"Ecology",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Customer focus",
+      "Social",
+      "Ecological thinking"
+    ],
+    "description":"A professional who is responsible for providing the public with environmental reporting from business, creating programs to increase responsibility, ensuring environmental control of supply chains and contractors. As environmental responsibility becomes a  part of government policy, the demand for highly professional specialists to ensure it will increase in companies. "
+  },
+
+  {
+    "name":"Bioremediator",
+    "industry":"Ecology",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "Working in uncertainty",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who restores ecosystems using biotechnology (in particular, using microorganisms, plants, and mushrooms)."
+  },
+
+  {
+    "name":"Ecosystem restoration architect",
+    "industry":"Ecology",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Ecological thinking"
+    ],
+    "description":"A specialist in the development of principles for the disposal of agricultural consequences; is also involved in soil restoration"
+  },
+
+  {
+    "name":"Park ecologist",
+    "industry":"Ecology",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Ecological thinking"
+    ],
+    "description":"A  professional, whose tasks include monitoring and analyzing the ecological state of public spaces (parks, squares, alleys, etc.), developing and implementing solutions for landscaping, populating the territory with animals, birds, insects and taking other measures to maintain the ecological balance on green territory inside the city. For example, the London organization The Royal Parks, a charity created to manage and fundraise for London’s eight city parks, have its team of ecologists, whose task is to take care of 418 rare species of plants, animals, and mushrooms. However, this specialty can be considered a new variation of the long-established profession of 'urban ecologist,' which appeared in the 1970s."
+  },
+
+  {
+    "name":"Ecologist urbanist",
+    "industry":"Ecology",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Lean production",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Ecological thinking"
+    ],
+    "description":"Designer of new cities, based on environmental biotechnology. He or she specializes in the fields of construction, energy, and pollution control. This profession is already in demand now as high-tech green cities have been designed and built-in Malaysia, China, the United Arab Emirates, India, South Korea, and European countries."
+  },
+
+  {
+    "name":"Rehabilitation veterinarian",
+    "industry":"Ecology",
+    "skills":[
+      "Cross-industry communication ",
+      "Customer focus",
+      "Social",
+      "Ecological thinking"
+    ],
+    "description":"A specialist in the rehabilitation of wild animals affected by oil spills. Oil companies will create special training programs for veterinarians to work in extreme situations. In this case, it is important to assess the situation correctly: in many cases, it is better to make an effort on timely keeping away animals from pollution zones. Nevertheless, already affected animals will also need to be rescued."
+  },
+
+  {
+    "name":"Agricultural ecologist",
+    "industry":"Ecology",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Ecological thinking"
+    ],
+    "description":"A specialist in the development of principles for the disposal of agricultural consequences; is also involved in soil restoration."
+  },
+
+  {
+    "name":"Food safety curator",
+    "industry":"Food industry",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Working in uncertainty",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist who ensures the future consumer safety of enriched and synthetic products in the production."
+
+  },
+
+  {
+    "name":"Enriched food designer",
+    "industry":"Food industry",
+    "skills":[
+      "Systems thinking",
+      "Lean production",
+      "Customer focus",
+      "Art and Creativity"
+    ],
+    "description":"This professional develops products enriched with beneficial substances that give an accumulative effect in terms of health and longevity. The designer of fortified foods should calculate the dosages of beneficial components, understand their impact on the body, derive the most easily digestible formulas, and make sure that the additives do not affect the taste of the product."
+  },
+
+  {
+    "name":"Synthetic animal product developer",
+    "industry":"Food industry",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who creates analogues of meat, egg whites and yolks, and dairy products from plant materials or grows meat “in vitro” from animal cells."
+  },
+
+  {
+    "name":"Food production algorithms developer",
+    "industry":"Food industry",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist who develops universal algorithms for growing plants and producing foods, so these algorithms can be applied to automated farms and plants everywhere in the world."
+  },
+
+  {
+    "name":"Food logistics specialist",
+    "industry":"Food industry",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"A  professional who optimizes food logistics in terms of timing, quality control, transparency of supply, and environmental impact."
+  },
+
+  {
+    "name":"Fast food robot developer",
+    "industry":"Food industry",
+    "skills":[
+      "Project management",
+      "Lean production",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A specialist who creates robots that can cook pizza, hamburgers, and other fast food quicker and more accurately than humans."
+  },
+
+  {
+    "name":"Advisor in harmful ingredient replacement",
+    "industry":"Food industry",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Customer focus",
+      "Social",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who comes up with how to optimize the composition of dishes and replace harmful ingredients with healthy ones without losing the taste of the dish."
+  },
+
+  {
+    "name":"Food recycling specialist",
+    "industry":"Food industry",
+    "skills":[
+      "Systems thinking",
+      "Lean production",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"A professional who comes up with how to recycle useful organic compounds that are recyclable from food residues."
+  },
+
+  {
+    "name":"Food rationalizer",
+    "industry":"Food industry",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Customer focus",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who helps the population to reduce organic waste from cooking and process it (for example, more rationally purchase and store food, make compost from residues, etc.), and also teaches redistributing excess food in favor of those who need it (for example, using food sharing)."
+  },
+
+  {
+    "name":"Neurogastronomist",
+    "industry":"Food industry",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Customer focus",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A  specialist who creates a  new gastronomic experience for customers, based on how our brain perceives tastes."
+  },
+
+  {
+    "name":"IT nutritionist",
+    "industry":"Food industry",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A  specialist who creates virtual assistants who help choose menus according to the needs of a specific user. Such an assistant analyzes genetic information, mood, favorite tastes, energy needs, body mass index, and other factors. He will help improve nutrition, reduce food costs, and resist temptations more easily."
+  },
+
+  {
+    "name":"Gamifier of healthy eating habits",
+    "industry":"Food industry",
+    "skills":[
+      "Customer focus",
+      "Social",
+      "Art and Creativity",
+      "Ecological thinking"
+    ],
+    "description":"A professional who is well versed in nutrition, psychology, and behavioral economics and helps clients switch to healthier eating habits (including both diet and reasonable food restrictions), including through gamification."
+  },
+
+  {
+    "name":"Ecological nutritionist",
+    "industry":"Food industry",
+    "skills":[
+      "Customer focus",
+      "Social",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist who develops a  balanced, tasty, and healthy diet, safe for humans and nature. Ecological nutritionists can come up with menus for particular clients or consult various companies and organizations to implement sustainable food production practices on a large scale."
+  },
+
+  {
+    "name":"Eco-guide",
+    "industry":"Social sphere",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who supports initiative community groups working to improve the environment, provides information exchange between them, helps to organize public control of production and monitoring of people's behavior on the ground (in cities or villages). Many people are ready to participate in environmental activism, but they often lack an organizer who would say where and what to do. Some eco-activists are already gathering groups of volunteers around themselves, but in the future, even more specialists in this profile will be needed."
+  },
+
+  {
+    "name":"Social conflict mediator",
+    "industry":"Social sphere",
+    "skills":[
+      "Systems thinking",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist who helps to non-violently resolve conflicts that arise between social groups on the property, cultural, national, religious, and other grounds."
+  },
+
+  {
+    "name":"Specialist in the organization of public-private partnerships in the social sphere",
+    "industry":"Social sphere",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":""
+  },
+
+  {
+    "name":"Platform moderator for personal charity programs",
+    "industry":"Social sphere",
+    "skills":[
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"He or she creates dossiers of personal requests for help (for example, children with cancer, or single pensioners) and provides a link between those in need and benefactors who provide assistance in various forms (money, in-kind contributions, spending time together, etc.). For example, the “Nuzhna Pomosh” (“Looking for Help”) fund launched the media platform “Takie dela” (“There You Go”), where you can read stories about people who need help and immediately transfer money."
+  },
+
+  {
+    "name":"Migrant adaptation specialist",
+    "industry":"Social sphere",
+    "skills":[
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A professional who teaches national language and culture, including through online platforms. Russian schools for migrants, including for children at regular schools, are already opening in Moscow and St. Petersburg. Since 2014, the School of Educational Training of Migrants has been working at RUDN University, where you can prepare and take tests in Russian as a foreign language, the history of Russia, and the fundamentals of Russian legislation"
+  },
+
+  {
+    "name":"Community crowdsourcing specialist",
+    "industry":"Social sphere",
+    "skills":[
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A professional who manages a crowdsourcing platform to collect information on problems of families, houses, districts, roads, parks, and other public spaces, sends requests to state organizations or NGOs and monitors their solution. An example of such platforms in Russia is the Democrat and Virtual Market sites. "
+
+  },
+
+  {
+    "name":"Social worker on adaptation of people with disabilities via the internet",
+    "industry":"Social sphere",
+    "skills":[
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Social"
+    ],
+    "description":"A  specialist who helps people with disabilities lead a  full life, namely, teaches skills in remote work, assisting to choose the field of professional activity, organize the work process and the rest (for example, the selection of online communities, communication platforms, educational courses, etc.)."
+  },
+
+  {
+    "name":"Platform moderator for communication with government agencies",
+    "industry":"Social sphere",
+    "skills":[
+      "Project management",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A  specialist who organizes online and offline dialogue between public activists and officials responsible for specific areas (for example, education, housing and communal services, construction, pensions, etc.), to develop joint solutions."
+  },
+
+  {
+    "name":"Corporate social responsibility consultant",
+    "industry":"Social sphere",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"Modern companies seek a balance between profit and ethical behavior, even more so as consumers increasingly vote with their money for the products of companies that respect the principles of equality, with humane working conditions and environmental certification. Therefore, there is a growing demand for consultants who help balance these aspects."
+  },
+
+  {
+    "name":"Assistant technology implementation specialist",
+    "industry":"Social sphere",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Customer focus",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"Modern assistive technologies (wheelchairs, hearing aids, etc.) allow people with disabilities to lead an active lifestyle. But the problem is that there are not enough qualified specialists who can correctly prescribe assistive devices, configure them, and train patients to use them. Incorrect use can lead to injuries (for example, if people with back injuries are put in wheelchairs without special pillows to relieve pressure)."
+  },
+
+  {
+    "name":"Crisis center manager",
+    "industry":"Social sphere",
+    "skills":[
+      "Cross-industry communication ",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description":"A  manager who coordinates the work of various specialists in a  crisis center. As humanistic values spread in society, more and more crisis centers appear to help vulnerable groups, especially women and children. Usually, social workers, psychologists, and lawyers work there together, combining psychological support with the help in solving the most pressing everyday problems."
+
+  },
+
+  {
+    "name":"Developer of sharing platforms",
+    "industry":"Social sphere",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A specialist who creates online platforms and mobile applications that help people share unnecessary things, food, and share services."
+  },
+
+  {
+    "name":"Moderator of sharing platforms",
+    "industry":"Social sphere",
+    "skills":[
+      "Cross-industry communication ",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A  specialist who supervises a  platform for exchanging things, food and services, tracking inappropriate behavior, recalling the rules of exchange, and improving the system in accordance with the wishes of users."
+  },
+
+  {
+    "name":"Volunteer group curator",
+    "industry":"Social sphere",
+    "skills":[
+      "Customer focus",
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist who recruits volunteers for any kind of social activity, forms groups out of them, and monitors well-coordinated work in the team, recalling tasks and talking about the most productive ways to accomplish them."
+  },
+
+  {
+    "name":"Personal ethical consumption advisor",
+    "industry":"Social sphere",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Lean production",
+      "Social",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who will help you figure out which products and services to buy ethically, and which are better to refuse. Ethical standards regarding how, where, and by whom goods and services are produced are gradually changing: now users can refuse to buy goods whose production is harmful to nature or violates labor laws. For example, in 2017, there was a scandal when it turned out that the cosmetics company Natura Siberica cosmetics company used an extract of non-ossified reindeer horns, the extraction of which is painful for animals."
+  },
+
+  {
+    "name":"Home robot designer",
+    "industry":"Robotics",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Customer focus"
+    ],
+    "description":"A  specialist who develops and programs home robots to help with the household (for example, a nurse robot, a robot cleaner, a laundress robot, a gardener robot, a dog-walking robot, etc.). Such robots are integrated with other elements of a smart home, have freedom of movement, and can perform complex household duties."
+  },
+
+  {
+    "name":"Medical robot designer",
+    "industry":"Robotics",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT"
+    ],
+    "description":"A  specialist in the design of biocompatible robotic systems and cyber devices for medicine and the biotechnology industry (for example, surgical robots, diagnostic robots, cyber prostheses, etc.)."
+  },
+
+  {
+    "name":"Robot control neural interface designer",
+    "industry":"Robotics",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Social"
+    ],
+    "description":"A specialist who designs control systems for operating industrial robots through neural interfaces that allow controlling the process, both for individual operators and distributed teams."
+  },
+
+  {
+    "name":"Children's robotics designer",
+    "industry":"Robotics",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who develops children's toys, games, gadgets, and various mechanized consumer goods based on programmable robots and takes into account the psychophysiological characteristics of childhood. For example, Japanese scientists have developed the Keepon social robot specifically for interacting with children with autism. He or she teaches children to communicate and recognize other people's emotions. And the Shelly, a turtle robot, created at Naver Labs, teaches children sensitivity and humanism. It is programmed to show stressful reactions to abuse."
+  },
+
+  {
+    "name":"Composites engineer",
+    "industry":"Robotics",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT"
+    ],
+    "description":"A specialist in the selection of composite materials for the production of parts, mechanisms, connecting elements of robotic devices with specified characteristics, including using 3D printing."
+
+  },
+
+  {
+    "name":"Ergonomic designer",
+    "industry":"Robotics",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Social"
+    ],
+    "description":"A specialist who designs robotic systems, taking into account the ergonomic requirements of users, based on their physical and mental characteristics."
+  },
+
+  {
+    "name":"Nanobot developer",
+    "industry":"Robotics",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A  professional who creates microscopic robots for medical and other purposes. Often, he or she joins forces with a smart swarm programmer."
+  },
+
+  {
+    "name":"Smart swarm programmer",
+    "industry":"Robotics",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Working in uncertainty",
+      "Art and Creativity"
+    ],
+    "description":"An IT specialist who develops algorithms for complex group interaction for robots, including drawing on examples from wildlife (in particular, the swarm intelligence of bees and ants)."
+  },
+
+  {
+    "name":"Roboethics consultant",
+    "industry":"Robotics",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Customer focus",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A professional who develops ethical codes for both robots themselves and human behavior, regarding robots: he or she can also advise companies, scientists, and ordinary users on the topic of roboethics."
+  },
+
+  {
+    "name":"Aeronautics infrastructure designer",
+    "industry":"Aviation",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who designs airfields, hangars, service stations, and navigation infrastructure elements for airships. Airships will be able to deliver goods to places that are difficult to access due to poor transport infrastructure."
+  },
+
+  {
+    "name":"Aircraft recycling technologist",
+    "industry":"Aviation",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist developing recycling schemes for materials, raw materials, equipment, and frame elements of aircraft. This profession already exists, and there is an international Aircraft Fleet Recycling Association, which includes large manufacturers (such as Boeing, Bombardier), engine manufacturers, such as Pratt."
+  },
+
+  {
+    "name":"Unmanned aircraft interface designer",
+    "industry":"Aviation",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A specialist in the development of interfaces and programs for controlling unmanned aerial vehicles, is responsible for programming and operating navigation and safety systems for unmanned aerial vehicles."
+  },
+
+  {
+    "name":"Airship designer",
+    "industry":"Aviation",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT"
+    ],
+    "description":"A specialist who develops models of airships, considering the purpose of their use (freight or passenger) and aeronautical conditions."
+  },
+
+  {
+    "name":"Performance analyst",
+    "industry":"Aviation",
+    "skills":[
+      "Systems thinking",
+      "IT"
+    ],
+    "description":"A specialist who processes data and prepares expert opinions that permit or prohibit flights. To do this, he analyzes the condition of the aircraft, the runway."
+  },
+
+  {
+    "name":"Small aviation production engineer",
+    "industry":"Aviation",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Customer focus",
+      "Ecological thinking"
+    ],
+    "description":"This specialist designs and models low-cost aircraft of varying complexity for small civil aviation. There are already such engineers, but with the development of small aircraft (which is important for expanding the transport infrastructure in our country), more will be needed."
+  },
+
+  {
+    "name":"Repairman-composer",
+    "industry":"Aviation",
+    "skills":[
+      "Lean production",
+      "IT",
+      "Working in uncertainty"
+    ],
+    "description":"A repairman who specializes in aircraft parts made from composite materials. Due to the complex composition of composites, the repair of such elements is laborious and has its own nuances."
+
+  },
+
+  {
+    "name":"Digital modeling specialist",
+    "industry":"Aviation",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Art and Creativity"
+    ],
+    "description":"A professional designing a digital model of the future aircraft, which, like BIM in construction, allows you to consider production in various aspects: materials, mechanics, electrification, engines, environmental friendliness, design, etc."
+
+  },
+
+  {
+    "name":"Load optimization engineer",
+    "industry":"Aviation",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A specialist optimizing aircraft weight. He selects lighter materials, develops a more compact electrified on-board equipment (in comparison with bulkier and more difficult to operate hydraulics) in order to reduce the weight of the aircraft and, accordingly, reduce fuel consumption."
+  },
+
+  {
+    "name":"Intelligent dispatch system developer",
+    "industry":"Aviation",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT"
+    ],
+    "description":"A professional who develops software solutions for controlling traffic in the airspace of cities and regions with heavy traffic (so that helicopters, private planes, and drones do not collide with each other)."
+  },
+
+  {
+    "name":"Drone adjuster",
+    "industry":"Aviation",
+    "skills":[
+      "Project management",
+      "IT",
+      "Working in uncertainty"
+    ],
+    "description":"Drones will appear almost everywhere. They will begin to be widely used as taxis, couriers, to assess traffic, even to deliver organs to hospitals. It will take specialists who can ensure the safety of the movement of drones in the city."
+  },
+
+  {
+    "name":"Arctic navigation expert",
+    "industry":"Water transport",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Multilingualism/ Multiculturalism",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist who understands the features of ice navigation in the Arctic. He or she can plot optimal routes for ships and, in unusual situations, make quick decisions about their change."
+  },
+
+  {
+    "name":"Marine infrastructure systems engineer",
+    "industry":"Water transport",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"A professional who develops and implements technologies that increase the stability of coastal structures and ships to various types of threats, both natural and man-made. Similar specialists are being trained today majoring in  Shipbuilding, Ocean Engineering and Systems Engineering of Marine Infrastructure Facilities. However, new technologies and an increase in environmental requirements will change the functionality of the profession."
+  },
+
+  {
+    "name":"Port ecologist",
+    "industry":"Water transport",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who monitors the environmental safety indicators of the port, ships, and the environment (water, air, surrounding areas, plant and animal populations in and around the area). He or she develops programs to restore the ecology of the port and the water area."
+  },
+
+  {
+    "name":"Designer of marine robots",
+    "industry":"Water transport",
+    "skills":[
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who develops underwater robots. At the same time, he or she takes into account the specifics of the environment, including currents, water resistance, weakness of the information signal, corrosion, etc."
+  },
+
+  {
+    "name":"Marine robot repairman",
+    "industry":"Water transport",
+    "skills":[
+      "Lean production",
+      "IT",
+      "Customer focus",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist who repairs marine robots. It is possible that repair crews will work at sea stations and ports, combining specialists with different skills: electrician, mechanic, radio acoustics specialist, etc."
+  },
+
+  {
+    "name":"Developer of automatic ship navigation systems",
+    "industry":"Water transport",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"A professional who creates software that helps ships navigate the best route based on weather conditions and the trajectories of other ships."
+  },
+
+  {
+    "name":"Energy-efficient ship designer",
+    "industry":"Water transport",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who creates more environmentally friendly versions of ships that use less fuel, have less leaks, built using energy-efficient materials, etc."
+  },
+
+  {
+    "name":"Unmanned water transport manager",
+    "industry":"Water transport",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Working in uncertainty"
+    ],
+    "description":"A  specialist who monitors the trajectories of unmanned vessels and in a critical situation can redirect them to avoid an accident."
+  },
+
+  {
+    "name":"Cyber tech engineer of underwater internet of things",
+    "industry":"Water transport",
+    "skills":[
+      "Cross-industry communication ",
+      "Lean production",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist who develops networks of underwater modems and access points and manages their implementation on the ground."
+  },
+
+  {
+    "name":"Underwater power designer",
+    "industry":"Water transport",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist designing underwater “windmills” that generate electricity through the power of waves, as well as power plants using conversion technology."
+  },
+
+  {
+    "name":"Biomimetic",
+    "industry":"New materials and nanotechnologies",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Social",
+      "Art and Creativity",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who develops artificial materials, inspired by the principles by which wildlife operates."
+  },
+
+  {
+    "name":"Security specialist in nanoindustry",
+    "industry":"New materials and nanotechnologies",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Working in uncertainty"
+    ],
+    "description":"A professional who is responsible for the safety of workers in the field, end-users of the product, and the environment. He or she develops programs to quickly respond to the negative consequences of the production or use of nanoproducts."
+  },
+
+  {
+    "name":"Smart materials designer",
+    "industry":"New materials and nanotechnologies",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Art and Creativity"
+    ],
+    "description":"He or she develops composite materials as part of smart environments that change properties for the tasks of home, office, industrial enterprise."
+  },
+
+  {
+    "name":"Glazier",
+    "industry":"New materials and nanotechnologies",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Lean production"
+    ],
+    "description":"A specialist in the development and manufacture of glass products based on glass composite functional materials."
+  },
+
+  {
+    "name":"Recycling technologist",
+    "industry":"New materials and nanotechnologies",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"A specialist in the development and implementation of technologies for a waste-free production and reuse of materials, as well as the creation of new materials from industrial waste. In this, he or she is assisted by special computer programs that record all useful components that are in the waste or can be obtained during processing in one way or another, after which they offer options for further use. In Russia, the technologies of lean and environmentally responsible productions are only just beginning to be mastered, while in the West, they are already actively used it."
+  },
+
+  {
+    "name":"Nanotechnology designer",
+    "industry":"New materials and nanotechnologies",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A professional who, using digital models, experiments with the properties of nanotechnological materials, and predicts their life cycle. Highly skilled programmer with good knowledge of nanophysics and nanochemistry."
+  },
+
+  {
+    "name":"Composite systems engineer",
+    "industry":"New materials and nanotechnologies",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"A specialist in replacing traditional materials with composite materials. His work is relevant in construction, engineering, robotics, medicine, etc. The engineer will design new materials with a variety of parameters of frost resistance, brittleness, wear resistance, hypoallergenicity, etc., depending on the requirements of consumer industries."
+
+  },
+
+  {
+    "name":"Translational nanotechnologist",
+    "industry":"New materials and nanotechnologies",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "Customer focus",
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description":"A  specialist who accelerates the application of research in the field of nanotechnology, adapting existing production systems to the use of new materials, as well as finding ways to quickly move from research and experiment to pilot development and production (including using computer models)."
+  },
+
+  {
+    "name":"Constructor of micro- and nanoelectronics",
+    "industry":"New materials and nanotechnologies",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Lean production",
+      "IT",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A  specialist creating high-performance computing equipment based on memristors*and new portable electronics (including those based on carbon nanomaterials)."
+  },
+
+  {
+    "name":"Sensor designer",
+    "industry":"New materials and nanotechnologies",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Art and Creativity"
+    ],
+    "description":"A specialist developing new materials for sensors for a specific request. For example, for an airport security system or for packaging that helps track the expiration date of products."
+  },
+
+  {
+    "name":"Diagnostic systems engineer",
+    "industry":"New materials and nanotechnologies",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Lean production",
+      "Multilingualism/ Multiculturalism",
+      "Working in uncertainty"
+    ],
+    "description":"A  professional who designs and integrates diagnostic systems into composite parts so that damage can be detected in a timely manner."
+  },
+
+  {
+    "name":"Smart wearables designer",
+    "industry":"Power Industry",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A  specialist who creates goods for personal use (including clothes and shoes) with the function of micro-energy generation. Outerwear already exists with built-in solar panels, such as Ecotech jacket, created by Italian Zegna Sport."
+  },
+
+  {
+    "name":"Meteopower specialist",
+    "industry":"Power Industry",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT"
+    ],
+    "description":"A specialist who adjusts the operation modes of power and heat plants by taking into account climatic conditions and seasonal fluctuations in demand. For example, in cold winter, more heating will be needed, and in the hot summer, more consumers will use air conditioning. If you adapt the operating modes to these factors, you can save energy and avoid crashes and overloads."
+  },
+
+  {
+    "name":"Local power systems specialist",
+    "industry":"Power Industry",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who develops, implements, and maintains systems of small power generation (wind, solar, bio-atomic microgenerators, etc.). The main driver for the development of small power generation today is an increase in environmental awareness and the need for reducing consumer spending. In the West, this profession has already appeared, and in the near future, the trend will reach Russia. Help from such specialists will be needed both by the owners of country houses and when designing vertical farms*."
+
+  },
+
+  {
+    "name":"Energy storage designer",
+    "industry":"Power Industry",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who designs various energy storage systems: high-capacity batteries, heat stores, flywheels, etc. These devices help smart grids conserve energy to deliver during peak loads."
+  },
+
+  {
+    "name":"Recuperation systems designer",
+    "industry":"Power Industry",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist who develops technological solutions for collecting surplus energy of moving vehicles, primarily urban transport. In the recovery of energy, there is nothing revolutionary: regenerative braking is still applied to trolleybuses, trains, and trams. But with the increasing trend for a careful attitude to resources, the demand for specialists who are able to create similar systems will grow."
+
+  },
+
+
+  {
+    "name":"Microgeneration systems developer",
+    "industry":"Power Industry",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A specialist in the development and design of new technological solutions related to micro energy generation according to user requirements. For example, he or she comes up with how to combine windmills, solar panels, and biogas plants on a particular farm."
+  },
+
+  {
+    "name":"Hydrogen energy designer",
+    "industry":"Power Industry",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"Specialist designing hydrogen power generation systems. Now, hydrogen fuel cells are used in vehicles (for example, in the model Toyota Mirai), in drones (like the Russian “Inspector-1”), and even in trains (e.g., German Coradia iLint). While this is a  too expensive technology to use widely, scientists come up with new ways to make it cheaper, so that hydrogen energy is considered a very promising area."
+  },
+
+  {
+    "name":"Energy generation systems modernizer",
+    "industry":"Power Industry",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"A  professional who manages the modernization of cogeneration plants and power plants. He introduces modern security methods, environmental friendliness, and resource efficiency. Despite the general trend towards a variety of electricity generation sources, its lion’s share will be centralized. Equipment is aging and wears out; therefore, new specialists will be in demand, especially those who will be able to implement best practices at power plants and thermal power plants. Large players on the power market today, such as Siemens, actively provide services for the modernization of generation systems, which means that in the near future, more and more specialists in this profession will be required."
+  },
+
+  {
+    "name":"Energy consumption systems developer",
+    "industry":"Power Industry",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Lean production",
+      "Customer focus",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist who tells you how to consume energy rationally, which accounting and saving tools to use, and what to do with the most “greediest” household appliances, such as air conditioning and a refrigerator."
+  },
+
+  {
+    "name":"Intelligent power systems engineer",
+    "industry":"Power Industry",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"A professional who designs and models smart networks, micro-generation systems, smart energy environments for a particular task, and also develops technological and infrastructural requirements for them. It solves the same problem as an energy systems developer, but from the side of energy supply. Today, in the world, there are organizations that provide similar services. For example, Siemens offers a SureGrid service that allows real-time control of energy consumption in a particular building, and the American independent operator, California ISO, develops different demand scenarios, distributes the load between suppliers of electricity, and integrates renewable energy sources into the network."
+  },
+
+  {
+    "name":"Energy auditor",
+    "industry":"Power Industry",
+    "skills":[
+      "Systems thinking",
+      "Lean production",
+      "Customer focus",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who engages in auditing and consulting in the field of energy consumption, checking private homes, residential complexes, individual buildings, factories to evaluate energy losses and find options for optimizing energy consumption. Energy audit exists today as a dedicated licensed activity, but in the future, such specialists will be in higher demand."
+  },
+
+  {
+    "name":"Distributor / Network controller for distributed energy",
+    "industry":"Power Industry",
+    "skills":[
+      "Systems thinking",
+      "Lean production",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who is able to analyze possible system failures, predicting optimal operating conditions, and ensuring the calculated safety of power grids and waste disposal. He or she knows non-destructive testing methods* and ways to enter the operation of smart networks."
+  },
+
+  {
+    "name":"Powermarketer",
+    "industry":"Power Industry",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A  specialist with good knowledge of the global energy markets, who solves the problems of energy sales. The need for professionals of this kind is associated with growing competition in the energy market and the emergence of a large number of private players. There is no demand for them in Russia yet, but questions of micro-generation and distributed networks will become truly relevant. And in the world, a marketer of energy markets is a well-established profession."
+  },
+
+  {
+    "name":"Electricity consumer advocate",
+    "industry":"Power Industry",
+    "skills":[
+      "Systems thinking",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description":"He or she checks energy networks for safety performance, general performance, and other user requirements; he is able to provide qualified advice in the field of energy conservation legislation. Europe and US consumer protection in the field of electricity is carefully worked out, and there are many experts in this field. Specialists in these areas mainly advise how to pay less for energy. In Russia, this service will also be in demand, not least in order to deal with privileges and subsidies, the complication of which even experts complain."
+  },
+
+  {
+    "name":"Electric vehicles charger",
+    "industry":"Power Industry",
+    "skills":[
+      "Lean production",
+      "Customer focus"
+    ],
+    "description":"A specialist who serves the infrastructure of recharging electric vehicles and other vehicles (e.g., cargo drones). Currently, the US has the most developed network, with more than 50,000 charging stations."
+  },
+
+  {
+    "name":"Agricultural economist",
+    "industry":"Agriculture",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Working in uncertainty",
+      "Ecological thinking"
+    ],
+    "description":"A highly qualified specialist who monitors the economic efficiency of the agricultural company, helps it to be competitive and adjusts the work of the enterprise for the needs of the market. Also responsible for managing economic enterprise risks. Now, such specialists have graduated from a number of universities, but the need for them exceeds the supply in the labor market."
+  },
+
+  {
+    "name":"Agricultural nutritionist",
+    "industry":"Agriculture",
+    "skills":[
+      "Systems thinking",
+      "Customer focus",
+      "Social"
+    ],
+    "description":"A specialist developing and customizing individual power schemes for farm animals, which improves the quality of milk and meat."
+  },
+
+  {
+    "name":"Automated farm operator",
+    "industry":"Agriculture",
+    "skills":[
+      "Lean production",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"Specialist in farm automation technology: sensor systems, drones, and agrobots."
+  },
+
+  {
+    "name":"City farmer",
+    "industry":"Agriculture",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"Specialist in equipping and servicing agro-industrial enterprises on roofs and in the skyscraper buildings of large cities. Vertical farms (autonomous and eco-friendly constructions that allow you to grow plants and breed animals in the city limits) is the story of the near future. The first commercial vertical farm appeared in Singapore in 2012, and now the creation of agricultural skyscrapers is planned in South Korea, China, UAE, the USA, France, and other countries."
+  },
+
+  {
+    "name":"GMO agronomist",
+    "industry":"Agriculture",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"Specialist in the use of genetically modified foods in rural farms. He implements biotechnological achievements and obtains products with specified properties. Despite the public debate surrounding this topic, most scientists consider GMOs as safe technology, so this profession will be in demand."
+  },
+
+  {
+    "name":"Agroinformatics specialist / Agrocyberneticist",
+    "industry":"Agriculture",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"A highly qualified specialist in the implementation of new technologies, informatization, and automation of agricultural enterprises."
+  },
+
+  {
+    "name":"Online veterinarian",
+    "industry":"Agriculture",
+    "skills":[
+      "Customer focus",
+      "Social",
+      "Working in uncertainty",
+      "Ecological thinking"
+    ],
+    "description":"A veterinarian who works online and, if necessary, travels to small farms or consults online, remotely receiving information about the condition of animals with biofeedback sensors."
+  },
+
+  {
+    "name":"Digital agri-model developer",
+    "industry":"Agriculture",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist who creates and manages digital copies of agricultural ecosystems. He or she tracks changes (soil status, illumination, etc.) and controls them to make the most economical use of every resource and get optimal results in the long run."
+  },
+
+  {
+    "name":"Coordinator of distributed tunnelling teams",
+    "industry":"Mining",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Lean production",
+      "Social"
+    ],
+    "description":"A specialist whose task is to ensure a coordinated interaction of people, part of which is located directly at the facility, and some are involved in the project remotely. His or her key tasks are the setting of work tasks, the organization of communication in a team, the removal of contradictions and conflict situations."
+  },
+
+  {
+    "name":"Exploration UAV operator",
+    "industry":"Mining",
+    "skills":[
+      "IT",
+      "Working in uncertainty",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who monitors the development of the field and is looking for new deposits using unmanned aerial vehicles equipped with magnetometers and other geophysical sensors. Drones analyze promising areas, conduct geodetic surveys, survey production objects that recognize the presence or absence of individual means of protection on person, confirm the correctness of the work performed, etc., UAVs are already used in mining by China, the USA, France, Germany, Poland, and other countries. And in 2017, Gazprom Neft used UAV to deliver the cargo to a remote field for the first time."
+  },
+
+  {
+    "name":"Robotic systems engineer",
+    "industry":"Mining",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"He or she serves automated systems for monitoring, development, production, and processing and managing of mineral deposits."
+  },
+
+
+  {
+    "name":"Telemetry data interpretation engineer",
+    "industry":"Mining",
+    "skills":[
+      "Systems thinking",
+      "Working in uncertainty"
+    ],
+    "description":"This specialist analyzes the array of data coming from the field to monitor the process, anticipate possible emergencies, and make prompt decisions if necessary."
+  },
+
+
+  {
+    "name":"Mining system engineer",
+    "industry":"Mining",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist who works with natural resources on a  full life cycle (from exploration to closure and remediation of deposits), taking into account the complexity of these facilities. For example, in the same territory may be deposits of both oil and gas, and it is necessary to harmoniously combine fundamentally different technologies for the extraction of these minerals."
+  },
+
+
+  {
+    "name":"IT geologist",
+    "industry":"Mining",
+    "skills":[
+      "Cross-industry communication ",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Working in uncertainty"
+    ],
+    "description":"A  specialist who, based on an array of information collected, creates a digital model of the field and works out different production scenarios on its minerals. He or she combines skills in geology and seismography with skills in programming, machine learning, and 3D design."
+  },
+
+
+  {
+    "name":"Smart field systems constructor",
+    "industry":"Mining",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A specialist who designs and improves automated systems for smart fields. On the one hand, he or she combines technical knowledge in mining and robotics; on the other hand, understands production processes well and knows how to optimize field management."
+  },
+
+
+  {
+    "name":"EOR implementation engineer",
+    "industry":"Mining",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "Customer focus",
+      "Social"
+    ],
+    "description":"A specialist who helps move to the advanced enhanced oil recovery (EOR) methods. He or she calculates which method is best for a specific field and what equipment and specialists will be needed for its implementation."
+  },
+
+
+  {
+    "name":"Deep-sea geologist",
+    "industry":"Mining",
+    "skills":[
+      "Project management",
+      "Lean production",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Working in uncertainty"
+    ],
+    "description":"A professional who is engaged in the exploration of deep-sea deposits, plans to develop them, collects information to create digital models, evaluates the prospects of the field and the complexity of mining useful fossils."
+  },
+
+
+  {
+    "name":"Environmental analyst in extractive industries",
+    "industry":"Mining",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Working in uncertainty",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who analyzes, prevents, and eliminates environmental threats in the mining process and helps restore environmental balance at the final stages of production. The most common pollutant substances during hydrocarbon production are actually hydrocarbon compounds, oxide, nitrogen, hydrogen sulfide, and sulfur dioxide."
+  },
+
+  {
+    "name":"LNG equipment operator",
+    "industry":"Mining",
+    "skills":[
+      "Project management",
+      "Lean production",
+      "IT",
+      "Social"
+    ],
+    "description":"A specialist who services equipment for production and transportation of liquefied natural gas (LNG), refueling facilities for ships. LNG is natural gas, cooled after purification, and turned into liquid. It has low toxicity and takes up 600 times less volume than ordinary gas. LNG use is now replacing naval fuel oil for shipping and eliminates the risk of accidental oil spills, making shipping economically and environmentally attractive. In such remote areas like the Russian Arctic, LNG could become one of the key types of energy supply in the near future."
+  },
+
+  {
+    "name":"Spaceport engineer",
+    "industry":"Mining",
+    "skills":[
+      "Systems thinking",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Working in uncertainty",
+      "Ecological thinking"
+    ],
+    "description":"Specialist servicing the near-Earth transport network and responsible for the development of corridors of traffic flows (both flights to orbit and ballistic flight transcontinental flights) and synchronization launches on earth."
+  },
+
+  {
+    "name":"Astrogeologist",
+    "industry":"Space",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist who is engaged in the exploration and mining of minerals on the Moon and asteroids. The American company, Planetary Resources, has already released several generations of satellites to search for water on asteroids (this is the main resource needed both for life support and for the production of hydrogen fuel). And in the Colorado School of Mines already there are space mining educational programs."
+    
+  },
+
+  {
+    "name":"Life support systems engineer",
+    "industry":"Space",
+    "skills":[
+      "Systems thinking",
+      "Lean production",
+      "IT",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A specialist in the maintenance of life support systems in complex conditions."
+    
+  },
+
+  {
+    "name":"Astrobiologist",
+    "industry":"Space",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A specialist who studies the behaviour of various biological systems (from viruses to animals and humans) in space (in  spaceships, on planetary stations, etc.), studies the physiology and genetic changes of organisms, develops sustainable space ecosystems for lunar orbital stations bases, and long flights."
+    
+  },
+
+
+  {
+    "name":"Space tourism manager",
+    "industry":"Space",
+    "skills":[
+      "Project management",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A  specialist who develops programs for visiting the outer space, and subsequently, orbital complexes and other space structures (including lunar bases)."
+    
+  },
+
+  {
+    "name":"Space constructions lifecycle designer",
+    "industry":"Space",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"A  professional designing space structures (stations, satellites, etc.) with considering future restructuring and disposal. Demand for these professionals will arise in the coming years due to more intensive development of circumterrestrial space and the resumption of plans for the colonization of the Moon and Mars."
+    
+  },
+
+  {
+    "name":"Research equipment designer",
+    "industry":"Space",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A specialist who designs probes, sensors, telescopes, cameras, and more research equipment for working in far space."
+    
+  },
+
+  {
+    "name":"Space garbage collector",
+    "industry":"Space",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Working in uncertainty",
+      "Ecological thinking"
+    ],
+    "description":"The operator of the service equipment, which will initially be engaged in cleaning space debris, and then he or she will take on other functions, including refueling, repair, etc."
+    
+  },
+
+  {
+    "name":"Communication appliance developer",
+    "industry":"Space",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A specialist who develops specialized communication devices, equipped with powerful lasers that will transmit huge amounts of data over long distances (in the long term, for the space Internet)."
+    
+  },
+
+  {
+    "name":"Space lawyer",
+    "industry":"Space",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Customer focus",
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description":"A  specialist who regulates the relations of representatives of various countries in outer space and develops legislation related to the space exploration, space mining, etc."
+    
+  },
+
+  {
+    "name":"Space power engineer",
+    "industry":"Space",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist developing and installing space energy sources devices, stations, satellites, etc., primarily solar panels (due to being more efficient in an environment with no atmosphere) and compact energy sources."
+    
+  },
+
+  {
+    "name":"Space smart control architect",
+    "industry":"Space",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A  professional who develops drone software transport and traffic management systems and controls intelligent control systems."
+    
+  },
+
+  {
+    "name":"Operator processing Earth images from space",
+    "industry":"Space",
+    "skills":[
+      "Project management",
+      "Lean production",
+      "IT"
+    ],
+    "description":"A specialist who provides the work of the station receiving images from space. The receiving station is located in the radio-visibility zone of the space satellite/ship. The operator is engaged in specialized image processing for their further use by scientists and verifies the quality of the resulting products."
+    
+  },
+
+  {
+    "name":"Space production engineer",
+    "industry":"Space",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "Multilingualism/ Multiculturalism",
+      "Working in uncertainty",
+      "Art and Creativity",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist who replaces complex and expensive earthly production in space where it improves efficiency and pays off."
+    
+  },
+
+  {
+    "name":"Mind fitness trainer",
+    "industry":"Neuronet",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Social"
+    ],
+    "description":"A  specialist who develops programs for the development of individual cognitive skills (e.g., memory, concentration, reading speed, verbal counting, etc.) using special programs and devices. At the same time, he or she takes into account the psychological features and tasks of the user. Such programs exist now, in Russia, and there is even the Mind Fitness Education Association."
+    
+  },
+
+  {
+    "name":"Neural rehabilitologist ",
+    "industry":"Neuronet",
+    "skills":[
+      "Cross-industry communication ",
+      "IT",
+      "Customer focus",
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description":"A  specialist who is involved in the rehabilitation of people with mental disorders and traumatic brain injuries using psychopharmacology, TNS, neural and biofeedback devices, etc."
+  },
+
+  {
+    "name":"Neuropharmacologist",
+    "industry":"Neuronet",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist who develops drugs that affect brain neurochemistry and increases productivity in healthy people."
+  },
+
+  {
+    "name":"Neuromarketologist",
+    "industry":"Neuronet",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A marketing specialist using knowledge from areas of behavioral economics and cognitive sciences."
+  },
+
+
+  {
+    "name":"Neural interface designer",
+    "industry":"Neuronet",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A specialist who develops interfaces compatible with the human nervous system for controlling computers, home appliances, and industrial robots. Today, neural interfaces are used mainly for entertainment: for example, the Australian Emotiv Epoc sells neural helmets to control characters in online games. But in the future, with their help, it will be possible to manage complex devices or even communicate without words with other people (as in the DARPA Silent Talk system currently under development)."
+  },
+
+  {
+    "name":"Consciousness tools developer",
+    "industry":"Neuronet",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Social"
+    ],
+    "description":"A professional who creates programs and equipment (e.g., biofeedback devices) to educate users on productive states of consciousness (high concentration, relaxation, increased creativity, and others). For example, Wild Divine sells devices and programs to users for training concentration, relaxation, and awareness. There are also biofeedback devices explicitly designed for lucid dreaming."
+  },
+
+  {
+    "name":"Coordinator of community development programs",
+    "industry":"Management",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who organizes and maintains a dialogue between independent manufacturers' teams, coordinating their long-term goals and a common vision of the future. He or she helps them determine the program of joint investments in production facilities and personnel. This is a new level of project management. In the future, managers will often have to coordinate the work of project teams whose members are in different countries."
+  },
+
+  {
+    "name":"Coordinator of production in distributed communities",
+    "industry":"Management",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"More and more production facilities will be organized as a  network of independent manufacturers which at various stages are involved in the production of the final product. In order to organize such processes, a kind of 'band-masters' are needed, that is, professionals who coordinate all aspects of order fulfillment and organize the work of independent teams working within the industry community for the development, production, and assembly of the product according to customer requirements."
+  },
+
+  {
+    "name":"Online sales manager",
+    "industry":"Management",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Social"
+    ],
+    "description":"A  specialist who develops solutions for online promotion of offline companies' products. He or she organizes online marketing campaigns, accompanies the company's online stores, or works with partners on the improvement of customer service (e.g., delivery speed). This job already exists for some time now, but demand for such specialists will grow."
+  },
+
+  {
+    "name":"Personal brand manager",
+    "industry":"Management",
+    "skills":[
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who helps clients create a personal brand. For this, she uses social networks and other offline and online resources. Creating personal branding is an important aspect of modern business coaching: image, exactly designed for the target audience, allows you to stand out among other specialists and become a public opinion leader in your niche. Therefore, the demand for this service is growing."
+  },
+
+  {
+    "name":"Corporate anthropologist",
+    "industry":"Management",
+    "skills":[
+      "Systems thinking",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"This specialist explores new product markets relevant to the company using anthropological methods (e.g., participatory observation) and helps a company make contact with the target audience. In the West, work in the field of business has long been perceived as one of the logical career development options for an anthropologist, since the consumption of goods and services began to be studied not only from an economic but also from a sociocultural point of view. Professionals of this profile are hired by many IT companies, including Intel and Nokia."
+  },
+
+  {
+    "name":"Cross-cultural communication manager",
+    "industry":"Management",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A specialist who ensures the company's workflow in foreign languages and controls key meanings and values (for example, when choosing marketing slogans), teaches employees how to convey meanings in foreign languages, as well as features culture in negotiations with foreign partners. A cross-cultural communications manager advises company management on doing business in other countries. Lack of specialists able to deal with translation problems becomes the reason for not only unsuccessful deals but also failed advertising campaigns. For example, KFC's corporate tagline is “Finger-lickin' good” (“So delicious that you lick your fingers”), when translated into Chinese in the 1980s, sounded like, “We will bite your fingers,” which did not contribute to the growth of popularity of American fast food among the local population."
+  },
+
+  {
+    "name":"Corporate venture fund portfolio manager",
+    "industry":"Management",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A specialist who manages the company's investments in startups created by its employees and focused on developing the company's product line. He or she accompanies the development of these startups from idea to production."
+  },
+
+  {
+    "name":"User community moderator",
+    "industry":"Management",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A specialist who organizes online and offline user communities, accompanies a dialogue with developers of company products, and supports their loyalty (for example, organizes contests and competitions)."
+  },
+
+  {
+    "name":"Online lawyer",
+    "industry":"Management",
+    "skills":[
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A specialist in remote legal support through the internet, with respect to the laws of the country in which the case is to be conducted (regardless of the country in which the lawyer himself practices)."
+  },
+
+  {
+    "name":"Foresighter/Trend watcher",
+    "industry":"Management",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A specialist who tracks the emergence of new trends in various industries —economics, public life, politics and culture, and reports on the impact of the new trends on customer needs. In the future, the ability to work with visions of the future will be the universal skill of any manager."
+  },
+
+  {
+    "name":"Time manager",
+    "industry":"Management",
+    "skills":[
+      "Systems thinking",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A specialist in the efficient use and distribution of personal time and time of teams. The main task is to optimize time distribution, taking into account new technological opportunities and personal or team needs."
+  },
+
+  {
+    "name":"Time broker",
+    "industry":"Management",
+    "skills":[
+      "Cross-industry communication ",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A professional who sells working hours of freelancers, i.e., he manages someone else's employment in the open market. The development of technology reduces the need for a full-time presence in the office. Moreover, a professional who knows foreign languages can work for companies from other countries. At the same time, both freelancers and employers lack effective intermediaries, as recruitment agencies still mainly work with full-time positions, and sites for finding contractors (like Freelancer.com) are not convenient enough. So, the demand for time brokers will grow."
+  },
+
+  {
+    "name":"Inventive problem-solving consultant",
+    "industry":"Management",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Lean production",
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description":"A specialist who implements the tools of the theory of inventive problem solving (TIPS*) in companies developing innovative products. He trains staff to arrange brainstorming sessions that quickly lead to the creation of an original and useful solution."
+  },
+
+  {
+    "name":"Business processes schematizer",
+    "industry":"Management",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Art and Creativity"
+    ],
+    "description":"A  specialist who creates various visuals of the processes existing in companies at different levels. The complexity and cohesiveness of business processes are growing both inside companies and in their interaction with external contractors (customers, partners, regulators, etc.) These visuals and schemes will allow better detecting of various bottlenecks in processes and optimize company processes."
+  },
+
+  {
+    "name":"Facilitator",
+    "industry":"Management",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "Customer focus",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A  specialist helping to organize successful group communication with a variety of discussion tools. This profession already exists but will become more in-demand as there are more and more cross-industry and cross-cultural teams, for whose members it is not easy to understand each other."
+  },
+
+  {
+    "name":"Human-machine team manager",
+    "industry":"Management",
+    "skills":[
+      "Project management",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who collects a team of people, programs, and robots for specific functionality, trains them to collaborate, distributes tasks, and monitors their process until task completion. Over time, any manager will have to master this skill, but for now, there will be few man-machine teams with specially trained managers."
+  },
+
+
+  {
+    "name":"Sustainability consultant",
+    "industry":"Management",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Lean production",
+      "Customer focus",
+      "Social",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who helps companies reorient towards healthier values and priorities that contribute to the well-being of the environment and society (environmentally friendly production, more equitable social policies, etc.). In the future, he or she can transform into an ethical mentor who will help make decisions in controversial ethical situations."
+  },
+
+
+  {
+    "name":"Staff cognitive work optimizer",
+    "industry":"Management",
+    "skills":[
+      "Systems thinking",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description":"A manager who is responsible for balancing high-level intellectual workloads and periods of rest, meditation, or switching between tasks. All of this will allow maximizing the use of the mental abilities of employees."
+  },
+
+  {
+    "name":"Designer of markets/industries",
+    "industry":"Management",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Working in uncertainty",
+      "Art and Creativity"
+    ],
+    "description":"A professional who designs new markets. He analyzes different audiences, their lifestyle, and preferences, and understands what new types of products and services could be useful to them. Then, he or she compiles directories with their lifestyles and designs markets for them, forming guides for suppliers of goods and services."
+  },
+
+  {
+    "name":"Producer of industry-specific coworking space",
+    "industry":"Management",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "Customer focus",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who creates and guides industry-specific coworking space in accordance with the needs of the region. He or she analyzes region needs, creates a concept, selects equipment, invites residents, and a team for creating a  coworking space (including architects, marketing specialists, operational specialists)."
+  },
+
+  {
+    "name":"Children's R&D manager",
+    "industry":"Management",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Customer focus",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who organizes the creative work of children in inventing new children's goods and adapts their ideas for production. Sometimes, children manage to come up with more interesting design ideas than teams of adult professionals. For example, the famous artist Damien Hirst admitted that creating new concepts, he uses ideas that came to him when he was a child. And in 2014, the twelve-year-old Shubham Banerji using the Lego kit made his own Braille printer which wasten times cheaper than existing options on the market."
+  },
+
+  {
+    "name":"Experience manager",
+    "industry":"Management",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who forms a positive attitude of the client to the company. His or her tasks include managing offline and online interaction experience, which increases the loyalty of the customers. With growing competition, managers will have to find marketing solutions that affect the entire gamut of customer feelings and respond on an intellectual and emotional level."
+  },
+
+  {
+    "name":"Ecoauditor",
+    "industry":"Management",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Social",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who audits industrial enterprises and makes recommendations on the reduction of environmental impact due to modernization of production, changes practices, and ways of working. This is an existing profession today. In Russia, it has existed since 1993. But as the environmental awareness of society increases, there will be a growing demand for it."
+  },
+
+  {
+    "name":"HR gamifier",
+    "industry":"Management",
+    "skills":[
+      "Systems thinking",
+      "Social",
+      "Working in uncertainty",
+      "Art and Creativity",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who develops an employee's management system, which will involve them as much as possible in activities that motivate them for the effective and balanced performance of their duties. Such a specialist is responsible for the development and implementation of performance-enhancing gaming practices in accordance with the functionality and character of an employee."
+  },
+
+  {
+    "name":"HR developer",
+    "industry":"Management",
+    "skills":[
+      "Cross-industry communication ",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A specialist who creates complex algorithms for selecting candidates for vacancies. These algorithms must take into account all sorts of factors that can affect the effectiveness of the candidates in this place. It will require a combination of skills, including HR-competencies, programming, and deep machine learning."
+  },
+
+  {
+    "name":"New metals designer",
+    "industry":"Metallurgy",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "IT"
+    ],
+    "description":"A specialist who develops alloys with predefined or changing properties due to operating conditions."
+  },
+
+
+  {
+    "name":"Ecorecycler in metallurgy",
+    "industry":"Metallurgy",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Working in uncertainty",
+      "Ecological thinking"
+    ],
+    "description":"A professional who develops recycling methods for metallurgical waste and helps restore the environment."
+  },
+
+
+  {
+    "name":"Equipment supervisor",
+    "industry":"Metallurgy",
+    "skills":[
+      "Systems thinking",
+      "Lean production",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist with competencies in mechatronics and engineering, accompanying and servicing high-tech equipment throughout a life cycle."
+  },
+
+
+  {
+    "name":"System equipment modernizer",
+    "industry":"Metallurgy",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Lean production",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who evaluates the equipment of the plant, draws up a plan for the introduction of more modern equipment, and accompanies this process."
+  },
+
+  {
+    "name":"IT metallurgist",
+    "industry":"Metallurgy",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A  specialist who, using high-tech equipment, builds digital models of processes taking place at a metallurgical plant and is looking for ways to optimize them."
+  },
+
+  {
+    "name":"Biometallurgist",
+    "industry":"Metallurgy",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Multilingualism/ Multiculturalism",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who, with the help of microorganisms, extracts metals from low-grade ore. The processing of these ores by traditional methods is unprofitable, and the use of microorganisms can greatly reduce the cost of the obtained metal. And this process is less harmful to the environment and is easy to automate."
+  },
+
+  {
+    "name":"Electronic waste recycler",
+    "industry":"Metallurgy",
+    "skills":[
+      "Cross-industry communication ",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Ecological thinking"
+    ],
+    "description":"A  specialist who extracts valuable metals from electronic waste (old smartphones, computers, etc.)."
+  },
+
+  {
+    "name":"New metals advisor",
+    "industry":"Metallurgy",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Customer focus",
+      "Social"
+    ],
+    "description":"A specialist who comes up with a package of engineering solutions for a client to use new metals in specific products."
+  },
+
+
+  {
+    "name":"Powder metallurgy designer",
+    "industry":"Metallurgy",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Lean production",
+      "IT",
+      "Ecological thinking"
+    ],
+    "description":"A design engineer of new equipment for producing metals of a high degree of readiness (metal powders, alloys)."
+  },
+
+  {
+    "name":"Art appraiser",
+    "industry":"Culture and art",
+    "skills":[
+      "Systems thinking",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who is able to assess the artistic value and market value of new formats of works of art, which consist of heterogeneous elements that are complex and/or short-lived (for example, art, street art, or performance art)."
+  },
+
+  {
+    "name":"Science artist",
+    "industry":"Culture and art",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "Multilingualism/ Multiculturalism",
+      "Art and Creativity"
+    ],
+    "description":"A person who uses scientific data and knowledge in his work. Science art is actively practiced by individual artists and is even supported by reputable educational institutions. For example, at MIT, there is a center for science, art, and technology."
+  },
+
+  {
+    "name":"Personal tutor on aesthetic development",
+    "industry":"Culture and art",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A  specialist who is well versed in the cultural field and can create an aesthetic development program in accordance with the tastes, requests, and capabilities of the client. For example, to trace the development of various aspects of the Gothic style from the Middle Ages to the present day."
+  },
+
+  {
+    "name":"Creative state trainer",
+    "industry":"Culture and art",
+    "skills":[
+      "Customer focus",
+      "Social",
+      "Working in uncertainty",
+      "Art and Creativity"
+    ],
+    "description":"A specialist in mind fitness who can bring people of creative professions into a “state of flow” and other states characterized by increased creativity. He or she is also developing their awareness, as one of the artist's important tasks is to constantly rethink reality."
+  },
+
+  {
+    "name":"Curator of collective creativity",
+    "industry":"Culture and art",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A  specialist who organizes art groups to implement a  specific creative project. These art groups may include artists of various profiles, scientists, programmers, engineers, and specialists from other industries."
+  },
+
+  {
+    "name":"Art technologist",
+    "industry":"Culture and art",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who helps a science artist with a scientific and technical part, an intermediary between science and art on behalf of science."
+  },
+
+  {
+    "name":"Curator of human-machine creativity",
+    "industry":"Culture and art",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "IT",
+      "Customer focus",
+      "Art and Creativity"
+    ],
+    "description":"A  specialist who organizes human-machine art groups and helps them collaborate more productively. There are already robots and neural networks that draw, compose music and poetry. Their style is quite different from the human one, and in combination with the works of artists, interesting and paradoxical works can turn out."
+  },
+
+  {
+    "name":"Virtual museum curator",
+    "industry":"Culture and art",
+    "skills":[
+      "Cross-industry communication ",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who, with a team of designers and programmers, works on aesthetics and usability of a virtual museum, monitors the digitization of cultural objects, comes up with virtual tours and multimedia projects, etc."
+  },
+
+  {
+    "name":"Mobile art guide developer",
+    "industry":"Culture and art",
+    "skills":[
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A  specialist who develops mobile applications that help people get acquainted with art. First of all, there are audio guides and applications with augmented reality, which allow you to arrange rich, self-guided tours (such as Klimt Paintings Tour around Vienna by GPSmyCity)."
+  },
+
+  {
+    "name":"Interactive books publisher",
+    "industry":"Culture and art",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A specialist who invents and oversees the creation of interactive e-books with multimedia elements and a non-linear narrative."
+  },
+
+  {
+    "name":"Concept artist in computer games",
+    "industry":"Culture and art",
+    "skills":[
+      "Cross-industry communication ",
+      "IT",
+      "Customer focus",
+      "Art and Creativity"
+    ],
+    "description":"Computer games are increasingly considered a full form of art. There are concept artists in game design now, but the demand for them will grow, and their status in the art world will increase."
+  },
+
+  {
+    "name":"Educational trajectory developer",
+    "industry":"Education",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A professional who creates a training route for new specialists. The route consists of courses offered by educational institutions (including those available online), as well as simulators, internships, etc. Based on them, an educational trajectory is developed. Moreover, in its construction, a personality type, abilities, and goals of the student are taken into account."
+  },
+
+  {
+    "name":"Career strategist",
+    "industry":"Education",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Working in uncertainty"
+    ],
+    "description":"A  specialist who informs students and teachers about the needs of employers, helps to formulate professional goals (both short-term and long-term), and builds an educational and career path that will lead to students' achievement."
+  },
+
+  {
+    "name":"Project-based learning organizer",
+    "industry":"Education",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Customer focus",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A specialist in the formation and organization of educational programs, in the center of which is the development and implementation of projects from a real sector of the economy or the social sphere, and theoretical material only provides information in order to complete a project."
+  },
+
+  {
+    "name":"Tutor",
+    "industry":"Education",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Customer focus",
+      "Social"
+    ],
+    "description":"A teacher who accompanies the individual development of students in the disciplines that form an educational program. He or she answers questions, develops individual tasks, recommends a career path, etc."
+  },
+
+  {
+    "name":"Game master",
+    "industry":"Education",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A  specialist in the development and organization of educational games (business, historical, science fiction, etc.), and maintenance of games using simulators. The educational potential of games was studied in developed countries from the beginning of the 2000s. In recent years, gamification (the use of game mechanics in non-game processes) has become a noticeable trend. In Russia, the direction of educational games is supported by the Russian Association for Educational Games."
+  },
+
+  {
+    "name":"Moderator",
+    "industry":"Education",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who organizes group discussions or collective creative projects. His task is to establish communication between participants and build the process in such a way as to obtain maximum effect. He or she can work both offline and on online platforms. Moderators are also actively used in Russian education; for example, most of the educational programs of the Moscow School of Management Skolkovo are accompanied by moderators."
+  },
+
+  {
+    "name":"Educational content unpacker / packer",
+    "industry":"Education",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Customer focus",
+      "Art and Creativity"
+    ],
+    "description":"A  specialist who breaks down training materials into minimal blocks of knowledge in order to collect training courses and programs suitable for specific tasks from them. This specialist also solves the inverse problem: builds “trees” from related knowledge, skills, and competencies."
+  },
+
+  {
+    "name":"Online education platform coordinator",
+    "industry":"Education",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A  specialist within an educational institution or on an independent educational project who helps teachers prepare online courses in specific subjects or disciplines, organizes and promotes specific courses or typical educational paths, moderates the communication of teachers and students within courses or platforms, and sets the requirements for finalizing the platform's functionality. In some Russian universities, whole units have appeared that are responsible for these functions. For example, at Moscow Institute of Physics and Technology, there is a  laboratory of innovative educational technologies, and at the Higher School of Economics, there is the Center for the Development of the Educational Environment. This, in particular, allowed universities to develop their online courses for the Coursera platform."
+  },
+
+  {
+    "name":"Team competencies trainer",
+    "industry":"Education",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A coach specializing in developing skills for productive work in a group: emotional intelligence, building boundaries, assertiveness, non-violent communication, efficient distribution of roles and tasks within a group, etc."
+  },
+
+  {
+    "name":"Educational ecosystems architect",
+    "industry":"Education",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Art and Creativity",
+      "Ecological thinking"
+    ],
+    "description":"A  professional who manages open communities of various education providers and helps them coordinate the work of educational institutions so that it meets the current needs of students as much as possible."
+  },
+
+  {
+    "name":"Educational institution modernizer",
+    "industry":"Education",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Lean production",
+      "Customer focus",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who turns schools and universities into educational hubs that provide learning opportunities in different formats, styles, and lengths. Education is becoming less standardized and more variable, so the task of educational institutions of the future is to look for different ways to educate people, depending on the desired result."
+  },
+
+  {
+    "name":"Knowledge validator",
+    "industry":"Education",
+    "skills":[
+      "Cross-industry communication ",
+      "Project management",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A professional who develops new systems for assessing knowledge and skills that allow evaluating the student's abilities in a wide range of parameters (including independence of thinking, adaptability, communication skills, etc.) and providing developing feedback. Ideally, such systems should reflect the full diversity of activities and competencies."
+  },
+
+  {
+    "name":"Child future life advisor",
+    "industry":"Education",
+    "skills":[
+      "Systems thinking",
+      "Project management",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism",
+      "Social"
+    ],
+    "description":"A specialist in the formation of a possible way of the future life of the child and the trajectory of his development. The vision is based on the desire of the parents, as well as the abilities and ideas of the child. The expert will select educational programs (creative, sports, etc.), educational games, and computer programs that help the child learn the necessary skills."
+  },
+
+  {
+    "name":"Startup mentor",
+    "industry":"Education",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "IT",
+      "Customer focus",
+      "Multilingualism/ Multiculturalism"
+    ],
+    "description":"A  professional with experience in launching his own startup projects. He oversees teams of new startups, trains them on how to conduct entrepreneurial activity on the example of his own projects. Mentorship programs now exist not only in business incubators and accelerators, but also at large universities, and the latter combines the functionality of business mentoring and more traditional mentoring: successful graduates give students advice on the first steps in their careers, whether their business or work in a large company. For example, MSU, the Higher School of Economics, and the Russian Economic School have such programs."
+  },
+
+  {
+    "name":"Environmental prophet",
+    "industry":"Education",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Project management",
+      "Social",
+      "Ecological thinking"
+    ],
+    "description":"A specialist who develops and runs educational programs devoted to a more environmentally friendly lifestyle (refusal from excessive consumption, separate collection of garbage, an environmentally conscious lifestyle, etc.), and programs on more environmentally friendly practices for manufacturing enterprises."
+  },
+
+  {
+    "name":"Games educator",
+    "industry":"Education",
+    "skills":[
+      "Systems thinking",
+      "Cross-industry communication ",
+      "Multilingualism/ Multiculturalism",
+      "Social",
+      "Art and Creativity"
+    ],
+    "description":"A specialist who creates educational programs based on game pedagogy techniques and can take up a  game character role. In schools, these specialists can replace the traditional teacher. In Russia, there are already developed traditions of game based learning in schools. The penetration of school games is mainly limited by the regulatory framework."
   }
+
   
+
 ]
+
+
+
+  
