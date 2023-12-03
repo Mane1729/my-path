@@ -22,5 +22,7 @@ module Types
                                                description: "Assesses user's Ecological Thinking skill based on a questionnaire"
     field :assess_user_art_and_creativity_skill, mutation: Mutations::AssessUserArtAndCreativitySkill, 
                                                description: "Assesses user's Art and Creativity skill based on their answer to a specific question"
+    field :assess_user_multilingualism_multiculturalism_skill, mutation: Mutations::AssessUserMultilingualismMulticulturalismSkill, 
+                                               description: "Assesses user's Multilingualism / Multiculturalism skill based on a questionnaire"
   end
 end

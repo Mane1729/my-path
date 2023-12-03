@@ -1,0 +1,15 @@
+[
+  { "language": "English", "translation": "It's a beautiful day today." },
+  { "language": "Spanish", "translation": "Es un día hermoso hoy." },
+  { "language": "Chinese", "translation": "今天是个美好的日子. (Jīntiān shì gè měihǎo de rìzi.)" },
+  { "language": "Hindi", "translation": "आज एक सुंदर दिन है। (Aaj ek sundar din hai.)" },
+  { "language": "Arabic", "translation": "إنها يوم جميل اليوم. (Innaha yawm jameel alyawm.)" },
+  { "language": "Bengali", "translation": "আজ একটি সুন্দর দিন। (Aj ekṭi sundar din.)" },
+  { "language": "Russian", "translation": "Сегодня прекрасный день. (Segodnya prekrasnyy den.)" },
+  { "language": "Portuguese", "translation": "Está um belo dia hoje" },
+  { "language": "French", "translation": "C'est une belle journée aujourd'hui." },
+  { "language": "Japanese", "translation": "今日は美しい日です. (Kyō wa utsukushī hi desu.)" },
+  { "language": "Armenian", "translation": "Այսօր գեղեցիկ օր է:" },
+  { "language": "Italian", "translation": "È una bella giornata oggi." },
+  { "language": "German", "translation": "Heute ist ein wunderschöner Tag." }
+]

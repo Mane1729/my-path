@@ -1,58 +1,131 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import jsonData from './SystemsThinkingQuestions.json';
+import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+import translations from './MultilinguismData.json';
 import './../App.css';
+import { useNavigate } from 'react-router-dom';
 
-function App() {
-  const questions = Object.keys(jsonData).slice(31, 32);
+function shuffleArray(array) {
+  let currentIndex = array.length,  randomIndex;
 
-  // Create a state to store user responses
-  const [responses, setResponses] = useState({});
+  // While there remain elements to shuffle...
+  while (currentIndex !== 0) {
 
-  const handleResponseChange = (question, response) => {
-    setResponses({ ...responses, [question]: response });
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+
+function Skill9_1() {
+  const [languages, setLanguages] = useState(translations.map(item => item.language));
+  const [translationsList, setTranslationsList] = useState(shuffleArray(translations.map(item => item.translation)));
+
+  // Handle the end of a drag event
+  const onDragEnd = (result) => {
+    // dropped outside the list
+    if (!result.destination) {
+      return;
+    }
+  
+    const sourceIndex = result.source.index;
+    const destIndex = result.destination.index;
+  
+    // Swapping the translations
+    const newTranslations = Array.from(translationsList);
+    [newTranslations[sourceIndex], newTranslations[destIndex]] = [newTranslations[destIndex], newTranslations[sourceIndex]];
+  
+    setTranslationsList(newTranslations);
+  };
+
+  const countCorrectMatches = () => {
+    return translationsList.reduce((count, translation, index) => {
+      if (translation === translations[index].translation) {
+        return count + 1;
+      }
+      return count;
+    }, 0);
+  };
+
+  const navigate = useNavigate();
+  const correctCount = countCorrectMatches();
+
+  const navigateToSkill9_2 = () => {
+    navigate('/skill9_2', { state: { correctCount } });
   };
 
   return (
-      <div>
-        <header>
-          <h1>Multilingualism </h1>
-        </header>
-        <main>
-          <section>
-            <ul>
-              {questions.map((question, index) => (
-                <li key={index}>
-                 <br></br><h3>{question}</h3>
-                  <ul>
-                    {jsonData[question].map((answer, answerIndex) => (
-                      <li key={answerIndex}>
-                        <label>
-                          <input
-                            type="radio"
-                            name={question}
-                            value={answer}
-                            checked={responses[question] === answer}
-                            onChange={() => handleResponseChange(question, answer)}
-                          />
-                          {answer}
-                        </label>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              ))}
-            </ul>
-          </section>
-        </main>
-        <footer>
-          {/* &copy; 2023 My Website */}
-        </footer>
-        <Link to="/skill9_2">
-          <button>Next</button>
-        </Link>
+    <DragDropContext onDragEnd={onDragEnd}>
+      <header>
+        <h1>Multilingualism</h1>
+      </header>
+      <div className="table">
+        <div className="header language">Languages</div>
+        <div className="header translation">Translations</div>
+
+        {languages.map((language, index) => (
+          <div className="row" key={`row-${index}-${language}`}>
+            <div className="language">{language}</div>
+            <Droppable droppableId={`droppable-${index}`}>
+              {(provided) => (
+                <div
+                  ref={provided.innerRef}
+                  {...provided.droppableProps}
+                  className="translation-container"
+                >
+                  <Draggable draggableId={`item-${index}`} index={index}>
+                    {(provided) => (
+                      <div
+                        ref={provided.innerRef}
+                        {...provided.draggableProps}
+                        className="translation"
+                      >
+                        {/* Drag Handle */}
+                        <span 
+                          {...provided.dragHandleProps} 
+                          className="drag-handle"
+                        ></span>
+                        <div {...provided.dragHandleProps} className="drag-handle">
+                          <div className="drag-row">
+                            <span className="drag-dot"></span>
+                            <span className="drag-dot"></span>
+                          </div>
+                          <div className="drag-row">
+                            <span className="drag-dot"></span>
+                            <span className="drag-dot"></span>
+                          </div>
+                          <div className="drag-row">
+                            <span className="drag-dot"></span>
+                            <span className="drag-dot"></span>
+                          </div>
+                          <div className="drag-row">
+                            <span className="drag-dot"></span>
+                            <span className="drag-dot"></span>
+                          </div>
+                        </div>
+                        <span className="translation-text">{translationsList[index]}</span>
+                      </div>
+                    )}
+                  </Draggable>
+                  {provided.placeholder}
+                </div>
+              )}
+            </Droppable>
+          </div>
+        ))}
       </div>
+      <div className="match-count">
+        Correct Matches: {countCorrectMatches()}
+      </div>
+      <button onClick={navigateToSkill9_2}>Next</button>
+    </DragDropContext>
   );
 }
 
-export default App;
+export default Skill9_1;

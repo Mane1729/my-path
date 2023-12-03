@@ -1,0 +1,56 @@
+{
+  "sushi": {
+    "question": "Which country is traditionally associated with sushi?",
+    "options": [
+      {"choice": "a", "text": "China"},
+      {"choice": "b", "text": "Korea"},
+      {"choice": "c", "text": "Japan"},
+      {"choice": "d", "text": "Vietnam"}
+    ]
+  },
+  "paella": {
+    "question": " This dish, made primarily with rice and seafood, originates from which country?",
+    "options": [
+      {"choice": "a", "text": "Spain"},
+      {"choice": "b", "text": "Italy"},
+      {"choice": "c", "text": "Greece"},
+      {"choice": "d", "text": "Mexico"}
+    ]
+  },
+  "colosseum": {
+    "question": "This ancient amphitheater, known for its gladiatorial contests, is situated in which city?",
+    "options": [
+      {"choice": "a", "text": "Athens"},
+      {"choice": "b", "text": "Rome"},
+      {"choice": "c", "text": "Paris"},
+      {"choice": "d", "text": "London"}
+    ]
+  },
+  "sydneyOperaHouse": {
+    "question": "This iconic building with sail-shaped structures is located in which country?",
+    "options": [
+      {"choice": "a", "text": "New Zealand"},
+      {"choice": "b", "text": "South Africa"},
+      {"choice": "c", "text": "Australia"},
+      {"choice": "d", "text": "Canada"}
+    ]
+  },
+  "kilt": {
+    "question": "This knee-length non-bifurcated skirt-type garment is traditionally associated with which country?",
+    "options": [
+      {"choice": "a", "text": "Scotland"},
+      {"choice": "b", "text": "Ireland"},
+      {"choice": "c", "text": "England"},
+      {"choice": "d", "text": "Norway"}
+    ]
+  },
+  "hanbok": {
+    "question": "This is a traditional attire worn on special occasions and festivals in which country? ",
+    "options": [
+      {"choice": "a", "text": "South Korea"},
+      {"choice": "b", "text": "China"},
+      {"choice": "c", "text": "Japan"},
+      {"choice": "d", "text": "Vietnam"}
+    ]
+  }
+}
