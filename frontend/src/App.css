@@ -93,3 +93,120 @@ input[type="text"] {
   display: flex;
 }
 
+/*elen*/
+
+/* .back_image{
+  width: 100%;
+  height: 100vh;
+  background-image: url(C:\Users\DELL\Developer\MyPath\my-path\frontend\src\photos\mp.jpeg);
+  background-size: cover;
+  background-position: center;
+  
+} */
+
+/* .back_image{
+  width: 100%;
+  height: 100vh;
+  background-image: url(C:\Users\DELL\Developer\MyPath\my-path\frontend\src\photos\mp.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+} */
+
+
+
+.back_image{
+  background-image: url(C:\Users\DELL\Developer\MyPath\my-path\frontend\src\photos\mp.jpeg); /* Replace with your image path */
+  height: 100vh; /* Viewport height: 100% of the viewport */
+  width: 100vw; /* Viewport width: 100% of the viewport */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* This will cover the entire viewport without stretching the image */
+  position: fixed; /* This makes the image stay in place while scrolling */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensures the image stays behind other content */
+}
+
+
+
+
+/* .skill1_back {
+  background-image: url(C:\Users\DELL\Developer\MyPath\my-path\frontend\src\photos\backgroud.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+} */
+
+.skill1_back {
+  background-color: #D8DCD6;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Cover the entire viewport without stretching */
+  background-attachment: fixed; /* Keeps the background image fixed during scrolling */
+  position: absolute; /* Positioning relative to the viewport */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure the image stays behind other content */
+}
+
+
+
+
+.buttonStart{
+  background: transparent;
+  border: 0;
+  width: 175px;
+  height: 175px;
+  border-radius: 100px;
+  
+  padding: 15px 0;
+  cursor: pointer;
+  position: relative;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+
+.buttonStart:hover{
+  background-color: rgba(0,141,200,0.26);
+  
+  
+
+}
+.buttonStart:active{
+  opacity: 0.5;
+
+}
+
+.skill1_nextButton{
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  margin-bottom: 100px;
+  }
+
+
+
+header{
+  margin-top: 60px;
+  text-align: center;
+}
+
+/* div{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+} */
+
+li {
+  list-style: none;
+}

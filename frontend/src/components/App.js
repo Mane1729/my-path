@@ -78,11 +78,19 @@ function Home() {
   };
 
   return (
-    <div>
-      <Link to="/skill1">
-      <button onClick={handleStartButtonClick} disabled={loading}>Start</button>
-      </Link>
-    </div>
+    
+      
+      
+      <div class="back_image">
+
+          <Link to="/skill1">
+            <button class="buttonStart" onClick={handleStartButtonClick} disabled={loading}></button>
+        
+            </Link>
+        </div>
+      
+
+    
   );
 }
 

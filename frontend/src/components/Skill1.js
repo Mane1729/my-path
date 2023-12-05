@@ -55,7 +55,9 @@ function App() {
   };
 
   return (
-    <div>
+    <div class="skill1_back">
+      
+      <div>
       <header>
         <h1>System thinking</h1>
       </header>
@@ -87,17 +89,11 @@ function App() {
           </ul>
         </section>
       </main>
-      <section>
-        <h2>Collected Responses:</h2>
-        <pre>{JSON.stringify(responses, null, 2)}</pre>
-      </section>
-      <footer>
-        {/* &copy; 2023 My Website */}
-      </footer>
-      <div>
+      
         <Link to="/skill2">
-          <button onClick={submitResponses}>Next</button>
+          <button class="skill1_nextButton" onClick={submitResponses}>Next</button>
         </Link>
+     
       </div>
     </div>
   );
