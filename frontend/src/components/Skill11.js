@@ -48,7 +48,7 @@ function App() {
         <footer>
           {/* &copy; 2023 My Website */}
         </footer>
-        <Link to="/career">
+        <Link to="/industry_selector">
           <button>Next</button>
         </Link>
       </div>

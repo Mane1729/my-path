@@ -15,7 +15,9 @@ import Skill9_1 from './/Skill9_1';
 import Skill9_2 from './/Skill9_2';
 import Skill10 from './/Skill10';
 import Skill11 from './/Skill11';
-import Career from './/Career';
+import IndustrySelector from './IndustrySelector'
+import CareerSuccess from './CareerSuccess';
+import CareerError from './CareerError';
 
 import React, { useState } from 'react';
 import gql from 'graphql-tag';
@@ -49,7 +51,9 @@ class App extends React.Component {
           <Route path="/skill9_2" element={<Skill9_2 />} />
           <Route path="/skill10" element={<Skill10 />} />
           <Route path="/skill11" element={<Skill11 />} />
-          <Route path="/career" element={<Career />} />
+          <Route path="/industry_selector" element={<IndustrySelector/>} />
+          <Route path="/career_success" element={<CareerSuccess/>} />
+          <Route path="/career_error" element={<CareerError />} />
         </Routes>
       </Router>
     );
@@ -78,31 +82,12 @@ function Home() {
   };
 
   return (
-    
-      
-      
-      <div class="back_image">
-
-          <Link to="/skill1">
-            <button class="buttonStart" onClick={handleStartButtonClick} disabled={loading}></button>
-        
-            </Link>
-        </div>
-      
-
-    
+    <div class="back_image">
+      <Link to="/skill1">
+        <button class="buttonStart" onClick={handleStartButtonClick} disabled={loading}></button>
+       </Link>
+      </div>
   );
 }
-
-
-// function Home() {
-//   return (
-//     <div>
-//       <Link to="/skill1">
-//         <button>Start</button>
-//       </Link>
-//     </div>
-//   );
-// }
 
 export default App;

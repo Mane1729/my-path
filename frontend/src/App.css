@@ -1,8 +1,21 @@
+body {
+  background-color: #D0D4D9;
+}
+
+body, h1, label, p {
+  color: #123b53; 
+}
+
 h1 {
-  font-size: 2rem; 
+  font-size: 2em; 
+  margin-bottom: 0.5em;
   font-weight: bold; 
 }
 
+p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
 
 input[type="text"] {
   width: 100%;
@@ -40,9 +53,9 @@ input[type="text"] {
 /* Skill9_1 */
 .table {
   display: grid;
-  grid-template-columns: 1fr 2fr; /* Adjust the ratio as needed */
+  grid-template-columns: 1fr 2fr; 
   gap: 10px;
-  max-width: 800px; /* Adjust as necessary */
+  max-width: 800px;
   margin: auto;
 }
 
@@ -56,29 +69,28 @@ input[type="text"] {
 
 .language, .translation {
   padding: 5px;
-  border-bottom: 1px solid #ccc; /* Creates a line */
+  border-bottom: 1px solid #ccc;
 }
 
 .translation {
   display: flex;
-  align-items: center; /* Aligns the handle and text vertically */
+  align-items: center; 
 }
 
 .drag-handle {
   display: block;
-  grid-template-columns: repeat(2, 4px); /* Creates a 2 column grid */
-  grid-row-gap: 4px; /* Space between rows */
-  grid-column-gap: 4px; /* Space between columns */
-  padding-right: 8px; /* Space between handle and text */
+  grid-template-columns: repeat(2, 4px); 
+  grid-row-gap: 4px; 
+  grid-column-gap: 4px;
+  padding-right: 8px;
   cursor: grab;
 }
 
-
 .drag-dot {
-  width: 3px; /* Dot size */
-  height: 3px; /* Dot size */
+  width: 3px; 
+  height: 3px;
   margin: 1px;
-  background-color: #000; /* Dot color */
+  background-color: #000;
 }
 
 .drag-dot::before {
@@ -93,65 +105,31 @@ input[type="text"] {
   display: flex;
 }
 
-/*elen*/
-
-/* .back_image{
-  width: 100%;
-  height: 100vh;
-  background-image: url(C:\Users\DELL\Developer\MyPath\my-path\frontend\src\photos\mp.jpeg);
-  background-size: cover;
-  background-position: center;
-  
-} */
-
-/* .back_image{
-  width: 100%;
-  height: 100vh;
-  background-image: url(C:\Users\DELL\Developer\MyPath\my-path\frontend\src\photos\mp.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-} */
-
-
-
+/* Home page */
 .back_image{
-  background-image: url(C:\Users\DELL\Developer\MyPath\my-path\frontend\src\photos\mp.jpeg); /* Replace with your image path */
-  height: 100vh; /* Viewport height: 100% of the viewport */
-  width: 100vw; /* Viewport width: 100% of the viewport */
+  background-image: url(C:\Users\DELL\Developer\MyPath\my-path\frontend\src\photos\mp.jpeg); 
+  height: 100vh;
+  width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; /* This will cover the entire viewport without stretching the image */
-  position: fixed; /* This makes the image stay in place while scrolling */
+  background-size: cover;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: -1; /* Ensures the image stays behind other content */
+  z-index: -1;
 }
-
-
-
-
-/* .skill1_back {
-  background-image: url(C:\Users\DELL\Developer\MyPath\my-path\frontend\src\photos\backgroud.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-} */
 
 .skill1_back {
   background-color: #D8DCD6;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; /* Cover the entire viewport without stretching */
-  background-attachment: fixed; /* Keeps the background image fixed during scrolling */
-  position: absolute; /* Positioning relative to the viewport */
+  background-size: cover; 
+  background-attachment: fixed; 
+  position: absolute; 
   top: 0;
   left: 0;
-  z-index: -1; /* Ensure the image stays behind other content */
+  z-index: -1; 
 }
-
-
-
 
 .buttonStart{
   background: transparent;
@@ -171,13 +149,10 @@ input[type="text"] {
 
 .buttonStart:hover{
   background-color: rgba(0,141,200,0.26);
-  
-  
-
 }
+
 .buttonStart:active{
   opacity: 0.5;
-
 }
 
 .skill1_nextButton{
@@ -192,21 +167,70 @@ input[type="text"] {
   transform: translateX(-50%);
   position: relative;
   margin-bottom: 100px;
-  }
-
-
+}
 
 header{
   margin-top: 60px;
   text-align: center;
 }
 
-/* div{
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-} */
-
 li {
   list-style: none;
+}
+
+
+/* Industry Selector */
+.industry-selector-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.checkbox-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-auto-flow: column;
+  grid-template-rows: repeat(9, auto);
+  gap: 15px; 
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto; 
+  padding: 0 1em;
+}
+
+.checkbox-label {
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  margin: 0.5em 0;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.submit-button {
+  background-color: #2F6690; 
+  color: white; 
+  padding: 15px 30px; 
+  border: none; 
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s; 
+  margin-top: 40px;
+  font-size: 25px;
+}
+
+.submit-button:hover {
+  background-color: #16425B; 
+}
+
+@media (max-width: 768px) {
+  .checkbox-container {
+    grid-template-columns: 1fr; 
+    grid-auto-flow: row; 
+    gap: 15px;
+    max-width: none; 
+    padding: 0 10px;
+  }
 }

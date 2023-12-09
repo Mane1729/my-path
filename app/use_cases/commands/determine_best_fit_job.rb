@@ -13,6 +13,8 @@ module Commands
       user = User.find_by(id: user_id)
       return error('User not found') if user.nil?
 
+      return error('Data is not enough for finding a suitable job') if user.skills.empty?
+
       find_job(user:)
     end
 

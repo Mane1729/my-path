@@ -18,6 +18,15 @@ RSpec.describe Commands::DetermineBestFitJob do
       end
     end
 
+    context "when the user doesn't have any skills" do
+      let(:user) { create(:user) }
+
+      it 'returns an error' do
+        expect(result[:success]).to be false
+        expect(result[:errors]).to include('Data is not enough for finding a suitable job')
+      end
+    end
+
     context "when DB contains a job that matches exactly user's skills" do
       let!(:job1) { create(:emerging_job, skills: ['Customer focus', 'IT', 'Project management']) }
       let!(:job2) { create(:emerging_job, skills: ['IT', 'Project management']) }
