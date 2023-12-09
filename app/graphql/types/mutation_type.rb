@@ -24,5 +24,7 @@ module Types
                                                description: "Assesses user's Art and Creativity skill based on their answer to a specific question"
     field :assess_user_multilingualism_multiculturalism_skill, mutation: Mutations::AssessUserMultilingualismMulticulturalismSkill, 
                                                description: "Assesses user's Multilingualism / Multiculturalism skill based on a questionnaire"
+    field :determine_best_fit_job, mutation: Mutations::DetermineBestFitJob, 
+                                               description: "Finds the best fitting job based on the user's skills and preferred industries"
   end
 end
