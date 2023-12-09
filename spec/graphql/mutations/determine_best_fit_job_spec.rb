@@ -10,12 +10,6 @@ RSpec.describe Mutations::DetermineBestFitJob, type: :request do
       determineBestFitJob(industries: $industries){
         success
         errors
-        emergingJob{
-          id
-        }
-        lackingSkills{
-          id
-        }
       }
     }
     GQL
@@ -46,22 +40,15 @@ RSpec.describe Mutations::DetermineBestFitJob, type: :request do
     let!(:job2) { create(:emerging_job, skills: ['Art and Creativity', 'Social']) }
     let!(:job3) { create(:emerging_job, skills: ['Customer focus', 'IT', 'Social']) }
 
-    it 'returns the best fit job and links it to the user' do
+    it 'returns ' do
       expect(data['success']).to be true
       expect(data['errors']).to be_empty
-      expect(data['emergingJob']['id']).to eq(job1.id.to_s)
     end
 
-    it 'returns the lacking skills' do
-      expect(data['lackingSkills']).to eq([
-        { 'id' => skill1.id.to_s },
-        { 'id' => skill2.id.to_s }
-      ])
-    end
-
-    it 'links the job to the user' do
+    it 'links the best fit job and the lacking skills to the user ' do
       graphql_query(mutation, variables:)
       expect(user.reload.emerging_job).to eq(job1)
+      expect(user.lacking_skills).to match_array([skill1, skill2])
     end
   end
 
@@ -79,10 +66,13 @@ RSpec.describe Mutations::DetermineBestFitJob, type: :request do
     it 'returns the best fit filtered from given industries' do
       expect(data['success']).to be true
       expect(data['errors']).to be_empty
-      expect(data['emergingJob']['id']).to eq(job2.id.to_s)
-      expect(data['lackingSkills']).to eq([])
-      expect(user.reload.emerging_job).to eq(job2)
     end
+
+    it 'links the best fit filtered from given industries' do
+      graphql_query(mutation, variables:)
+      expect(user.reload.emerging_job).to eq(job2)
+      expect(user.lacking_skills).to eq([])
+    end 
   end
 
   context 'when no jobs match' do

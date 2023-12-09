@@ -19,11 +19,18 @@ module Types
     # Add root-level fields here.
     # They will be entry points for queries on your schema.
 
-    # TODO: remove me
-    field :users, [Types::UserType], null: false,
-      description: "All users"
+    field :users, [Types::UserType], null: false, description: "All users"
+    field :user, Types::UserType, null: true, description: "A user"
+
     def users
       User.all
+    end
+
+    def user
+      user_id = context[:session][:user_id]
+      return if user_id.nil?
+      
+      User.find_by(id: user_id)
     end
   end
 end

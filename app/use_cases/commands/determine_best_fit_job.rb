@@ -13,15 +13,13 @@ module Commands
       user = User.find_by(id: user_id)
       return error('User not found') if user.nil?
 
-      result = find_job(user:)
-      link_job_to_user(user:, job: result[:emerging_job]) if result[:success]
-      result
+      find_job(user:)
     end
 
     private
 
-    def success(job, lacking_skills)
-      { emerging_job: job, lacking_skills: lacking_skills, success: true, errors: [] }
+    def success
+      { success: true, errors: [] }
     end
 
 
@@ -50,7 +48,12 @@ module Commands
 
       return error("Data is not enough for finding a suitable job") if best_job.nil? || lacking_skills.size > 3
 
-      success(best_job, lacking_skills)
+      lacking_skills.each do |skill|
+        UsersLackingSkill.create(user_id:, skill_id: skill.id)
+      end
+
+      link_job_to_user(user:, job: best_job)
+      success
     end
 
     def calculate_composite_score(match_score:, lacking_skills_count:)

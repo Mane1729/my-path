@@ -3,6 +3,10 @@
 module Types
   class UserType < Types::BaseObject
     field :id, ID, null: false
+
+    field :emerging_job, Types::EmergingJobType, null: true, description: 'The best fitting emerging job'
+    field :lacking_skills, [Types::SkillType], null: true, description: 'List of skills lacking for the best fitting job'
+    
     field :working_hours, Integer, null: false
     field :public_speaking_points, Integer, null: false
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false

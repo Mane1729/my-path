@@ -8,7 +8,7 @@ RSpec.describe Commands::DetermineBestFitJob do
     described_class.call(user_id: user.id, industries:)
   end
 
-  describe '.calrel' do
+  describe '.call' do
     context 'when the user is not found' do
       it 'returns an error' do
         result = described_class.call(user_id: -1, industries:)
@@ -23,12 +23,15 @@ RSpec.describe Commands::DetermineBestFitJob do
       let!(:job2) { create(:emerging_job, skills: ['IT', 'Project management']) }
       let!(:job3) { create(:emerging_job, skills: ['Customer focus', 'IT', 'Social']) }
 
-      it 'returns the job and links it to the user' do
+      it 'returns success' do
         expect(result[:success]).to be true
         expect(result[:errors]).to be_empty
-        expect(result[:emerging_job]).to eq(job1)
-        expect(result[:lacking_skills]).to eq([])
+      end
+
+      it 'links the job to the user' do
+        result
         expect(user.reload.emerging_job).to eq(job1)
+        expect(user.lacking_skills).to eq([])
       end
     end
 
@@ -47,15 +50,15 @@ RSpec.describe Commands::DetermineBestFitJob do
       let!(:job2) { create(:emerging_job, skills: ['Art and Creativity', 'Social']) }
       let!(:job3) { create(:emerging_job, skills: ['Customer focus', 'IT', 'Social']) }
 
-      it 'returns the best fit job and links it to the user' do
+      it 'returns success' do
         expect(result[:success]).to be true
         expect(result[:errors]).to be_empty
-        expect(result[:emerging_job]).to eq(job1)
-        expect(user.reload.emerging_job).to eq(job1)
       end
 
-      it 'returns the lacking skills' do
-        expect(result[:lacking_skills]).to eq([skill1, skill2])
+      it 'links the best fit job and lacking skills to the user' do
+        result
+        expect(user.reload.emerging_job).to eq(job1)
+        expect(user.lacking_skills).to match_array([skill1, skill2])
       end
     end
 
@@ -67,12 +70,15 @@ RSpec.describe Commands::DetermineBestFitJob do
       let!(:job3) { create(:emerging_job, skills: ['Customer focus', 'IT', 'Social']) }
 
 
-      it 'returns the best fit job trying to maximize matching skills and minimize lacking skills' do
+      it 'returns success' do
         expect(result[:success]).to be true
         expect(result[:errors]).to be_empty
-        expect(result[:emerging_job]).to eq(job3)
-        expect(result[:lacking_skills]).to eq([skill])
+      end
+
+      it 'links the best fit job found by maximizing matching skills and minimizing lacking skills' do
+        result
         expect(user.reload.emerging_job).to eq(job3)
+        expect(user.lacking_skills).to eq([skill])
       end
     end
 
@@ -92,13 +98,16 @@ RSpec.describe Commands::DetermineBestFitJob do
       let!(:job2) { create(:emerging_job, industry: 'Management', skills: ['Customer focus', 'IT']) }
       let!(:job3) { create(:emerging_job, industry: 'Ecology', skills: ['Customer focus', 'IT', 'Art and Creativity', 'Social']) }
 
-      it 'returns the best fit filtered from given industries' do
+      it 'returns success' do
         expect(result[:success]).to be true
         expect(result[:errors]).to be_empty
-        expect(result[:emerging_job]).to eq(job2)
-        expect(result[:lacking_skills]).to eq([])
-        expect(user.reload.emerging_job).to eq(job2)
       end
+
+      it 'links the best fit filtered from given industries' do
+        result
+        expect(user.reload.emerging_job).to eq(job2)
+        expect(user.lacking_skills).to eq([])
+      end 
     end
   end
 end

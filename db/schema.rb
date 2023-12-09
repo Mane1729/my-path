@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_05_193608) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_09_155511) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -79,6 +79,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_05_193608) do
     t.index ["emerging_job_id"], name: "index_users_on_emerging_job_id"
   end
 
+  create_table "users_lacking_skills", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "skill_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["skill_id"], name: "index_users_lacking_skills_on_skill_id"
+    t.index ["user_id"], name: "index_users_lacking_skills_on_user_id"
+  end
+
   create_table "users_skills", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "skill_id", null: false
@@ -92,6 +101,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_05_193608) do
   add_foreign_key "emerging_jobs_skills", "skills"
   add_foreign_key "profiles", "users"
   add_foreign_key "users", "emerging_jobs"
+  add_foreign_key "users_lacking_skills", "skills"
+  add_foreign_key "users_lacking_skills", "users"
   add_foreign_key "users_skills", "skills"
   add_foreign_key "users_skills", "users"
 end
