@@ -6,7 +6,8 @@
       {"choice": "b", "text": "Korea"},
       {"choice": "c", "text": "Japan"},
       {"choice": "d", "text": "Vietnam"}
-    ]
+    ],
+    "image": "https://www.mashed.com/img/gallery/youve-been-eating-sushi-wrong-this-whole-time/intro-1654872727.jpg"
   },
   "paella": {
     "question": " This dish, made primarily with rice and seafood, originates from which country?",
@@ -15,7 +16,8 @@
       {"choice": "b", "text": "Italy"},
       {"choice": "c", "text": "Greece"},
       {"choice": "d", "text": "Mexico"}
-    ]
+    ],
+    "image": "https://houseofnasheats.com/wp-content/uploads/2023/08/Mixed-Paella-Recipe-1.jpg"
   },
   "colosseum": {
     "question": "This ancient amphitheater, known for its gladiatorial contests, is situated in which city?",
@@ -24,7 +26,9 @@
       {"choice": "b", "text": "Rome"},
       {"choice": "c", "text": "Paris"},
       {"choice": "d", "text": "London"}
-    ]
+    ],
+    "image": "https://cdn.mos.cms.futurecdn.net/BiNbcY5fXy9Lra47jqHKGK.jpg"
+
   },
   "sydneyOperaHouse": {
     "question": "This iconic building with sail-shaped structures is located in which country?",
@@ -33,7 +37,9 @@
       {"choice": "b", "text": "South Africa"},
       {"choice": "c", "text": "Australia"},
       {"choice": "d", "text": "Canada"}
-    ]
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Sydney_Australia._%2821339175489%29.jpg"
+
   },
   "kilt": {
     "question": "This knee-length non-bifurcated skirt-type garment is traditionally associated with which country?",
@@ -42,7 +48,9 @@
       {"choice": "b", "text": "Ireland"},
       {"choice": "c", "text": "England"},
       {"choice": "d", "text": "Norway"}
-    ]
+    ],
+    "image": "https://www.kilts-4-u.com/media/52825/untitled90.jpg?mode=pad&width=1200&upscale=false"
+
   },
   "hanbok": {
     "question": "This is a traditional attire worn on special occasions and festivals in which country? ",
@@ -51,6 +59,8 @@
       {"choice": "b", "text": "China"},
       {"choice": "c", "text": "Japan"},
       {"choice": "d", "text": "Vietnam"}
-    ]
+    ],
+    "image": "https://thekoreaninme.com/cdn/shop/products/womens-korean-hanbok-white-top-green-skirt_1024x1024.jpg?v=1593042904"
+
   }
 }

@@ -1,0 +1,38 @@
+{
+    "firstStep": {
+      "question": "You've been assigned to lead a project that aims to create a new software product. You're given minimal guidelines, only that it should be a productivity tool targeting freelancers. You have a diverse team of ten members, but there's no predefined structure for how to proceed. What's the first step you would take?",
+      "options": [
+        {"choice": "a", "text": "Wait for someone to provide clearer instructions."},
+        {"choice": "b", "text": "Call for a team meeting to brainstorm and gather insights on the vague guidelines."},
+        {"choice": "c", "text": "Start by researching current productivity tools in the market."},
+        {"choice": "d", "text": "Seek guidance from higher-ups or peers before proceeding."}
+      ]
+    },
+    "approachToDivergentOpinions": {
+      "question": "After initial research, you find out that there's a vast range of productivity tools targeting freelancers. Some team members think the software should focus on task management, while others believe it should emphasize time tracking. How would you proceed?",
+      "options": [
+        {"choice": "a", "text": "Choose the most popular opinion in the team and proceed."},
+        {"choice": "b", "text": "Decide on your own without seeking further input."},
+        {"choice": "c", "text": "Organize a structured debate or discussion to weigh pros and cons, followed by a team vote."},
+        {"choice": "d", "text": "Avoid making a decision and wait to see if a clear direction emerges on its own."}
+      ]
+    },
+    "handlingTeamMemberResignation": {
+        "question": "During the project, a key team member resigns, leaving a knowledge gap in the team. How would you handle the situation?",
+        "options": [
+          {"choice": "a", "text": "Immediately request a replacement from the HR department."},
+          {"choice": "b", "text": "Panic and worry about the potential delays and issues."},
+          {"choice": "c", "text": "Gather the team, assess the knowledge gap, and brainstorm ways to distribute tasks or train other members to bridge the gap."},
+          {"choice": "d", "text": "Hope someone in the team steps up to fill the role without any intervention."}
+        ]
+      },
+      "responseToCompetitorRelease": {
+        "question": "Two months into the project, a competitor releases a similar product. Your team is demoralized. What's your response?",
+        "options": [
+          {"choice": "a", "text": "Consider abandoning the project as it's too risky now."},
+          {"choice": "b", "text": "Rally the team, analyze the competitor's product for strengths and weaknesses, and adapt your strategy."},
+          {"choice": "c", "text": "Stick to the original plan without any changes."},
+          {"choice": "d", "text": "Ask higher-ups what to do next."}
+        ]
+      }
+}

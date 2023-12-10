@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import jsonData from './LeanProductionQuestions.json';
+import jsonData from './questionData/LeanProductionQuestions.json';
 import './../App.css';
 
 import gql from 'graphql-tag';
 import { useMutation } from '@apollo/react-hooks';
 
-const CREATE_USER = gql`
+const ASSESS_SKILL = gql`
   mutation AssessUserLeanProductionSkill($answer: String!) {
     assessUserLeanProductionSkill(answer: $answer) {
       success
@@ -19,7 +19,7 @@ function Skill4() {
   const questions = Object.keys(jsonData);
 
   const [responses, setResponses] = useState({});
-  const [AssessUserProjectManagemenSkill] = useMutation(CREATE_USER); 
+  const [AssessUserLeanProductionSkill] = useMutation(ASSESS_SKILL); 
 
   const handleResponseChange = (question, response) => {
     setResponses({ ...responses, [question]: response });
@@ -42,7 +42,7 @@ function Skill4() {
         throw new Error('Invalid value for answersString');
       }
   
-      const response = await AssessUserProjectManagemenSkill({
+      const response = await AssessUserLeanProductionSkill({
         variables: {
           answer: answersString, 
         },
@@ -56,38 +56,31 @@ function Skill4() {
     }
   };
   
-  
-
   return (
-    <div>
-      <header>
-        <h1>Lean production</h1>
-      </header>
-      <main>
+    <div class="skill">
+    <header>
+      <h1>Lean production</h1>
+    </header>
+    <main>
         <section>
           <ul>
             {questions.map((question, index) => (
               <li key={index}>
                 <br />
-                <h3>{jsonData[question].question}</h3>
+                <h3 class="question_fontsize">{jsonData[question].question}</h3>
                 <textarea
+                  class="response-textarea"
                   value={responses[question] || ''}
                   onChange={(e) => handleResponseChange(question, e.target.value)}
+                  placeholder="Type your response here..."
                 />
               </li>
             ))}
           </ul>
         </section>
       </main>
-      <section>
-        <h2>Collected Responses:</h2>
-        <pre>{JSON.stringify(responses, null, 2)}</pre>
-      </section>
-      <footer>
-        {/* &copy; 2023 My Website */}
-      </footer>
       <Link to="/skill5">
-        <button onClick={submitResponses}>Next </button>
+        <button class="skill_nextButton" onClick={submitResponses}>Next</button>
       </Link>
     </div>
   );

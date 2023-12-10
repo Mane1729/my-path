@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import jsonData from './MulticulturalismQuestions.json';
+import jsonData from './questionData/MulticulturalismQuestions.json';
 import './../App.css';
 import { useLocation } from 'react-router-dom';
 
@@ -60,47 +60,50 @@ function Skill9_2() {
   };
 
   return (
-      <div>
+      <div className="skill">
         <header>
-          <h1>Multiculturalism </h1>
+          <h1>Multiculturalism</h1>
         </header>
         <main>
-        <section>
-          <ul>
-            {Object.keys(questionsData).map((questionKey) => (
-              <li key={questionKey}>
-                <br></br>
-                <h3>{questionsData[questionKey].question}</h3>
-                <ul>
-                  {questionsData[questionKey].options.map((option) => (
-                    <li key={option.choice}>
-                      <label>
-                        <input
-                          type="radio"
-                          name={questionKey}
-                          value={option.choice}
-                          checked={responses[questionKey] === option.choice}
-                          onChange={() => handleResponseChange(questionKey, option.choice)}
-                        />
-                        {option.text}
-                      </label>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ))}
-          </ul>
-        </section>
-      </main>
-      <section>
+          <section>
+            <ul>
+              {Object.keys(questionsData).map((questionKey) => (
+                <li key={questionKey}>
+                  <br />
+                  <h3 className="question_fontsize">{questionsData[questionKey].question}</h3>
+                  {questionsData[questionKey].image && (
+                    <img
+                      src={process.env.PUBLIC_URL + questionsData[questionKey].image}
+                      style={{ maxWidth: '100%' }}
+                    />
+                  )}
+                  <ul>
+                    {questionsData[questionKey].options.map((option) => (
+                      <li key={option.choice}>
+                        <label>
+                          <input
+                            type="radio"
+                            name={questionKey}
+                            value={option.choice}
+                            checked={responses[questionKey] === option.choice}
+                            onChange={() => handleResponseChange(questionKey, option.choice)}
+                          />
+                          <span className="option_fontsize">{option.text}</span>
+                        </label>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </main>
+      {/* <section>
         <h2>Collected Responses:</h2>
         <pre>{JSON.stringify(responses, null, 2)}</pre>
-      </section>
-        <footer>
-          {/* &copy; 2023 My Website */}
-        </footer>
+      </section> */}
         <Link to="/skill10">
-        <button onClick={submitResponses}>Next</button>
+          <button class="skill_nextButton" onClick={submitResponses}>Next</button>
         </Link>
       </div>
   );

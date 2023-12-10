@@ -1,0 +1,47 @@
+{
+    "greenhouseEffectContribution": {
+      "question": "Which of the following contributes most to the greenhouse effect?",
+      "options": [
+        {"choice": "a", "text": "Oxygen"},
+        {"choice": "b", "text": "Nitrogen"},
+        {"choice": "c", "text": "Carbon dioxide"},
+        {"choice": "d", "text": "Helium"}
+      ]
+    },
+    "deforestationCauses": {
+        "question": "What are the main causes of deforestation?",
+        "options": [
+          {"choice": "a", "text": "Urban development and transportation."},
+          {"choice": "b", "text": "Tourism and scientific research."},
+          {"choice": "c", "text": "Logging and agriculture."},
+          {"choice": "d", "text": "Wildlife conservation and recreation."}
+        ]
+      },
+      "renewableResource": {
+        "question": "Which of the following is a renewable resource?",
+        "options": [
+          {"choice": "a", "text": "Coal"},
+          {"choice": "b", "text": "Oil"},
+          {"choice": "c", "text": "Natural gas"},
+          {"choice": "d", "text": "Solar energy"}
+        ]
+      },
+      "plasticPollutantsImpact": {
+        "question": "What impact do plastic pollutants primarily have on the ocean ecosystem?",
+        "options": [
+          {"choice": "a", "text": "They increase the salt concentration in seawater."},
+          {"choice": "b", "text": "They lead to an increase in oceanic volcanic activity."},
+          {"choice": "c", "text": "They disrupt the food chain by being ingested by marine animals."},
+          {"choice": "d", "text": "They provide a new habitat for deep-sea creatures."}
+        ]
+      },
+      "waterScarcityContributor": {
+        "question": "Which activity contributes most significantly to global water scarcity?",
+        "options": [
+          {"choice": "a", "text": "Household water use."},
+          {"choice": "b", "text": "Industrial processes."},
+          {"choice": "c", "text": "Agricultural irrigation."},
+          {"choice": "d", "text": "Hydroelectric power generation."}
+        ]
+      }
+}

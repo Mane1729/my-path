@@ -1,0 +1,29 @@
+{
+    "teamConflict": {
+      "question": "You are leading a team project, and two of your team members, Alex and Jordan, are having a disagreement about the direction of a task. You notice their voices are raised, and the rest of the team is becoming visibly uncomfortable. How would you handle this situation?",
+      "options": [
+        {"choice": "a", "text": "Let them resolve their disagreement on their own; they are adults and can manage their issues."},
+        {"choice": "b", "text": "Ask them both to leave the meeting and discuss their concerns privately, returning with a united decision."},
+        {"choice": "c", "text": "Interrupt the conversation and suggest that the whole team takes a break. Speak with Alex and Jordan separately to understand their perspectives."},
+        {"choice": "d", "text": "Change the topic in hopes that the tension will dissipate on its own."}
+      ]
+    },
+    "newTeamMemberStruggling": {
+        "question": "A new team member, Lee, has joined your project team. You've observed that Lee struggles to integrate into the group and is often silent during meetings. What would be your approach to support Lee?",
+        "options": [
+          {"choice": "a", "text": "Assign another team member to act as a mentor for Lee, helping them to understand the project better."},
+          {"choice": "b", "text": "Ignore it, believing that with time Lee will adapt to the new environment."},
+          {"choice": "c", "text": "Arrange a private meeting with Lee to understand any challenges or concerns they might be facing."},
+          {"choice": "d", "text": "Announce in the next team meeting that everyone should make an effort to include Lee more."}
+        ]
+      },
+      "sharingNegativeFeedback": {
+        "question": "You have to communicate to your team that the project deliverables they submitted did not meet the client's expectations and there's a need for revisions. How would you communicate this to your team?",
+        "options": [
+          {"choice": "a", "text": "Email the team, listing all the errors and stating that they need to be fixed immediately."},
+          {"choice": "b", "text": "Organize a team meeting, share the feedback constructively, discuss solutions, and plan for revisions collaboratively."},
+          {"choice": "c", "text": "Speak only with the team members responsible for the mistakes and ask them to correct them."},
+          {"choice": "d", "text": "Wait for the next team meeting to casually mention that there were some issues with the deliverables."}
+        ]
+      }
+}

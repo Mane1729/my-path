@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
-import translations from './MultilinguismData.json';
+import translations from './questionData/MultilinguismData.json';
 import './../App.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -61,10 +61,12 @@ function Skill9_1() {
   };
 
   return (
+    <div class="skill">
     <DragDropContext onDragEnd={onDragEnd}>
       <header>
         <h1>Multilingualism</h1>
       </header>
+      <h3 className="question_fontsize">Match the languages and corresponding sentences by dragging and dropping them.</h3>
       <div className="table">
         <div className="header language">Languages</div>
         <div className="header translation">Translations</div>
@@ -120,11 +122,12 @@ function Skill9_1() {
           </div>
         ))}
       </div>
-      <div className="match-count">
+      {/* <div className="match-count">
         Correct Matches: {countCorrectMatches()}
-      </div>
-      <button onClick={navigateToSkill9_2}>Next</button>
+      </div> */}
+      <button class="skill_nextButton" onClick={navigateToSkill9_2}>Next</button>
     </DragDropContext>
+    </div>
   );
 }
 

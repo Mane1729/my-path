@@ -1,0 +1,92 @@
+{
+    "ageProblem": {
+      "question": "John, who is twelve years old, is three times as old as his brother. How old will John be when he is twice as old as his brother?",
+      "options": [
+        {"choice": "a", "text": "16"},
+        {"choice": "b", "text": "18"},
+        {"choice": "c", "text": "20"},
+        {"choice": "d", "text": "22"}
+      ]
+    },
+    "numberSeriesNext": {
+        "question": "What number comes next in the series: 1, 1, 2, 3, 5, 8, ...?",
+        "options": [
+        {"choice": "a", "text": "10"},
+        {"choice": "b", "text": "12"},
+        {"choice": "c", "text": "13"},
+        {"choice": "d", "text": "15"}
+        ]
+      },
+      "sequenceNext": {
+        "question": "What comes next in the sequence: O, T, T, F, F, S, S,...?",
+        "options": [
+          {"choice": "a", "text": "E"},
+          {"choice": "b", "text": "N"},
+          {"choice": "c", "text": "T"},
+          {"choice": "d", "text": "O"}
+        ]
+      },
+      "logicalDeduction": {
+        "question": "If some books are red and all red things fade over time, which of the following must be true?",
+        "options": [
+            {"choice": "a", "text": "All books fade over time."},
+            {"choice": "b", "text": "Some red things are books."},
+            {"choice": "c", "text": "All red books fade over time."},
+            {"choice": "d", "text": "Some books are blue."}
+        ]
+      },
+      "comparativeCost": {
+        "question": "Blueberries cost more than strawberries. Strawberries cost less than raspberries. If the first two statements are true, which is the cheapest fruit?",
+        "options": [
+            {"choice": "a", "text": "Blueberries"},
+            {"choice": "b", "text": "Strawberries"},
+            {"choice": "c", "text": "Raspberries"},
+            {"choice": "d", "text": "Can't determine"}
+        ]
+      },
+      "ipAssignmentProtocol": {
+        "question": "Which protocol is used to assign IP addresses to devices on a network automatically?",
+        "options": [
+            {"choice": "a", "text": "ICMP"},
+            {"choice": "b", "text": "DHCP"},
+            {"choice": "c", "text": "DNS"},
+            {"choice": "d", "text": "FTP"}
+        ]
+      },
+      "directoryViewCommand": {
+        "question": "In Linux, which command is used to view the contents of a directory?",
+        "options": [
+            {"choice": "a", "text": "view"},
+            {"choice": "b", "text": "dir"},
+            {"choice": "c", "text": "list"},
+            {"choice": "d", "text": "ls"}
+        ]
+      },
+      "volatileMemoryComponent": {
+        "question": "Which of the following components is considered volatile memory, meaning it loses its contents when the power is turned off?",
+        "options": [
+            {"choice": "a", "text": "SSD"},
+            {"choice": "b", "text": "HDD"},
+            {"choice": "c", "text": "RAM"},
+            {"choice": "d", "text": "ROM"}
+        ]
+      },
+      "hierarchicalDataStructure": {
+        "question": "Which of the following data structures is best suited for storing hierarchical data, like a file system?",
+        "options": [
+            {"choice": "a", "text": "Queue"},
+            {"choice": "b", "text": "Stack"},
+            {"choice": "c", "text": "Tree"},
+            {"choice": "d", "text": "Linked List"}
+        ]
+      },
+      "webPageFetchProtocol": {
+        "question": "Which protocol is used primarily to fetch web pages on the internet?",
+        "options": [
+            {"choice": "a", "text": "SMTP"},
+            {"choice": "b", "text": "HTTP"},
+            {"choice": "c", "text": "FTP"},
+            {"choice": "d", "text": "SNMP"}
+        ]
+      }
+}

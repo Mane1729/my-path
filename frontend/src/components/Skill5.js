@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import jsonData from './CustomerFocusQuestions.json';
+import jsonData from './questionData/CustomerFocusQuestions.json';
 import './../App.css';
 
 
 import gql from 'graphql-tag';
 import { useMutation } from '@apollo/react-hooks';
 
-const CREATE_USER = gql`
-  mutation assessUserCustomerFocusSkill($answers: CustomerFocusQuestionnaireInput0!) {
+const ASSESS_SKILL = gql`
+  mutation AssessUserCustomerFocusSkill($answers: CustomerFocusQuestionnaireInput!) {
     assessUserCustomerFocusSkill(answers: $answers) {
       success
       errors
@@ -34,7 +34,7 @@ function App() {
     return mappedResponses;
   };
 
-  const [assessUserSystemsThinkingSkill] = useMutation(CREATE_USER);
+  const [AssessUserCustomerFocusSkill] = useMutation(ASSESS_SKILL);
 
   const submitResponses = async () => {
     try {
@@ -43,7 +43,7 @@ function App() {
       console.log('Collected Responses:', responses);
       console.log('Mapped Responses for Mutation:', mappedResponses);
 
-      const response = await assessUserSystemsThinkingSkill({
+      const response = await AssessUserCustomerFocusSkill({
         variables: {
           answers: mappedResponses,
         },
@@ -56,17 +56,17 @@ function App() {
   };
 
   return (
-    <div>
-      <header>
-        <h1>Customer Focus</h1>
-      </header>
-      <main>
+    <div class="skill">
+    <header>
+      <h1>Customer Focus</h1>
+    </header>
+    <main>
         <section>
           <ul>
             {Object.keys(questionsData).map((questionKey) => (
               <li key={questionKey}>
                 <br></br>
-                <h3>{questionsData[questionKey].question}</h3>
+                <h3 class="question_fontsize">{questionsData[questionKey].question}</h3>
                 <ul>
                   {questionsData[questionKey].options.map((option) => (
                     <li key={option.choice}>
@@ -78,7 +78,7 @@ function App() {
                           checked={responses[questionKey] === option.choice}
                           onChange={() => handleResponseChange(questionKey, option.choice)}
                         />
-                        {option.text}
+                        <span class="option_fontsize">{option.text}</span>
                       </label>
                     </li>
                   ))}
@@ -88,18 +88,9 @@ function App() {
           </ul>
         </section>
       </main>
-      <section>
-        <h2>Collected Responses:</h2>
-        <pre>{JSON.stringify(responses, null, 2)}</pre>
-      </section>
-      <footer>
-        {/* &copy; 2023 My Website */}
-      </footer>
-      <div>
-        <Link to="/skill4">
-          <button onClick={submitResponses}>Next</button>
-        </Link>
-      </div>
+      <Link to="/skill6">
+          <button class="skill_nextButton" onClick={submitResponses}>Next</button>
+      </Link>
     </div>
   );
 }

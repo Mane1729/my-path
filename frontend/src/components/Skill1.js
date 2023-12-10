@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import jsonData from './SystemsThinkingQuestions.json';
+import jsonData from './questionData/SystemsThinkingQuestions.json';
 import './../App.css';
 
 import gql from 'graphql-tag';
 import { useMutation } from '@apollo/react-hooks';
 
-const CREATE_USER = gql`
+const ASSESS_SKILL = gql`
   mutation AssessUserSystemsThinkingSkill($answers: SystemsThinkingQuestionnaireInput!) {
     assessUserSystemsThinkingSkill(answers: $answers) {
       success
@@ -33,7 +33,7 @@ function App() {
     return mappedResponses;
   };
 
-  const [assessUserSystemsThinkingSkill] = useMutation(CREATE_USER);
+  const [assessUserSystemsThinkingSkill] = useMutation(ASSESS_SKILL);
 
   const submitResponses = async () => {
     try {
@@ -55,47 +55,43 @@ function App() {
   };
 
   return (
-    <div class="skill1_back">
-      
-      <div>
-      <header>
-        <h1>System thinking</h1>
-      </header>
-      <main>
-        <section>
-          <ul>
-            {Object.keys(questionsData).map((questionKey) => (
-              <li key={questionKey}>
-                <br></br>
-                <h3>{questionsData[questionKey].question}</h3>
-                <ul>
-                  {questionsData[questionKey].options.map((option) => (
-                    <li key={option.choice}>
-                      <label>
-                        <input
-                          type="radio"
-                          name={questionKey}
-                          value={option.choice}
-                          checked={responses[questionKey] === option.choice}
-                          onChange={() => handleResponseChange(questionKey, option.choice)}
-                        />
-                        {option.text}
-                      </label>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ))}
-          </ul>
-        </section>
-      </main>
-      
+    <div class="skill">
+    <header>
+      <h1>System thinking</h1>
+    </header>
+    <main>
+      <section>
+        <ul>
+          {Object.keys(questionsData).map((questionKey) => (
+            <li key={questionKey}>
+              <br />
+              <h3 class="question_fontsize">{questionsData[questionKey].question}</h3>
+              <ul>
+                {questionsData[questionKey].options.map((option) => (
+                  <li key={option.choice}>
+                    <label>
+                      <input
+                        type="radio"
+                        name={questionKey}
+                        value={option.choice}
+                        checked={responses[questionKey] === option.choice}
+                        onChange={() => handleResponseChange(questionKey, option.choice)}
+                      />
+                      <span class="option_fontsize">{option.text}</span>
+                    </label>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ))}
+        </ul>
         <Link to="/skill2">
-          <button class="skill1_nextButton" onClick={submitResponses}>Next</button>
+          <button class="skill_nextButton" onClick={submitResponses}>Next</button>
         </Link>
-     
-      </div>
-    </div>
+      </section>
+    </main>
+  </div>
+  
   );
 }
 
