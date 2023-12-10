@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import jsonData from './questionData/ProjectManagementQuestions.json';
 import './../App.css';
@@ -18,32 +18,41 @@ const ASSESS_SKILL = gql`
 function Skill2() {
   const questions = Object.keys(jsonData);
   const [responses, setResponses] = useState({});
-  const [AssessUserProjectManagemenSkill] = useMutation(ASSESS_SKILL); 
+  const [allQuestionsAnswered, setAllQuestionsAnswered] = useState(false);
+  const [AssessUserProjectManagemenSkill] = useMutation(ASSESS_SKILL);
+
+  useEffect(() => {
+    checkAllQuestionsAnswered();
+  }, [responses]);
 
   const handleResponseChange = (question, response) => {
     setResponses({ ...responses, [question]: response });
   };
 
   const mapResponsesToMutationFormat = () => {
-
     return responses;
+  };
+
+  const checkAllQuestionsAnswered = () => {
+    const answered = questions.every((question) => responses[question] !== undefined && responses[question].trim() !== '');
+    setAllQuestionsAnswered(answered);
   };
 
   const submitResponses = async () => {
     try {
       const mappedResponses = mapResponsesToMutationFormat();
       const answersString = JSON.stringify(mappedResponses);
-  
+
       console.log('Collected Responses:', responses);
       console.log('Mapped Responses for Mutation:', answersString);
-  
+
       if (!answersString) {
         throw new Error('Invalid value for answersString');
       }
-  
+
       const response = await AssessUserProjectManagemenSkill({
         variables: {
-          answer: answersString, 
+          answer: answersString,
         },
       });
 
@@ -54,6 +63,7 @@ function Skill2() {
       console.error('Mutation Error:', error);
     }
   };
+
 
   return (
     <div class="skill">
@@ -79,7 +89,7 @@ function Skill2() {
         </section>
       </main>
       <Link to="/skill3">
-      <button className="skill_nextButton" onClick={submitResponses}>Next</button>
+      <button className="skill_nextButton" onClick={submitResponses} disabled={!allQuestionsAnswered}>Next</button>
     </Link>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import jsonData from './questionData/MulticulturalismQuestions.json';
 import './../App.css';
@@ -19,9 +19,14 @@ const ASSESS_SKILL = gql`
 function Skill9_2() {
   const questionsData = jsonData;
   const [responses, setResponses] = useState({});
+  const [allQuestionsAnswered, setAllQuestionsAnswered] = useState(false);
 
   const location = useLocation();
   const correctCount = location.state?.correctCount || 0;
+
+  useEffect(() => {
+    checkAllQuestionsAnswered();
+  }, [responses]);
 
   const handleResponseChange = (questionKey, choice) => {
     setResponses({ ...responses, [questionKey]: choice });
@@ -37,6 +42,13 @@ function Skill9_2() {
     return mappedResponses;
   };
 
+  const checkAllQuestionsAnswered = () => {
+    const answered = Object.keys(questionsData).every(
+      (questionKey) => responses[questionKey] !== undefined
+    );
+    setAllQuestionsAnswered(answered);
+  };
+  
   const [assessUserMultilingualismMulticulturalismSkill] = useMutation(ASSESS_SKILL);
 
   const submitResponses = async () => {
@@ -103,7 +115,7 @@ function Skill9_2() {
         <pre>{JSON.stringify(responses, null, 2)}</pre>
       </section> */}
         <Link to="/skill10">
-          <button class="skill_nextButton" onClick={submitResponses}>Next</button>
+          <button class="skill_nextButton" onClick={submitResponses} disabled={!allQuestionsAnswered}>Next</button>
         </Link>
       </div>
   );

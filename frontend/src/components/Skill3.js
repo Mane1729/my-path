@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import jsonData from './questionData/CrossIndustryCommunicationQuestions.json';
 import './../App.css';
@@ -18,9 +18,21 @@ const ASSESS_SKILL = gql`
 function App() {
   const questionsData = jsonData;
   const [responses, setResponses] = useState({});
+  const [allQuestionsAnswered, setAllQuestionsAnswered] = useState(false);
 
   const handleResponseChange = (questionKey, choice) => {
     setResponses({ ...responses, [questionKey]: choice });
+  };
+
+  useEffect(() => {
+    checkAllQuestionsAnswered();
+  }, [responses]);
+
+  const checkAllQuestionsAnswered = () => {
+    const answered = Object.keys(questionsData).every(
+      (questionKey) => responses[questionKey] !== undefined
+    );
+    setAllQuestionsAnswered(answered);
   };
 
   const mapResponsesToMutationFormat = () => {
@@ -86,7 +98,7 @@ function App() {
             ))}
           </ul>
           <Link to="/skill4">
-            <button class="skill_nextButton" onClick={submitResponses}>Next</button>
+            <button class="skill_nextButton" onClick={submitResponses} disabled={!allQuestionsAnswered}>Next</button>
           </Link>
         </section>
       </main>
