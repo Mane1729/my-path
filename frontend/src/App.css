@@ -246,3 +246,11 @@ img {
   height: 150px; 
   margin-top: 10px;
 }
+
+.icon{
+  width: 50px;
+  max-height: auto;
+  position: relative;
+  z-index: 1;
+ 
+}

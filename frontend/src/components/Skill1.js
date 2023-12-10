@@ -70,9 +70,13 @@ function App() {
     <div class="skill">
     <header>
       <h1>System thinking</h1>
-    </header>
+      </header>
     <main>
+    <div><img className="icon" src="frontend\src\Images\WorkingInUncertainty.png"/>
+  </div>
+    
       <section>
+      
         <ul>
           {Object.keys(questionsData).map((questionKey) => (
             <li key={questionKey}>
@@ -100,9 +104,14 @@ function App() {
         <Link to="/skill2">
           <button class="skill_nextButton" onClick={submitResponses} disabled={!allQuestionsAnswered}>Next</button>
         </Link>
+        
+        
       </section>
     </main>
   </div>
+ 
+
+
   
   );
 }

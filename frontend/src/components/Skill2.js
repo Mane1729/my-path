@@ -72,6 +72,7 @@ function Skill2() {
     </header>
     <main>
         <section>
+          <img src='frontend\src\Icons\ProjectManagement.png'/>
           <ul>
             {questions.map((question, index) => (
               <li key={index}>
