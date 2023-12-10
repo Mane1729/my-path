@@ -6,6 +6,10 @@ body, h1, label, p {
   color: #123b53; 
 }
 
+p{
+  font-size: 1.2em;
+}
+
 .question_fontsize{
   font-size: 1.3em;
 }
@@ -92,7 +96,6 @@ input[type="text"] {
 .skill{
 margin-left: 15%;
 margin-right: 15%;
-
 }
 
 .buttonStart{
@@ -107,7 +110,6 @@ margin-right: 15%;
   top: 150px;
   left: 50%;
   transform: translateX(-50%);
-  
 }
 
 .buttonStart:hover{

@@ -21,6 +21,8 @@ jobs.each do |job_data|
     industry: job_data["industry"],
     description: job_data["description"]
   )
+  
+  job.update(image: job_data["image"]) if job_data["image"]
 
   job_data["skills"].each do |skill_name|
     skill = Skill.find_by(name: skill_name)

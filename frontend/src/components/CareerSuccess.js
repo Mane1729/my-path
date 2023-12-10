@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
 
+import bioethicistImage from '../Images/jobs/bioethicist.png';
+
 const GET_USER_INFO = gql`
   query user {
     user {
@@ -22,7 +24,7 @@ function SuccessPage() {
   const { loading, error, data } = useQuery(GET_USER_INFO);
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error :(</p>;
+  if (error) return <p>Error</p>;
 
   return (
     <div>
@@ -32,6 +34,7 @@ function SuccessPage() {
         <p><strong>Industry:</strong> {data.user.emergingJob.industry}</p>
         <p><strong>Description:</strong> {data.user.emergingJob.description}</p>
         <h3>Lacking Skills</h3>
+        <img src={bioethicistImage} alt="Specialist_Image" />
         <ul>
           {data.user.lackingSkills.map((skill, index) => (
             <li key={index}>{skill.name}</li>

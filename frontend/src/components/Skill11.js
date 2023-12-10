@@ -97,7 +97,7 @@ function App() {
             </li>
           ))}
         </ul>
-        <Link to="/IndustrySelector">
+        <Link to="/industry_selector">
           <button class="skill_nextButton" onClick={submitResponses} disabled={!allQuestionsAnswered}>Next</button>
         </Link>
       </section>
