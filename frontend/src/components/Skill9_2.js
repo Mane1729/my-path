@@ -6,6 +6,7 @@ import { useLocation } from 'react-router-dom';
 
 import gql from 'graphql-tag';
 import { useMutation } from '@apollo/react-hooks';
+import Multiculturalism from '../Icons/Multiligualizm.png';
 
 const ASSESS_SKILL = gql`
   mutation AssessUserMultilingualismMulticulturalismSkill($multilingualismCorrectCount: Int!, $multiculturalismAnswers: MulticulturalismQuestionnaireInput!) {
@@ -73,8 +74,13 @@ function Skill9_2() {
 
   return (
       <div className="skill">
-        <header>
+        <header class="header">
+        <div>
+          <img className="icon" src={Multiculturalism}/>
+        </div>
+          <div class="headerRight">
           <h1>Multiculturalism</h1>
+          </div>
         </header>
         <main>
           <section>
@@ -85,11 +91,12 @@ function Skill9_2() {
                   <h3 className="question_fontsize">{questionsData[questionKey].question}</h3>
                   {questionsData[questionKey].image && (
                     <img
+                    class="skill9_2images"
                       src={process.env.PUBLIC_URL + questionsData[questionKey].image}
                       style={{ maxWidth: '100%' }}
                     />
                   )}
-                  <ul>
+                  <ul class = "multipleChoice9_2">
                     {questionsData[questionKey].options.map((option) => (
                       <li key={option.choice}>
                         <label>

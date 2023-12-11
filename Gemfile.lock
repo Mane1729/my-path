@@ -187,6 +187,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.14.3-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.14.3-x86_64-linux)
+      racc (~> 1.4)
     pg (1.5.3)
     pry (0.13.1)
       coderay (~> 1.1)
@@ -306,6 +308,7 @@ PLATFORMS
   aarch64-linux
   arm64-darwin-22
   x86_64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap

@@ -132,6 +132,7 @@ margin-right: 15%;
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
+  margin-top: 20px;
   margin-bottom: 100px;
   border: 2px solid #16425B; /* Darker blue border */
   transition: background-color 0.3s, border-color 0.3s, color 0.3s;
@@ -249,9 +250,53 @@ img {
   margin-top: 10px;
 }
 
-.icon{
-  width: 50px;
-  max-height: auto;
-  position: relative;
-  z-index: 1;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; 
+  width: 100%; 
 }
+
+
+.icon {
+  width: 100px; 
+  height: auto; 
+  margin-right: 10px; 
+}
+
+
+.headerRight h1 {
+  margin: 0;
+}
+
+.addMoreIdeasButton{
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #16425B; /* Dark blue color */
+  color: white;
+  border: 2px solid #16425B;
+}
+
+.skill_nextButton:disabled{
+  background-color: #e8f4f8;
+  color: #666666;
+  /* cursor: not-allowed; */
+  cursor: default;
+}
+
+.skill9_2images {
+  max-width: 100%;
+  display: inline-block;
+  margin-right: 100px;
+}
+
+.multipleChoice9_2{
+  display: inline-block;
+  }
+
+
+
+
+
+

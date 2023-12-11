@@ -5,6 +5,8 @@ import './../App.css';
 
 import gql from 'graphql-tag';
 import { useMutation } from '@apollo/react-hooks';
+import SystemThinking from '../Icons/SystemThinking.png';
+
 
 const ASSESS_SKILL = gql`
   mutation AssessUserSystemsThinkingSkill($answers: SystemsThinkingQuestionnaireInput!) {
@@ -68,13 +70,16 @@ function App() {
 
   return (
     <div class="skill">
-    <header>
+    <header class="header">
+    <div>
+      <img className="icon" src={SystemThinking}/>
+      </div>
+      <div class="headerRight">
       <h1>System thinking</h1>
+      </div>
       </header>
     <main>
-      <div><img className="icon" src="frontend\src\Images\WorkingInUncertainty.png"/>
-      </div>
-        <section>
+      <section>
           <ul>
             {Object.keys(questionsData).map((questionKey) => (
               <li key={questionKey}>
@@ -100,7 +105,7 @@ function App() {
           ))}
         </ul>
         <Link to="/skill2">
-          <button class="skill_nextButton" onClick={submitResponses} disabled={!allQuestionsAnswered}>Next</button>
+          <button class="skill_nextButton" onClick={submitResponses} disabled={!allQuestionsAnswered} title={!allQuestionsAnswered ? 'Please complete all questions' : ''}>Next</button>
         </Link>
       </section>
     </main>

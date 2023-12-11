@@ -4,6 +4,7 @@ import './../App.css';
 
 import gql from 'graphql-tag';
 import { useMutation } from '@apollo/react-hooks';
+import ArtAndCreativity from '../Icons/ArtAndCreativity.png';
 
 const ASSESS_SKILL = gql`
   mutation AssessUserArtAndCreativitySkill($ideaCount: Int!, $answer: String!) {
@@ -75,9 +76,14 @@ function Skill8() {
 
   return (
     <div className="skill">
-      <header>
-        <h1>Art and Creativity</h1>
-      </header>
+      <header class="header">
+        <div>
+          <img className="icon" src={ArtAndCreativity}/>
+        </div>
+        <div class="headerRight">
+           <h1>Art and Creativity</h1>
+        </div>
+       </header>
       <main>
         <section>
           <h3 className="question_fontsize">{question}</h3>
@@ -96,11 +102,11 @@ function Skill8() {
             </div>
           ))}
           {!isFilled && <p>Please write something before submitting.</p>}
-          <button onClick={addTextbox}>Add More Ideas</button>
+          <button class="addMoreIdeasButton"onClick={addTextbox}>Add More Ideas</button>
         </section>
       </main>
       <Link to="/skill9_1">
-        <button className="skill_nextButton" onClick={submitResponses} disabled={!isFilled}>
+        <button className="skill_nextButton" onClick={submitResponses} disabled={!isFilled} title={!isFilled ? 'Please complete all questions' : ''}>
           Next
         </button>
       </Link>

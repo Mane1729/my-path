@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import jsonData from './questionData/CustomerFocusQuestions.json';
 import './../App.css';
+import CustomerFocus from '../Icons/CustomerFocus.png';
 
 
 import gql from 'graphql-tag';
@@ -69,9 +70,14 @@ function App() {
 
   return (
     <div class="skill">
-    <header>
+    <header class="header">
+    <div>
+      <img className="icon" src={CustomerFocus}/>
+      </div>
+      <div  class="headerRight">
       <h1>Customer Focus</h1>
-    </header>
+      </div>
+      </header>
     <main>
         <section>
           <ul>
@@ -101,7 +107,7 @@ function App() {
         </section>
       </main>
       <Link to="/skill6">
-          <button class="skill_nextButton" onClick={submitResponses} disabled={!allQuestionsAnswered}>Next</button>
+          <button class="skill_nextButton" onClick={submitResponses} disabled={!allQuestionsAnswered} title={!allQuestionsAnswered ? 'Please complete all questions' : ''}>Next</button>
       </Link>
     </div>
   );

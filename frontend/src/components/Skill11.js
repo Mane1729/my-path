@@ -5,6 +5,7 @@ import './../App.css';
 
 import gql from 'graphql-tag';
 import { useMutation } from '@apollo/react-hooks';
+import EcologicalThinking from '../Icons/EcologicalThinking.png';
 
 const ASSESS_SKILL = gql`
   mutation AssessUserEcologicalThinkingSkill($answers: EcologicalThinkingQuestionnaireInput!) {
@@ -68,9 +69,14 @@ function App() {
 
   return (
     <div class="skill">
-    <header>
-      <h1>Ecological thinking</h1>
-    </header>
+    <header class="header">
+    <div>
+          <img className="icon" src={EcologicalThinking}/>
+        </div>
+      <div class="headerRight">
+        <h1>Ecological thinking</h1>
+        </div>
+      </header>
     <main>
       <section>
         <ul>
@@ -98,7 +104,7 @@ function App() {
           ))}
         </ul>
         <Link to="/industry_selector">
-          <button class="skill_nextButton" onClick={submitResponses} disabled={!allQuestionsAnswered}>Next</button>
+          <button class="skill_nextButton" onClick={submitResponses} disabled={!allQuestionsAnswered} title={!allQuestionsAnswered ? 'Please complete all questions' : ''}>Finish</button>
         </Link>
       </section>
     </main>

@@ -4,6 +4,7 @@ import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import translations from './questionData/MultilinguismData.json';
 import './../App.css';
 import { useNavigate } from 'react-router-dom';
+import Multilingualizm from '../Icons/Multiligualizm.png';
 
 function shuffleArray(array) {
   let currentIndex = array.length,  randomIndex;
@@ -63,8 +64,13 @@ function Skill9_1() {
   return (
     <div class="skill">
     <DragDropContext onDragEnd={onDragEnd}>
-      <header>
+      <header class="header">
+      <div>
+          <img className="icon" src={Multilingualizm}/>
+        </div>
+        <div class="headerRight">
         <h1>Multilingualism</h1>
+        </div>
       </header>
       <h3 className="question_fontsize">Match the languages and corresponding sentences by dragging and dropping them.</h3>
       <div className="table">
