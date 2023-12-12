@@ -258,13 +258,11 @@ img {
   width: 100%; 
 }
 
-
 .icon {
   width: 100px; 
   height: auto; 
   margin-right: 10px; 
 }
-
 
 .headerRight h1 {
   margin: 0;
@@ -295,8 +293,68 @@ img {
   display: inline-block;
   }
 
+.notification {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.job-details p {
+  margin-bottom: 10px;
+}
 
+.job-details strong {
+  color: #16425B;
+}
 
+.job-details h3 {
+  color: #16425B;
+  margin-top: 15px;
+}
+
+.job-details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.job-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%; 
+}
+
+.job-image {
+  max-width: 100px; 
+  height: 200px;
+  width: 200px;
+  border-radius: 8px; 
+  overflow: hidden; 
+  position: absolute;
+  top: -80px;
+  left: 350px;
+  margin-bottom: 10px;
+}
+
+.job-image:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+  
+.skill-item {
+  margin-bottom: 5px;
+}
+  
 
 

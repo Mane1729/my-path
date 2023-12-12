@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
+import emergingJobsData from 'emerging_jobs.json';
+
 
 const GET_USER_INFO = gql`
   query user {
@@ -25,22 +27,29 @@ function SuccessPage() {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error</p>;
 
+  const emergingJob = data.user.emergingJob || {};
+  const { name, industry, description, image } = emergingJob;
+
   return (
-    <div>
+    <div class="notification">
       <p>Your operation was successful!</p>
-      <div>
-        <p><strong>Emerging Job:</strong> {data.user.emergingJob.name}</p>
-        <p><strong>Industry:</strong> {data.user.emergingJob.industry}</p>
-        <p><strong>Description:</strong> {data.user.emergingJob.description}</p>
-        <h3>Lacking Skills</h3>
-        {data.user.emergingJob.image && (<img
-                      src={process.env.PUBLIC_URL + data.user.emergingJob.image}
-                      style={{ maxWidth: '100%' }} alt="Specialist_Image"
-                    />
-                  )}
-        <ul>
+      <div class="job-details">
+      {emergingJobsData.map((job, index) => (
+        job.image && (
+          <img
+            key={index}
+            class="job-image"
+            src={process.env.PUBLIC_URL + job.image}
+          />
+        )
+      ))}
+        <p><strong>Emerging Job:</strong> {name}</p>
+        <p><strong>Industry:</strong> {industry}</p>
+        <p><strong>Description:</strong> {description}</p>
+        <h3>Lacking Skills:</h3>
+        <ul class="skills-list">
           {data.user.lackingSkills.map((skill, index) => (
-            <li key={index}>{skill.name}</li>
+            <li key={index} class="skill-item">{skill.name}</li>
           ))}
         </ul>
       </div>
