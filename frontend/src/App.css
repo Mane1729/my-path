@@ -330,7 +330,6 @@ img {
 }
 
 .job-image {
-  max-width: 100px; 
   height: 200px;
   width: 200px;
   border-radius: 8px; 
