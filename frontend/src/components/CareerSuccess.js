@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
-import emergingJobsData from 'emerging_jobs.json';
 
 
 const GET_USER_INFO = gql`
@@ -30,30 +29,47 @@ function SuccessPage() {
   const emergingJob = data.user.emergingJob || {};
   const { name, industry, description, image } = emergingJob;
 
+  const hasSkillsToImprove = data.user.lackingSkills && data.user.lackingSkills.length > 0;
+
   return (
-    <div class="notification">
-      <p>Your operation was successful!</p>
-      <div class="job-details">
-      {emergingJobsData.map((job, index) => (
-        job.image && (
-          <img
-            key={index}
-            class="job-image"
-            src={process.env.PUBLIC_URL + job.image}
-          />
-        )
-      ))}
-        <p><strong>Emerging Job:</strong> {name}</p>
-        <p><strong>Industry:</strong> {industry}</p>
-        <p><strong>Description:</strong> {description}</p>
-        <h3>Lacking Skills:</h3>
-        <ul class="skills-list">
-          {data.user.lackingSkills.map((skill, index) => (
-            <li key={index} class="skill-item">{skill.name}</li>
-          ))}
-        </ul>
+    <>
+      <header className="page-header">
+        <h1>My Path</h1>
+      </header>
+      <div className="success-page-container">
+        <div className="emerging-job-section">
+          {image && (
+            <img
+              className="specialist-image"
+              src={process.env.PUBLIC_URL + image}
+              alt={`${name}`}
+            />
+          )}
+          <div className="job-description">
+            <h1>{name || 'Your Future Job'}</h1>
+            <p><strong>Industry:</strong> {industry || 'Not available'}</p>
+            <p>{description || 'No description provided'}</p>
+            {hasSkillsToImprove && (
+              <div className="skills-section">
+                <div className="skills-heading">
+                  <span className="heading-line"></span>
+                  <h3>Skills to Improve</h3>
+                  <span className="heading-line"></span>
+                </div>
+                <div className="skills-list">
+                  {data.user.lackingSkills.slice(0, 3).map((skill, index) => (
+                    <div key={index} className="skill-item">
+                      <img src={process.env.PUBLIC_URL + 'https://drive.google.com/uc?export=view&id=1IXUU-bCJZHzhHMEDIHDKBrkyvdMFERK7'} alt={skill.name} className="skill-icon" />
+                      <span className="skill-name">{skill.name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

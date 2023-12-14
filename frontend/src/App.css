@@ -2,7 +2,7 @@ body {
   background-color: #D0D4D9;
 }
 
-body, h1, label, p {
+body, h1, h3, label, p {
   color: #123b53; 
 }
 
@@ -293,67 +293,94 @@ img {
   display: inline-block;
   }
 
-.notification {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.page-header {
+  text-align: center;
+  padding: 20px 0; 
+  margin-bottom: 30px;
 }
 
-.job-details p {
-  margin-bottom: 10px;
+.page-header h1 {
+  margin: 0;
+  font-size: 3em; 
+  font-weight: 300; 
 }
 
-.job-details strong {
-  color: #16425B;
+.success-page-container {
+  margin-left: 15%; 
+  margin-right: 15%;
+  padding: 30px 50px;
+  padding-bottom: 50px;
+  background: linear-gradient(to right, #A9B8C2, #D0D4D9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
 }
 
-.job-details h3 {
-  color: #16425B;
-  margin-top: 15px;
-}
-
-.job-details {
-  position: relative;
+.emerging-job-section {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.job-text {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 60%; 
+.specialist-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 25px;
 }
 
-.job-image {
-  height: 200px;
-  width: 200px;
-  border-radius: 8px; 
-  overflow: hidden; 
-  position: absolute;
-  top: -80px;
-  left: 350px;
-  margin-bottom: 10px;
+job-description {
+  flex: 1;
 }
 
-.job-image:hover {
-  transform: scale(1.05); 
-  transition: transform 0.3s ease-in-out; 
+.skills-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.skills-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7px;
+}
+
+.heading-line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #3f6378;
+  margin: 0 10px;
+}
+
+h3 {
+  font-size: 1.4em;
+  margin: 0 10px;
+  display: inline-block; 
+  white-space: nowrap;
 }
 
 .skills-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
-  
+
 .skill-item {
-  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  width: 120px;
 }
-  
 
+.skill-icon {
+  width: 80px; 
+  height: 80px; 
+}
 
+.skill-name {
+  font-size: 1em;
+  color: #123b53; 
+  text-align: center;
+}
