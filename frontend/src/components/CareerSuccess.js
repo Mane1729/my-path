@@ -15,6 +15,7 @@ const GET_USER_INFO = gql`
       }
       lackingSkills {
         name
+        icon
       }
     }
   }
@@ -57,9 +58,15 @@ function SuccessPage() {
                   <span className="heading-line"></span>
                 </div>
                 <div className="skills-list">
-                  {data.user.lackingSkills.slice(0, 3).map((skill, index) => (
+                  {data.user.lackingSkills.map((skill, index) => (
                     <div key={index} className="skill-item">
-                      <img src={process.env.PUBLIC_URL + 'https://drive.google.com/uc?export=view&id=1IXUU-bCJZHzhHMEDIHDKBrkyvdMFERK7'} alt={skill.name} className="skill-icon" />
+                      {image && (
+                        <img
+                          className="skill-icon"
+                          src={process.env.PUBLIC_URL + skill.icon}
+                          alt={skill.name}
+                        />
+                      )}
                       <span className="skill-name">{skill.name}</span>
                     </div>
                   ))}

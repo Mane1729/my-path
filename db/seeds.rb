@@ -8,8 +8,8 @@ Skill.destroy_all
 # Create skills
 skills = JSON.parse(File.read('db/skills.json'))
 
-skills.each do |skill_name|
-  Skill.create!(name: skill_name)
+skills.each do |skill|
+  Skill.create!(name: skill["name"], icon: skill["icon"])
 end
 
 # Create emerging jobs

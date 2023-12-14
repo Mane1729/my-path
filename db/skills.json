@@ -1,13 +1,46 @@
 [
-  "Systems thinking",
-  "Cross-industry communication",
-  "Project management",
-  "Lean production",
-  "IT",
-  "Customer focus",
-  "Multilingualism / Multiculturalism",
-  "Social",
-  "Working in uncertainty",
-  "Art and Creativity",
-  "Ecological thinking"
+  {
+    "name": "Systems thinking",
+    "icon": "https://drive.google.com/uc?export=view&id=1NBI25uLr1usLAyC8JmqMvDCP1W9K69F0"
+  },
+  {
+    "name": "Cross-industry communication",
+    "icon": "https://drive.google.com/uc?export=view&id=1qAw7zCIpc6pdJiGamhDuHxF4UW4VSV1A"
+  },
+  {
+    "name": "Project management",
+    "icon": "https://drive.google.com/uc?export=view&id=1OqpEmkDSB-ZCTGrC-vGVPiQl-J3yvnz5"
+  },
+  {
+    "name": "Lean production",
+    "icon": "https://drive.google.com/uc?export=view&id=1JBPk6gzSjg2FjfkKjhrg-syOR4cc_azv"
+  },
+  {
+    "name": "IT",
+    "icon": "https://drive.google.com/uc?export=view&id=1szH6YAzzoc81uCISrTARcCyHlDzj-CJt"
+  },
+  {
+    "name": "Customer focus",
+    "icon": "https://drive.google.com/uc?export=view&id=19VOqj1Xytp9yK4AM9wtymJu64WqL2qSl"
+  },
+  {
+    "name": "Multilingualism / Multiculturalism",
+    "icon": "https://drive.google.com/uc?export=view&id=1NkV6VrSlpEV7fumuuOQtf6dVaVD5oSBy"
+  },
+  {
+    "name": "Social",
+    "icon": "https://drive.google.com/uc?export=view&id=1K9Oe8NcmaVbWsRiG9J70GCjR0WAO1BBn"
+  },
+  {
+    "name": "Working in uncertainty",
+    "icon": "https://drive.google.com/uc?export=view&id=13ec7GnoT-O7Th6txr3i-IJlNr1iJf7WH"
+  },
+  {
+    "name": "Art and Creativity",
+    "icon": "https://drive.google.com/uc?export=view&id=1IXUU-bCJZHzhHMEDIHDKBrkyvdMFERK7"
+  },
+  {
+    "name": "Ecological thinking",
+    "icon": "https://drive.google.com/uc?export=view&id=1RK18T02K899XlSQvzZarlPZiTy_-IZ2T"
+  }
 ]
