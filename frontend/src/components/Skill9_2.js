@@ -73,30 +73,25 @@ function Skill9_2() {
   };
 
   return (
-      <div className="skill">
-        <header class="header">
+    <div className="skill">
+      <header className="header">
         <div>
-          <img className="icon" src={Multiculturalism}/>
+          <img className="icon" src={Multiculturalism} alt="Multiculturalism" />
         </div>
-          <div class="headerRight">
+        <div className="headerRight">
           <h1>Multiculturalism</h1>
-          </div>
-        </header>
-        <main>
-          <section>
-            <ul>
-              {Object.keys(questionsData).map((questionKey) => (
-                <li key={questionKey}>
-                  <br />
-                  <h3 className="question_fontsize">{questionsData[questionKey].question}</h3>
-                  {questionsData[questionKey].image && (
-                    <img
-                    class="skill9_2images"
-                      src={process.env.PUBLIC_URL + questionsData[questionKey].image}
-                      style={{ maxWidth: '100%' }}
-                    />
-                  )}
-                  <ul class = "multipleChoice9_2">
+        </div>
+      </header>
+      <main>
+        <section>
+          <ul>
+            {Object.keys(questionsData).map((questionKey) => (
+              <li key={questionKey} class="question-section-container">
+                  <h3 class="question_fontsize">{questionsData[questionKey].question}</h3>
+                  <div className="questionContainer"
+                  style={{ backgroundImage: `url(${process.env.PUBLIC_URL + questionsData[questionKey].image})` }}>
+                  <div class="options">
+                  <ul>
                     {questionsData[questionKey].options.map((option) => (
                       <li key={option.choice}>
                         <label>
@@ -112,19 +107,26 @@ function Skill9_2() {
                       </li>
                     ))}
                   </ul>
-                </li>
-              ))}
-            </ul>
-          </section>
-        </main>
-      {/* <section>
-        <h2>Collected Responses:</h2>
-        <pre>{JSON.stringify(responses, null, 2)}</pre>
-      </section> */}
-        <Link to="/skill10">
-          <button class="skill_nextButton" onClick={submitResponses} disabled={!allQuestionsAnswered}>Next</button>
-        </Link>
-      </div>
+                  </div>
+                {questionsData[questionKey].image && (
+                  <div className="imageBlock">
+                    <img
+                      className="questionImage"
+                      src={process.env.PUBLIC_URL + questionsData[questionKey].image}
+                      alt="Question related"
+                    />
+                  </div>
+                )}
+                </div>
+              </li>
+            ))}
+          </ul>
+          <Link to="/skill10">
+            <button className="skill_nextButton" onClick={submitResponses} disabled={!allQuestionsAnswered} title={!allQuestionsAnswered ? 'Please complete all questions' : ''}>Next</button>
+          </Link>
+        </section>
+      </main>
+    </div>
   );
 }
 

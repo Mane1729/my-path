@@ -7,7 +7,7 @@
       {"choice": "c", "text": "Japan"},
       {"choice": "d", "text": "Vietnam"}
     ],
-    "image": "https://www.mashed.com/img/gallery/youve-been-eating-sushi-wrong-this-whole-time/intro-1654872727.jpg"
+    "image": "https://drive.google.com/uc?export=view&id=1DJB_YS0iYwcuYtiG2XYXJWsgmIGVGThp"
   },
   "paella": {
     "question": " This dish, made primarily with rice and seafood, originates from which country?",
@@ -17,7 +17,7 @@
       {"choice": "c", "text": "Greece"},
       {"choice": "d", "text": "Mexico"}
     ],
-    "image": "https://houseofnasheats.com/wp-content/uploads/2023/08/Mixed-Paella-Recipe-1.jpg"
+    "image": "https://drive.google.com/uc?export=view&id=1jii9baZ7eODHcBXkU0ELHIufEI6mYJpq"
   },
   "colosseum": {
     "question": "This ancient amphitheater, known for its gladiatorial contests, is situated in which city?",
@@ -27,7 +27,7 @@
       {"choice": "c", "text": "Paris"},
       {"choice": "d", "text": "London"}
     ],
-    "image": "https://cdn.mos.cms.futurecdn.net/BiNbcY5fXy9Lra47jqHKGK.jpg"
+    "image": "https://drive.google.com/uc?export=view&id=1hcm7JoAiBCNlmtoFGUe8dvjorFug1iRJ"
 
   },
   "sydneyOperaHouse": {
@@ -38,7 +38,7 @@
       {"choice": "c", "text": "Australia"},
       {"choice": "d", "text": "Canada"}
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Sydney_Australia._%2821339175489%29.jpg"
+    "image": "https://drive.google.com/uc?export=view&id=1iRhST49zWXR4F8swHQ7FZN6nOmLOdC3X"
 
   },
   "kilt": {
@@ -49,7 +49,7 @@
       {"choice": "c", "text": "England"},
       {"choice": "d", "text": "Norway"}
     ],
-    "image": "https://www.kilts-4-u.com/media/52825/untitled90.jpg?mode=pad&width=1200&upscale=false"
+    "image": "https://drive.google.com/uc?export=view&id=1JcQM9LCHX8gHrnHbDOMv__aX3ajUF3Zm"
 
   },
   "hanbok": {
@@ -60,7 +60,6 @@
       {"choice": "c", "text": "Japan"},
       {"choice": "d", "text": "Vietnam"}
     ],
-    "image": "https://thekoreaninme.com/cdn/shop/products/womens-korean-hanbok-white-top-green-skirt_1024x1024.jpg?v=1593042904"
-
+    "image": "https://drive.google.com/uc?export=view&id=1a4E9uIkloCcn53PoWJXuZC8DsEAHAyRk"
   }
 }

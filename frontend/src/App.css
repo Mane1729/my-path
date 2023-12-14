@@ -10,8 +10,13 @@ p{
   font-size: 1.2em;
 }
 
+li{
+  margin-bottom: 5px;
+}
+
 .question_fontsize{
   font-size: 1.3em;
+  margin-bottom: 15px;
 }
 
 .option_fontsize{
@@ -271,7 +276,7 @@ img {
 .addMoreIdeasButton{
   cursor: pointer;
   border-radius: 20px;
-  background-color: #16425B; /* Dark blue color */
+  background-color: #16425B;
   color: white;
   border: 2px solid #16425B;
 }
@@ -279,19 +284,67 @@ img {
 .skill_nextButton:disabled{
   background-color: #e8f4f8;
   color: #666666;
-  /* cursor: not-allowed; */
   cursor: default;
 }
 
-.skill9_2images {
-  max-width: 100%;
-  display: inline-block;
-  margin-right: 100px;
+.questionContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-right: 15px;
 }
 
-.multipleChoice9_2{
-  display: inline-block;
-  }
+.questionContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(11, 20, 71, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+.questionContainer label {
+  color: #ededed;
+}
+
+.imageBlock, .questionImage, .options {
+  position: relative;
+  z-index: 2;
+}
+
+.question-section-container {
+  display: grid;
+  place-items: center;
+  margin-left: 5%; 
+  margin-right: 5%;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  padding-bottom: 0px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+
+.imageBlock {
+  display: flex;
+  align-items: center;
+}
+
+.questionImage {
+  height: 250px;
+  width: auto;
+  object-fit: cover;
+  margin-left: 20px;
+  margin-top: 0px;
+}
 
 .page-header {
   text-align: center;
@@ -353,7 +406,7 @@ job-description {
   margin: 0 10px;
 }
 
-h3 {
+.skills-to-improve {
   font-size: 1.4em;
   margin: 0 10px;
   display: inline-block; 

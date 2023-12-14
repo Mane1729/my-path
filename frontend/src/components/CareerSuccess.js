@@ -54,7 +54,7 @@ function SuccessPage() {
               <div className="skills-section">
                 <div className="skills-heading">
                   <span className="heading-line"></span>
-                  <h3>Skills to Improve</h3>
+                  <h3 class="skills-to-improve">Skills to Improve</h3>
                   <span className="heading-line"></span>
                 </div>
                 <div className="skills-list">
