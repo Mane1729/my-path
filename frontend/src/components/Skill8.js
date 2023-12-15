@@ -101,12 +101,11 @@ function Skill8() {
               />
             </div>
           ))}
-          {!isFilled && <p>Please write something before submitting.</p>}
           <button class="addMoreIdeasButton"onClick={addTextbox}>Add More Ideas</button>
         </section>
       </main>
       <Link to="/skill9_1">
-        <button className="skill_nextButton" onClick={submitResponses} disabled={!isFilled} title={!isFilled ? 'Please complete all questions' : ''}>
+        <button className="skill_nextButton" onClick={submitResponses} disabled={!isFilled} title={!isFilled ? 'Please fill in all the boxes to proceed' : ''}>
           Next
         </button>
       </Link>

@@ -28,7 +28,10 @@ function SuccessPage() {
   if (error) return <p>Error</p>;
 
   const emergingJob = data.user.emergingJob || {};
-  const { name, industry, description, image } = emergingJob;
+  let { name, industry, description, image } = emergingJob;
+
+  const defaultImage = "https://drive.google.com/uc?export=view&id=10E4toF2kbitL19RPshgRllmwCqtPmibi";
+  image = image || defaultImage;
 
   const hasSkillsToImprove = data.user.lackingSkills && data.user.lackingSkills.length > 0;
 

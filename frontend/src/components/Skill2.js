@@ -96,7 +96,7 @@ function Skill2() {
         </section>
       </main>
       <Link to="/skill3">
-      <button className="skill_nextButton" onClick={submitResponses} disabled={!allQuestionsAnswered} title={!allQuestionsAnswered ? 'Please complete all questions' : ''}>Next</button>
+      <button className="skill_nextButton" onClick={submitResponses} disabled={!allQuestionsAnswered} title={!allQuestionsAnswered ? 'Please enter your answer to proceed' : ''}>Next</button>
     </Link>
     </div>
   );
