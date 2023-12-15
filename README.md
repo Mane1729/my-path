@@ -8,6 +8,36 @@ My Path is a web application that uses machine learning to assist users in makin
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 You can either run the application using Docker, or install all the components separately on your machine.
 
+
+### New Feature: Emerging Career Recommendations
+
+Our latest update introduces a feature that leverages React to offer guidance on emerging and future careers.
+
+#### Setup for the New Feature
+
+The frontend for this new feature is a React application located in the `frontend/` directory. Before you begin, make sure you have Node.js and Yarn installed on your machine.
+
+To install the dependencies for the React application, run:
+```
+cd frontend/
+yarn install
+```
+
+#### Running the New Feature
+
+Once you have set up the React application, you can start it by running:
+```
+cd frontend/
+yarn start
+```
+
+This will run the application on port 3001. You can access it at http://localhost:3001.
+
+#### Integrating with the Ruby on Rails Backend
+
+The React frontend is designed to work in conjunction with the existing Ruby on Rails backend. Ensure the Rails server is running alongside the React application for full functionality. For instructions on setting up and running the Rails server, see the sections below on local setup and Docker configuration.
+
+
 ### Locally
 #### Ruby
 
